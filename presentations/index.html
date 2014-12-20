@@ -1,0 +1,15 @@
+---
+layout: page
+title: Presentations
+permalink: /presentations/
+---
+
+{% for month in site.data.presentations %}
+    <h3>{{month.name}}</h3>
+    
+    <ul>
+    {% for presentation in month.presentations %}
+        <li>{{presentation}}</li>
+    {% endfor %}
+    </ul>
+{% endfor %}

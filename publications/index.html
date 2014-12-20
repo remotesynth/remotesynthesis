@@ -1,0 +1,13 @@
+---
+layout: page
+title: Publications
+permalink: /publications/
+---
+
+{% for publication in site.data.publications %}
+    <h3>{{publication.name}}</h3>
+    
+    {% for article in publication.articles %}
+        <p><a href="{{article.URL}}">{{article.title}}</a></p>
+    {% endfor %}
+{% endfor %}

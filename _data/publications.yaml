@@ -1,0 +1,261 @@
+-   name: "Telerik Developer Network"
+    articles: 
+      - 
+        title: "Static Site Engine Battle Royale"
+        URL: "http://developer.telerik.com/featured/comparing-static-site-engines/"
+-   name: "SD Times"
+    articles:
+      - 
+        title: "Guest View: With Minecraft, Microsoft gains young developer mindshare"
+        URL: "http://sdtimes.com/guest-view-minecraft-microsoft-gains-young-developer-mindshare/"
+-   name: "The Modern Web (formerly Flippin' Awesome)"
+    articles: 
+      - 
+        title: "Original Founder, Publisher, Weekly Roundup Contributor"
+        URL: "http://flippinawesome.org/"
+      - 
+        title: "Rethinking DOM Traversal"
+        URL: "http://modernweb.com/2014/05/12/rethinking-dom-traversal/"
+      - 
+        title: "Paralyzed by Choice in Front-end Development"
+        URL: "http://modernweb.com/2014/03/31/paralyzed-by-choice-in-front-end-development/"
+      - 
+        title: "Creating Sound with the Web Audio API and Oscillators"
+        URL: "http://modernweb.com/2014/03/31/creating-sound-with-the-web-audio-api-and-oscillators/"
+      - 
+        title: "Building a Successful Content Site"
+        URL: "http://modernweb.com/2014/03/17/building-a-successful-content-site/"
+      - 
+        title: "CSS for Beginners with Dreamweaver"
+        URL: "http://modernweb.com/2014/02/17/css-for-beginners-with-dreamweaver/"
+      - 
+        title: "Topic Undefined – Episode 7 (podcast)"
+        URL: "http://modernweb.com/topic-undefined/topic-undefined-episode-7/"
+      - 
+        title: "Using CSS Regions in Responsive Designs"
+        URL: "http://modernweb.com/2014/01/27/using-css-regions-in-responsive-designs/"
+      -
+        title: "2014 – What Web Developers Will Need to Know"
+        URL: "http://modernweb.com/2014/01/06/2014-what-web-developers-will-need-to-know/"
+      - 
+        title: "2013 – The Year in Web Development"
+        URL: "http://modernweb.com/2014/01/06/2013-the-year-in-web-development/"
+      - 
+        title: "Topic Undefined – Episode 6 (podcast)"
+        URL: "http://modernweb.com/topic-undefined/topic-undefined-episode-6/"
+      - 
+        title: "Topic Undefined – Episode 5 (podcast)"
+        URL: "http://modernweb.com/topic-undefined/topic-undefined-episode-5/"
+      - 
+        title: "Stop Focusing on Tools"
+        URL: "http://modernweb.com/2013/09/16/stop-focusing-on-tools/"
+      - 
+        title: "Retro Game Music using Web Audio and Band.js"
+        URL: "http://modernweb.com/2013/09/09/retro-game-music-using-web-audio-and-band-js/"
+      - 
+        title: "Topic Undefined – Episode 3 (podcast)"
+        URL: "http://modernweb.com/topic-undefined/topic-undefined-episode-3/"
+      - 
+        title: "DOM Traversal and Manipulation with Voyeur "
+        URL: "http://modernweb.com/2013/07/22/dom-traversal-and-manipulation-with-voyeur/"
+      - 
+        title: "Topic Undefined – Episode 2 (podcast)"
+        URL: "http://modernweb.com/topic-undefined/topic-undefined-episode-2/"
+      - 
+        title: "Topic Undefined – Episode 1 (podcast)"
+        URL: "http://modernweb.com/topic-undefined/topic-undefined-episode-1/"
+      - 
+        title: "Drawing and Animating with Two.js and Illustrator"
+        URL: "http://modernweb.com/2013/06/10/drawing-and-animating-with-two-js-and-illustrator/"
+      - 
+        title: "Quick and Easy Local and Device Web App Testing"
+        URL: "http://modernweb.com/2013/05/06/quick-and-easy-local-and-device-web-app-testing/"
+      - 
+        title: "Create Your First Mobile App with PhoneGap Build – Using the Notification API"
+        URL: "http://modernweb.com/2013/04/29/phonegap-build-step-7/"
+      - 
+        title: "Create Your First Mobile App with PhoneGap Build – Using the Storage API"
+        URL: "http://modernweb.com/2013/04/22/phonegap-build-step-6/"
+      - 
+        title: "Create Your First Mobile App with PhoneGap Build – Adding Pages with jQuery Mobile"
+        URL: "http://modernweb.com/2013/04/15/phonegap-build-step-5/"
+      - 
+        title: "Create Your First Mobile App with PhoneGap Build – Adding jQuery Mobile"
+        URL: "http://modernweb.com/2013/04/08/phonegap-build-part4/"
+      - 
+        title: "Create Your First Mobile App with PhoneGap Build – Connecting to an API"
+        URL: "http://modernweb.com/2013/03/29/create-your-first-mobile-app-part3/"
+      - 
+        title: "Create Your First Mobile App with PhoneGap Build – Using PhoneGap Build"
+        URL: "http://modernweb.com/2013/03/29/phonegap-build-part2/"
+      - 
+        title: "Create Your First Mobile App with PhoneGap Build – Setup"
+        URL: "http://modernweb.com/2013/03/29/phonegap-build-part1/"
+-   name: "Adobe Inspire"
+    articles: 
+      - 
+        title: "Web designers become app developers with PhoneGap"
+        URL: "http://www.adobe.com/inspire/2013/11/web-designers-phonegap.html"
+      - 
+        title: "Building responsive web designs with Adobe Edge Reflow"
+        URL: "http://www.adobe.com/inspire/2013/04/responsive-web-designs-edge-reflow.html"
+      - 
+        title: "Getting started with responsive web design"
+        URL: "http://www.adobe.com/inspire/2013/02/responsive-web-design.html"
+      - 
+        title: "Four cool features you can use with HTML5 today"
+        URL: "http://www.adobe.com/inspire/2012/10/web-standards-html5-today.html"
+      - 
+        title: "Primer: How to take advantage of web standards"
+        URL: "http://www.adobe.com/inspire/2012/08/web-standards-primer.html"
+      - 
+        title: "What are web standards and why should I care?"
+        URL: "http://www.adobe.com/newsletters/inspire/april2012/articles/article5/index.html"
+-   name: "InfoQ"
+    articles:
+      -
+        title: "Axel Rauschmayer on ECMAScript 6 and the Future of JavaScript"
+        URL: "http://www.infoq.com/interviews/axel-rauschmayer-ecmascript-6"
+      -
+        title: "A Change in Leadership for Node.js"
+        URL: "http://www.infoq.com/news/2014/01/node-leadership-change"
+      -
+        title: "Neal Ford on Giving Technical Presentations"
+        URL: "http://www.infoq.com/interviews/neal-ford-technical-presentations"
+      -
+        title: "Andrew Betts on Developing for Mobile with HTML5"
+        URL: "http://www.infoq.com/interviews/andrew-betts-mobile-web"
+      -
+        title: "Tom Dale on Ember and JavaScript Frameworks"
+        URL: "http://www.infoq.com/interviews/tom-dale-ember"
+      -
+        title: "Google Announces Chrome Apps Improved Offline Capabilities & Mac Support"
+        URL: "http://www.infoq.com/news/2013/12/chrome-apps-mac"
+      -
+        title: "Current Trends in NoSQL - Q&A with Peter Bell"
+        URL: "http://www.infoq.com/news/2013/11/nosql-trends"
+      -
+        title: "CodeCube Offers Shareable, Runnable Code Samples"
+        URL: "http://www.infoq.com/news/2013/10/codecube"
+      -
+        title: "Backbone 1.1.0 Released, Includes Potential Incompatibility with 1.0"
+        URL: "http://www.infoq.com/news/2013/10/backbone-1.1.0-released"
+-   name: "Adobe Edge"
+    articles: 
+      - 
+        title: "Advanced Android development with Flex \"Hero\" and Flash Builder \"Burrito\""
+        URL: "http://www.adobe.com/devnet/html5/articles/nodejs-command-line-tools-for-front-end-development.html"
+      - 
+        title: "Create Android apps with Flex \"Hero\" and Flash Builder \"Burrito\""
+        URL: "http://www.adobe.com/devnet/html5/articles/nodejs-command-line-tools-for-front-end-development.html"
+      - 
+        title: "Getting Started with Adobe AIR for Android"
+        URL: "http://www.adobe.com/newsletters/edge/august2010/articles/article1/index.html"
+      - 
+        title: "Object relational mapping in ColdFusion 9 and ColdFusion Builder"
+        URL: "http://www.adobe.com/newsletters/edge/april2010/articles/article6/index.html"
+      - 
+        title: "Tutorial: Build an Adobe AIR application using JavaScript"
+        URL: "http://www.adobe.com/newsletters/edge/february2010/articles/article5/index.html"
+      - 
+        title: "A guide to Adobe developer groups and resources online"
+        URL: "http://www.adobe.com/newsletters/edge/october2009/articles/article4/index.html"
+      - 
+        title: "A beginner's guide to the Mate framework for Adobe Flex"
+        URL: "http://www.adobe.com/newsletters/edge/june2009/articles/article5/index.html"
+      - 
+        title: "Build a personal productivity application with Adobe AIR"
+        URL: "http://www.adobe.com/newsletters/edge/february2009/articles/article2/index.html"
+      - 
+        title: "Comparing Adobe Flex and Ajax Development Models"
+        URL: "http://www.adobe.com/newsletters/edge/february2009/articles/article2/index.html"
+      - 
+        title: "Add dynamic content to your site with RSS and ColdFusion"
+        URL: "http://www.adobe.com/newsletters/edge/march2007/articles/article6/index.html"
+-   name: "Adobe Developer Connection"
+    articles: 
+      - 
+        title: "Node.js command-line tools for front-end development"
+        URL: "http://www.adobe.com/devnet/html5/articles/nodejs-command-line-tools-for-front-end-development.html"
+      - 
+        title: "HTML, CSS and JavaScript code editing with Edge Code"
+        URL: "http://www.adobe.com/devnet/edge-code/articles/code-editing-with-edge-code.html"
+      - 
+        title: "Browser testing across devices with Adobe Edge Inspect"
+        URL: "http://www.adobe.com/devnet/edge-inspect/articles/browser-testing-across-devices-with-adobe-edge-inspect.html"
+      - 
+        title: "Pseudo-classical object-oriented programming in JavaScript with Minion"
+        URL: "http://www.adobe.com/devnet/html5/articles/pseudo-classical-object-oriented-programming-in-javascript-with-minion.html"
+      - 
+        title: "Metablog Monthly throughout 2011 (example November '11)"
+        URL: "http://www.adobe.com/devnet/ria/newsletter/2011-11-themetablog.html"
+      - 
+        title: "Creating Self-updating ColdFusion Builder Beta Extensions"
+        URL: "http://www.adobe.com/devnet/coldfusion/articles/cfbuilder_selfupdating_extension.html"
+-   name: "Onward Search Blog"
+    articles: 
+      - 
+        title: "Breaking into a Front-end Development Career"
+        URL: "http://blog.onwardsearch.com/2012/11/breaking-in-to-a-front-end-development-career/"
+-   name: "Kendo UI Blog"
+    articles: 
+      - 
+        title: "Using Adobe Edge Tools and Services with Kendo UI"
+        URL: "http://www.kendoui.com/blogs/teamblog/posts/12-12-04/using_adobe_edge_tools_and_services_with_kendo_ui.aspx"
+-   name: "Flex Authority"
+    articles: 
+      - 
+        title: "UHello Mate! A Beginner's Guide to the Mate Flex Framework (Vol. 1 Issue 1)"
+        URL: "http://www.flex-authority.com/issues/flex-and-air/hello-mate.cfm"
+-   name: "Fusion Authority Quarterly Update"
+    articles: 
+      - 
+        title: "Getting to Know Mr. Wizard (Vol. 2, Issue 4)"
+        URL: ""
+      - 
+        title: "What's Hot? What's Not? - What new ColdFusion 8 tags or features do you find indispensable, and why? (Vol. 2, Issue 3)"
+        URL: "http://www.fusionauthority.com/quarterly/"
+      - 
+        title: "Cairngorm Crystallized: Examining the Cairngorm Microarchitecture from a Workflow Perspective (Vol. 2, Issue 2)"
+        URL: "http://www.fusionauthority.com/quarterly/"
+-   name: "DevShed"
+    articles: 
+      - 
+        title: "Adobe ColdFusion Just Got More RAD"
+        URL: "http://www.devarticles.com/c/a/ColdFusion/Adobe-ColdFusion-Just-Got-More-RAD/"
+-   name: "Sitepoint"
+    articles: 
+      - 
+        title: "ColdFusion 8 - Believe the Hype"
+        URL: "http://www.sitepoint.com/article/coldfusion-8-believe-hype"
+-   name: "Fusion Authority Online"
+    articles: 
+      - 
+        title: "Elad Elrom Talks Flash...and the City"
+        URL: "http://www.fusionauthority.com/community/4799-elad-elrom-talks-flash-and-the-city.htm"
+      - 
+        title: "An Interview with John Wilker of 360Conferences"
+        URL: "http://www.fusionauthority.com/community/4791-an-interview-with-john-wilker-of-360-conferences.htm"
+      - 
+        title: "cf.Objective() 2008 Wrap-Up"
+        URL: "http://www.fusionauthority.com/news/4751-cf-objective-2008-wrap-up.htm"
+      - 
+        title: "cf.Objective() - Day One"
+        URL: "http://www.fusionauthority.com/Community/4685-cf-Objective-Day-One.htm"
+      - 
+        title: "cf.Objective() Day Two: May 5, 2007"
+        URL: "http://www.fusionauthority.com/Community/4686-cf-Objective-Day-Two-May-5-2007.htm"
+      - 
+        title: "cf.Objective() Day Three: May 6, 2007"
+        URL: "http://www.fusionauthority.com/Community/4687-cf-Objective-Day-Three-May-6-2007.htm"
+      - 
+        title: "Build a Code Generator in Five Easy Steps"
+        URL: "http://www.fusionauthority.com/Techniques/4657-Build-a-Code-Generator-in-Five-Easy-Steps.htm"
+-   name: "ColdFusion Developer's Journal"
+    articles: 
+      - 
+        title: "Stopping Spam in Its Tracks...using CAPTCHA"
+        URL: "http://coldfusion.sys-con.com/read/236003.htm"
+      - 
+        title: "Implementing a Nested Set Model in ColdFusion"
+        URL: "http://coldfusion.sys-con.com/read/42123.htm"

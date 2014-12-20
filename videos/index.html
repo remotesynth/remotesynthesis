@@ -1,0 +1,10 @@
+---
+layout: page
+title: Videos
+permalink: /videos/
+---
+
+{% for video in site.data.videos %}
+    <h3>{{video.name}}</h3>
+    <p><a href="{{video.URL}}">{{video.title}}</a></p>
+{% endfor %}

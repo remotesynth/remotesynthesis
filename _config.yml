@@ -1,0 +1,11 @@
+# Site settings
+title: Remote Synthesis
+email: brian.rinaldi@gmail.com
+description: "The blog of Brian Rinaldi, Developer Content Manager at Telerik"
+baseurl: ""
+url: "http://remotesynthesis.com"
+username: remotesynth
+
+# Build settings
+markdown: kramdown
+permalink: pretty
