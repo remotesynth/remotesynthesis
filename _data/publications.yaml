@@ -1,6 +1,12 @@
 -   name: "Telerik Developer Network"
     articles: 
       - 
+        title: "3 Useful Tools for Local Web Development & Testing"
+        URL: "http://developer.telerik.com/featured/3-useful-tools-local-development-testing/"
+      -
+        title: "Can AngularJS Maintain Its Dominance?"
+        URL: "http://developer.telerik.com/featured/can-angularjs-maintain-dominance/"
+      - 
         title: "Static Site Engine Battle Royale"
         URL: "http://developer.telerik.com/featured/comparing-static-site-engines/"
 -   name: "SD Times"

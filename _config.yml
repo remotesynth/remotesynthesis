@@ -9,3 +9,7 @@ username: remotesynth
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+#pagination
+paginate: 5
+excerpt_separator: "<!--more-->"

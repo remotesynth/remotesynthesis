@@ -164,6 +164,26 @@ a:visited { color: #205caa; }
   color: #818181;
 }
 
+.pagination {
+    padding: 0px 0px 20px 0px;
+    font-size: .9em;
+}
+
+.previous {
+    display: none;
+}
+
+a.previous {
+    display: inline;
+}
+
+.next {
+    display: none;
+}
+
+a.next {
+    display: inline;
+}
 
 /* Post styles */
 /* ----------------------------------------------------------*/
