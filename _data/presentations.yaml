@@ -1,3 +1,7 @@
+-   name: "February 2015"
+    presentations:
+      - "San Francisco HTML5 User Group - Comparing Static Site Engines"
+
 -   name: "September 2014"
     presentations: 
       - "Web Unleashed, Toronto - 8-bit Game Music with Web Audio API"
@@ -80,34 +84,34 @@
       - "Bay Area ColdFusion User Group - Building Self-Updating ColdFusion Builder Extensions"
 -   name: "January 2010"
     presentations: 
-      - "Online ColdFusion Meetup - \"Introduction to ColdSpring\""
+      - "Online ColdFusion Meetup - Introduction to ColdSpring"
 -   name: "October 2009"
     presentations: 
-      - "Hartford AUG - \"Introduction to ColdSpring\""
+      - "Hartford AUG - Introduction to ColdSpring"
 -   name: "September 2009"
     presentations: 
-      - "Devon CFUG - \"Introduction to ColdSpring\""
-      - "Boeing CFUG - \"Introduction to ColdSpring\""
+      - "Devon CFUG - Introduction to ColdSpring"
+      - "Boeing CFUG - Introduction to ColdSpring"
 -   name: "August 2009"
     presentations: 
-      - "CFUnited 2009 - \"A CF Developer's Guide to the Mate Flex Framework\""
+      - "CFUnited 2009 - A CF Developer's Guide to the Mate Flex Framework"
 -   name: "January 2009"
     presentations: 
-      - "Harvard University Extension School - \"ColdFusion 8\""
+      - "Harvard University Extension School - ColdFusion 8"
 -   name: "June 2008"
     presentations: 
-      - "CFUnited 2008 - \"Writing an RIA? Secure Your Data!\""
+      - "CFUnited 2008 - Writing an RIA? Secure Your Data!"
 -   name: "May 2008"
     presentations: 
-      - "cf.Objective 2008 Conference - \"Cairngorm for ColdFusion Developers\""
-      - "Boeing ColdFusion User Group - \"Practical Code Generation\""
+      - "cf.Objective 2008 Conference - Cairngorm for ColdFusion Developers"
+      - "Boeing ColdFusion User Group - Practical Code Generation"
 -   name: "January 2008"
     presentations: 
-      - "Harvard University Extension School - \"ColdFusion 8: Server Administration and Development Basics\""
-      - "Boeing Corporation (Connect Presentation) - \"Generating Framework Code with Illudium\""
+      - "Harvard University Extension School - ColdFusion 8: Server Administration and Development Basics"
+      - "Boeing Corporation (Connect Presentation) - Generating Framework Code with Illudium"
 -   name: "August 2007"
     presentations: 
-      - "Hartford CT Adobe User Group: \"Generating Framework Code with Illudium\""
+      - "Hartford CT Adobe User Group: Generating Framework Code with Illudium"
 -   name: "July 2007"
     presentations: 
-      - "cfFrameworks (Connect Presentation): \"Generating Framework Code with Illudium\""
+      - "cfFrameworks (Connect Presentation): Generating Framework Code with Illudium"

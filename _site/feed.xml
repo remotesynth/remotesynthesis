@@ -7,6 +7,27 @@
     <atom:link href="http://remotesynthesis.com/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Comparing Static Site Engines</title>
+        <description>&lt;p&gt;On February 18, I had the pleasure of gaving a &lt;a href=&quot;http://www.meetup.com/sfhtml5/events/219180801/&quot;&gt;talk&lt;/a&gt; to the San Francisco HTML5 User Group. The topic was static site engines, covering the basics of what they are and what they are good for (or what they are not good for). The latter half of the session focused on comparing three popular static site engines: &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;, &lt;a href=&quot;https://middlemanapp.com/&quot;&gt;Middleman&lt;/a&gt; and &lt;a href=&quot;http://harpjs.com/&quot;&gt;Harp&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can view the presentation below (I am also giving an updated version of this presentation at &lt;a href=&quot;https://www.devnexus.com/s/index&quot;&gt;DevNexus&lt;/a&gt; in Atlanta later this month).&lt;/p&gt;
+
+&lt;h2 id=&quot;sample-application&quot;&gt;Sample Application&lt;/h2&gt;
+
+&lt;p&gt;In order to compare the engines, I created a simple sample site, using data from the &lt;a href=&quot;http://adventuretime.wikia.com/wiki/Adventure_Time_with_Finn_and_Jake_Wiki&quot;&gt;Adventure Time Wiki&lt;/a&gt;. The site is intentionally simple, but uses things like custom post attributes, custom global attributes, data and, of course, posts.&lt;/p&gt;
+
+&lt;p&gt;You can get the samples as well as the slide deck &lt;a href=&quot;https://github.com/remotesynth/Static-Site-Samples&quot;&gt;on GitHub&lt;/a&gt;. I am hoping to add additional samples in the coming weeks.&lt;/p&gt;
+
+&lt;h2 id=&quot;recording&quot;&gt;Recording&lt;/h2&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/R-fJWOO1bjE&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+</description>
+        <pubDate>Wed, 04 Mar 2015 04:00:00 -0500</pubDate>
+        <link>http://remotesynthesis.com/general/2015/03/04/comparing-static-site-engines/</link>
+        <guid isPermaLink="true">http://remotesynthesis.com/general/2015/03/04/comparing-static-site-engines/</guid>
+      </item>
+    
+      <item>
         <title>Patterns of Development</title>
         <description>&lt;p&gt;Patterns are something that you cannot view close up - a narrow view obscures the pattern. However, given distance and time, we can begin to make out the sequences that repeat. This is one of the few benefits of being old, which I am compared to many developers.&lt;/p&gt;
 
