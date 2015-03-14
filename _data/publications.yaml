@@ -1,5 +1,7 @@
 -   name: "Telerik Developer Network"
     articles: 
+      - title: "Adding Audio to Web Apps"
+        URL: "http://developer.telerik.com/featured/adding-audio-to-web-apps/"
       - 
         title: "3 Useful Tools for Local Web Development & Testing"
         URL: "http://developer.telerik.com/featured/3-useful-tools-local-development-testing/"

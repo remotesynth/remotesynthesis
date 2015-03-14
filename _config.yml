@@ -13,3 +13,9 @@ permalink: pretty
 #pagination
 paginate: 5
 excerpt_separator: "<!--more-->"
+
+#glynn
+ftp_host: '162.208.2.130'
+ftp_dir: 'public_html'
+ftp_passive: true
+ftp_username: 'remotesynthesis'

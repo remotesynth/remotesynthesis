@@ -7,6 +7,19 @@
     <atom:link href="http://remotesynthesis.com/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Can Web Audio be Useful?</title>
+        <description>&lt;p&gt;Next month, I will be presenting at the &lt;a href=&quot;http://fluentconf.com&quot;&gt;Fluent Conference&lt;/a&gt; in San Francisco on the topic of “Practical Web Audio.” The idea here is that most every demo or presentation about web audio (including my own) have been fun and cool but not practical unless you build games or music software.&lt;/p&gt;
+
+&lt;p&gt;So, are there useful purposes for web audio in a standard web app? I wrote an article called &lt;a href=&quot;http://developer.telerik.com/featured/adding-audio-to-web-apps/&quot;&gt;Adding Audio to Web Apps&lt;/a&gt; that begins to explore some ideas. In almost every case, the demo uses very brief portions of audio to try to add context to some form of input. Notifications seemed obvious - but, admittedly, others are harder to make a strong case for except in very specific circumstances. These were just some of my initial ideas - I have a few others and some variations to the ones I showed already that I am working on.&lt;/p&gt;
+
+&lt;p&gt;Have you used web audio in your web app for something useful? If so, please share (and maybe I can even show it at Fluent).&lt;/p&gt;
+</description>
+        <pubDate>Sat, 14 Mar 2015 05:00:00 -0400</pubDate>
+        <link>http://remotesynthesis.com/general/2015/03/14/can-web-audio-be-useful/</link>
+        <guid isPermaLink="true">http://remotesynthesis.com/general/2015/03/14/can-web-audio-be-useful/</guid>
+      </item>
+    
+      <item>
         <title>Comparing Static Site Engines</title>
         <description>&lt;p&gt;On February 18, I had the pleasure of gaving a &lt;a href=&quot;http://www.meetup.com/sfhtml5/events/219180801/&quot;&gt;talk&lt;/a&gt; to the San Francisco HTML5 User Group. The topic was static site engines, covering the basics of what they are and what they are good for (or what they are not good for). The latter half of the session focused on comparing three popular static site engines: &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;, &lt;a href=&quot;https://middlemanapp.com/&quot;&gt;Middleman&lt;/a&gt; and &lt;a href=&quot;http://harpjs.com/&quot;&gt;Harp&lt;/a&gt;.&lt;/p&gt;
 
@@ -364,23 +377,6 @@
         <pubDate>Tue, 22 Jul 2014 07:15:47 -0400</pubDate>
         <link>http://remotesynthesis.com/general/2014/07/22/comparing-static-site-engines/</link>
         <guid isPermaLink="true">http://remotesynthesis.com/general/2014/07/22/comparing-static-site-engines/</guid>
-      </item>
-    
-      <item>
-        <title>Starting Anew</title>
-        <description>&lt;p&gt;Almost 10 years ago, on January 1, 2005, I started a blog called Remote Synthesis. The name came from synonyms for “Cold” and “Fusion” as ColdFusion development was my primary focus back then. A lot has happened in 10 years.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;The blog gained a good deal of popularity during the years that I was working on my popular ColdFusion code generator and posting the ColdFusion Open Source List. It remained somewhat popular during my years working with Flex and running the Flex Camp Boston conference (later RIA Unleashed and now Web Unleashed). Eventually, when joining Adobe, my focus started to drift from that blog to publishing elsewhere - on the Adobe Developer Connection that I was helping to run and other writing responsibilities.&lt;/p&gt;
-
-&lt;p&gt;In 2013, I started a site called &lt;a href=&quot;http://flippinawesome.org&quot;&gt;Flippin’ Awesome&lt;/a&gt; (now part of The Modern Web). While it included the contributions of many authors, including myself, it took most of my free time and effort to keep it going. It became very popular (and still is). I kept trying to blog, but found my focus and interest waning. Compounding this was the fact that my blog ran on a severely outdated version of ColdFusion and old CF-based blogging software and that it looked hideous on mobile.&lt;/p&gt;
-
-&lt;p&gt;While nearly 10 years of content has some value, most of the content was outdated and I had no intention of fixing this. Thus, I decided it was time for a fresh start…which is what you are looking at. I don’t plan to blog frequently, but occassionally. I know my audience will be limited, but…so what?! My audience back in 2005 was 1 - just me.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 01 Jul 2014 06:15:47 -0400</pubDate>
-        <link>http://remotesynthesis.com/general/2014/07/01/starting-anew/</link>
-        <guid isPermaLink="true">http://remotesynthesis.com/general/2014/07/01/starting-anew/</guid>
       </item>
     
   </channel>
