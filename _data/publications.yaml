@@ -1,5 +1,7 @@
 -   name: "Telerik Developer Network"
-    articles: 
+    articles:
+      - title: "Getting Started with Jekyll"
+        URL: "http://developer.telerik.com/featured/getting-started-with-jekyll/"
       - title: "Adding Audio to Web Apps"
         URL: "http://developer.telerik.com/featured/adding-audio-to-web-apps/"
       - 
@@ -16,6 +18,17 @@
       - 
         title: "Guest View: With Minecraft, Microsoft gains young developer mindshare"
         URL: "http://sdtimes.com/guest-view-minecraft-microsoft-gains-young-developer-mindshare/"
+-   name: "Sitepoint"
+    articles:
+      - 
+        title: "Creating Posts, Custom Metadata, and Data in Wintersmith"
+        URL: "http://www.sitepoint.com/creating-posts-custom-metadata-data-wintersmith/"
+      - 
+        title: "Getting Started with Wintersmith: A Node.js-based Static Site Generator"
+        URL: "http://www.sitepoint.com/getting-started-wintersmith-nodejs-static-site-generator/"
+      - 
+        title: "ColdFusion 8 - Believe the Hype"
+        URL: "http://www.sitepoint.com/article/coldfusion-8-believe-hype"
 -   name: "The Modern Web (formerly Flippin' Awesome)"
     articles: 
       - 
@@ -231,11 +244,6 @@
       - 
         title: "Adobe ColdFusion Just Got More RAD"
         URL: "http://www.devarticles.com/c/a/ColdFusion/Adobe-ColdFusion-Just-Got-More-RAD/"
--   name: "Sitepoint"
-    articles: 
-      - 
-        title: "ColdFusion 8 - Believe the Hype"
-        URL: "http://www.sitepoint.com/article/coldfusion-8-believe-hype"
 -   name: "Fusion Authority Online"
     articles: 
       - 

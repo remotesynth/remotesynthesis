@@ -76,6 +76,75 @@
   <ul class="posts">
     
       <li class="post-content">
+        <span class="post-date">May 7, 2015</span>
+        <a class="post-link" href="/general/2015/05/07/jekyll-versus-competition/">Jekyll Versus the Competition</a>
+        <p>On Saturday, May 2, the first ever <a href="http://jekyllconf.com">JekyllConf</a> was held online and featured some really prominent speakers including Tom Preston-Werner and Brandon Mathis. I had the honor of opening the event with my session comparing Jekyll to other popular static site engine options including <a href="http://harpjs.com">Harp</a>, <a href="http://hexo.io/">Hexo</a>, <a href="http://wintersmith.io/">Wintersmith</a>, <a href="http://wintersmith.io/">Hugo</a> and <a href="https://middlemanapp.com/">Middleman</a>.</p>
+
+<p>In summary (and in my personal opinion of course), Jekyll is still in the strongest position of all the engines. It has the strongest community (partly evidenced by JekyllConf itself), the best documentation (not saying it couldn’t be better, but it’s better than the alternatives) and has the largest selection of pre-built templates and plugins.</p>
+
+<p>However, it has failed to reach much beyond hardcore developers. This is partly because of the nature of the tool - for instance, few people outside of the developer community enjoy working on the command line…in fact, most find it intimidating. Tooling for authors is weak too - Markdown is a terrible option for authors (who aren’t developers). We think of it as being so simple and easy, but that’s actually what makes it so complex. In terms of authoring, it covers a majority of use cases, but it is still very common to encounter requirements that it doesn’t meet (intentionally, since it’s goal was simplicity). Thus, when you teach an author Markdown, you need to teach them the syntax, what it doesn’t cover and  HTML to handle those scenarios it doesn’t cover. This is actually more complicated than simply teaching them HTML.</p>
+
+<p>In my opinion, until the tooling is available to allow authors and contributors to write using the tooling they love, static site engines will remain a niche solution. This is a shame as they actually seem like the optimal solution for content focused sites and, perhaps more so, documentation sites. The good news is that there are people working on the tools needed to bridge this gap…we’ll see how this goes!</p>
+
+<p>You can see the full session recording below or view the <a href="https://www.youtube.com/watch?v=X5sJIL-nOhg&amp;feature=youtu.be&amp;t=9m32s">full recording of the day here</a>.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vT7DhK5zbv0?list=PLrxYIq_0LFJcXlsRZD-JCdITfZexwvqsQ" frameborder="0" allowfullscreen=""></iframe>
+
+
+      </li>
+    
+      <li class="post-content">
+        <span class="post-date">Apr 29, 2015</span>
+        <a class="post-link" href="/general/2015/04/29/tools-for-writing-markdown/">Tools for Writing and Converting Markdown</a>
+        <p>By now, most developers are familiar on some level with <a href="http://daringfireball.net/projects/markdown/">Markdown</a>. It’s become a somewhat ubiquitous part of developer tooling, probably in no small part due to it’s usage for documentation in GitHub. It also plays a big part in nearly all the major static site engines.</p>
+
+<p>The power of Markdown and probably a significant reason for its success is in its simplicity. But this is also its biggest weakness. Developers love Markdown because it offers a shorthand for probably 80% of their writing use cases - things like blog posts and basic documentation. For the other 20%, developers have no problem switching to straight HTML, which, of course, you can include in a Markdown file without issue.</p>
+
+<p>For writers and the general public however, this presents a huge obstacle. They cannot use the tools they are comfortable in writing with and they not only are forced to learn Markdown syntax, but they must learn those cases that Markdown doesn’t cover and the HTML to use in these cases. It’s multiple layers of complexity for the sake of simplicity.</p>
+
+<p>That being said, as Markdown becomes more widespread in its use, the tooling around it is slowly improving. I use Markdown daily and below are some of the tools that I’ve found useful in my own experience.</p>
+
+
+      </li>
+    
+      <li class="post-content">
+        <span class="post-date">Apr 8, 2015</span>
+        <a class="post-link" href="/general/2015/04/08/building-static-sites-wintersmith/">Building Static Sites with Node.js and Wintersmith</a>
+        <p>When I’ve spoken on the topic or even when I posted my recent <a href="http://developer.telerik.com/featured/getting-started-with-jekyll/">guide to getting started with Jekyll</a>,  the question I always get is if there is a comparable static site generator to Jekyll that is built with JavaScript and available on npm. The reason people cite is that they aren’t comfortable with Ruby and thus have trouble when they encounter problems with Jekyll or are unable to customize it completely to their needs. Well, there’s good and bad news.</p>
+
+<p>First, the bad news… I have found nothing comparable to Jekyll in terms of overall features, documentation and community. Now I don’t know every engine out there, but, so far, there’s nothing that even comes close to fully matching Jekyll.</p>
+
+<p>The good news, however, is that I found <a href="http://wintersmith.io/">Wintersmith</a> to be a viable Jekyll replacement. It has a lot of the key features and is extensible. Plus, there are a reasonable amount of extensions out there for it already. On the other hand, the documentation is awful (let’s be honest) and the community is small. So, if you run into a problem, you’re stuck reviewing the source code. On the upside, I found the source code is pretty self-explanatory when I needed to rely on it.</p>
+
+<p>Given the lack of a good getting started guide in the Wintersmith documentation, I wrote a two-part series for Sitepoint that walks you through the entire process of building a site. It follows the same exact format of my <a href="http://developer.telerik.com/featured/getting-started-with-jekyll/">Jekyll guide</a> covering everything from installation to templating, creating posts, custom metadata and custom data.</p>
+
+<ul>
+  <li><a href="http://www.sitepoint.com/getting-started-wintersmith-nodejs-static-site-generator/">Getting Started with Wintersmith: A Node.js-based Static Site Generator</a> - Part 1</li>
+  <li><a href="http://www.sitepoint.com/creating-posts-custom-metadata-data-wintersmith/">Creating Posts, Custom Metadata, and Data in Wintersmith</a> - Part 2</li>
+</ul>
+
+<p>The source code for the example is part of my <a href="https://github.com/remotesynth/Static-Site-Samples">Static Site Samples GitHub project</a> which also includes the aforementioned Jekyll sample as well as examples for Harp and Middleman.</p>
+
+
+      </li>
+    
+      <li class="post-content">
+        <span class="post-date">Mar 24, 2015</span>
+        <a class="post-link" href="/general/2015/03/24/building-static-sites-jekyll/">A Guide to Building Static Sites with Jekyll</a>
+        <p>As I’ve <a href="http://remotesynthesis.com/general/2015/03/04/comparing-static-site-engines/">posted about recently</a>, I’ve been speaking a lot about comparing static site engines. There are a <em>ton</em> of options out there (389 as of today, according to <a href="https://staticsitegenerators.net/">this site</a>). However, based on my personal experience, I always recommend <a href="http://jekyllrb.com">Jekyll</a> - granted, that’s based on having used 5 of the 389 so far.</p>
+
+<p>I already have a <a href="https://github.com/remotesynth/Static-Site-Samples">GitHub project</a> where I have built the same project multiple times with different engines as a means of comparison. The readme will guide you with installing and running each of these should you choose.</p>
+
+<p>Now, if you wanted to learn how to use Jekyll using this sample, I have written a <a href="http://developer.telerik.com/featured/getting-started-with-jekyll/">detailed guide to getting started with Jekyll</a> for the Telerik Developer Network. It walks through the most common things you need to know about Liquid templating as well as how to create and build your Jekyll site.</p>
+
+<p>I hope you enjoy it!</p>
+
+<p>P.S. One common questions I get whenever I recommend Jekyll is from people who don’t know Ruby and would prefer a solution written in JavaScript/Node.js and, preferably, available via npm. The <a href="https://github.com/remotesynth/Static-Site-Samples">GitHub project</a> includes two, Harp and Wintersmith. I have a follow up article that should be published any day now that walks through the same steps laid out in the Jekyll tutorial, but for Wintersmith. I’ll post about that as soon as it is out.</p>
+
+
+      </li>
+    
+      <li class="post-content">
         <span class="post-date">Mar 14, 2015</span>
         <a class="post-link" href="/general/2015/03/14/can-web-audio-be-useful/">Can Web Audio be Useful?</a>
         <p>Next month, I will be presenting at the <a href="http://fluentconf.com">Fluent Conference</a> in San Francisco on the topic of “Practical Web Audio.” The idea here is that most every demo or presentation about web audio (including my own) have been fun and cool but not practical unless you build games or music software.</p>
@@ -83,60 +152,6 @@
 <p>So, are there useful purposes for web audio in a standard web app? I wrote an article called <a href="http://developer.telerik.com/featured/adding-audio-to-web-apps/">Adding Audio to Web Apps</a> that begins to explore some ideas. In almost every case, the demo uses very brief portions of audio to try to add context to some form of input. Notifications seemed obvious - but, admittedly, others are harder to make a strong case for except in very specific circumstances. These were just some of my initial ideas - I have a few others and some variations to the ones I showed already that I am working on.</p>
 
 <p>Have you used web audio in your web app for something useful? If so, please share (and maybe I can even show it at Fluent).</p>
-
-
-      </li>
-    
-      <li class="post-content">
-        <span class="post-date">Mar 4, 2015</span>
-        <a class="post-link" href="/general/2015/03/04/comparing-static-site-engines/">Comparing Static Site Engines</a>
-        <p>On February 18, I had the pleasure of gaving a <a href="http://www.meetup.com/sfhtml5/events/219180801/">talk</a> to the San Francisco HTML5 User Group. The topic was static site engines, covering the basics of what they are and what they are good for (or what they are not good for). The latter half of the session focused on comparing three popular static site engines: <a href="http://jekyllrb.com/">Jekyll</a>, <a href="https://middlemanapp.com/">Middleman</a> and <a href="http://harpjs.com/">Harp</a>.</p>
-
-<p>You can view the presentation below (I am also giving an updated version of this presentation at <a href="https://www.devnexus.com/s/index">DevNexus</a> in Atlanta later this month).</p>
-
-<h2 id="sample-application">Sample Application</h2>
-
-<p>In order to compare the engines, I created a simple sample site, using data from the <a href="http://adventuretime.wikia.com/wiki/Adventure_Time_with_Finn_and_Jake_Wiki">Adventure Time Wiki</a>. The site is intentionally simple, but uses things like custom post attributes, custom global attributes, data and, of course, posts.</p>
-
-<p>You can get the samples as well as the slide deck <a href="https://github.com/remotesynth/Static-Site-Samples">on GitHub</a>. I am hoping to add additional samples in the coming weeks.</p>
-
-<h2 id="recording">Recording</h2>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/R-fJWOO1bjE" frameborder="0" allowfullscreen=""></iframe>
-
-
-      </li>
-    
-      <li class="post-content">
-        <span class="post-date">Jan 21, 2015</span>
-        <a class="post-link" href="/general/2015/01/21/patterns-of-development/">Patterns of Development</a>
-        <p>Patterns are something that you cannot view close up - a narrow view obscures the pattern. However, given distance and time, we can begin to make out the sequences that repeat. This is one of the few benefits of being old, which I am compared to many developers.</p>
-
-<p>In this post, I am not talking about development patterns as in software design patterns (or anti-patterns), but rather patterns in attitudes and behavior among developers that change the way a large number of us approach our work.</p>
-
-
-      </li>
-    
-      <li class="post-content">
-        <span class="post-date">Jan 16, 2015</span>
-        <a class="post-link" href="/general/2015/01/16/content-model-of-web-is-broken/">The Content Model of the Web is Broken</a>
-        <p>Print is dead. This is one of those supposed truisms we’re all lead to believe. It may or may not actually be true, but if print isn’t dead, it’s not healthy. This is especially true when it comes to news and information. Magazines and newspapers are failing all over the place.</p>
-
-<p>However, what you may not realize is that this same type of information is dying on the web as well. Sites are disappearing and the ones that aren’t, in large part, don’t make money off their content. Basically, as of right now, the content model of the web is thoroughly broken, and you are paying the price.</p>
-
-<p>In this post, I’ll speak mostly about sites that focus on content around technology and development, but I think much of this could apply to most any topic area. Keep in mind this is, obviously, all just my personal opinion and some of the information is based on speculation about certain business models.</p>
-
-
-      </li>
-    
-      <li class="post-content">
-        <span class="post-date">Jan 9, 2015</span>
-        <a class="post-link" href="/general/2015/01/09/best-music-2014/">Best Music of 2014</a>
-        <p>One of my New Year’s resolutions was to write and blog more - and that doesn’t mean just on technical topics but also on topics I am generally interested in. I just need to get in the habit of writing more, generally speaking.</p>
-
-<p>Anyway, any of you who know me know that I am a big fan of music. In fact, until about mid-2013 I was doing a bi-weekly Internet radio show (called Vitamin Sweet) focused only on new music. If you’d listened to that show you might Charli XCX in Februrary of 2013, Foxes in May 2013 and Lorde in July 2013, among others who later became famous.</p>
-
-<p>Along those lines, before 2015 got too far along, I wanted to share my favorite music from 2014.</p>
 
 
       </li>

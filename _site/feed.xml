@@ -7,6 +7,115 @@
     <atom:link href="http://remotesynthesis.com/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Jekyll Versus the Competition</title>
+        <description>&lt;p&gt;On Saturday, May 2, the first ever &lt;a href=&quot;http://jekyllconf.com&quot;&gt;JekyllConf&lt;/a&gt; was held online and featured some really prominent speakers including Tom Preston-Werner and Brandon Mathis. I had the honor of opening the event with my session comparing Jekyll to other popular static site engine options including &lt;a href=&quot;http://harpjs.com&quot;&gt;Harp&lt;/a&gt;, &lt;a href=&quot;http://hexo.io/&quot;&gt;Hexo&lt;/a&gt;, &lt;a href=&quot;http://wintersmith.io/&quot;&gt;Wintersmith&lt;/a&gt;, &lt;a href=&quot;http://wintersmith.io/&quot;&gt;Hugo&lt;/a&gt; and &lt;a href=&quot;https://middlemanapp.com/&quot;&gt;Middleman&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In summary (and in my personal opinion of course), Jekyll is still in the strongest position of all the engines. It has the strongest community (partly evidenced by JekyllConf itself), the best documentation (not saying it couldn’t be better, but it’s better than the alternatives) and has the largest selection of pre-built templates and plugins.&lt;/p&gt;
+
+&lt;p&gt;However, it has failed to reach much beyond hardcore developers. This is partly because of the nature of the tool - for instance, few people outside of the developer community enjoy working on the command line…in fact, most find it intimidating. Tooling for authors is weak too - Markdown is a terrible option for authors (who aren’t developers). We think of it as being so simple and easy, but that’s actually what makes it so complex. In terms of authoring, it covers a majority of use cases, but it is still very common to encounter requirements that it doesn’t meet (intentionally, since it’s goal was simplicity). Thus, when you teach an author Markdown, you need to teach them the syntax, what it doesn’t cover and  HTML to handle those scenarios it doesn’t cover. This is actually more complicated than simply teaching them HTML.&lt;/p&gt;
+
+&lt;p&gt;In my opinion, until the tooling is available to allow authors and contributors to write using the tooling they love, static site engines will remain a niche solution. This is a shame as they actually seem like the optimal solution for content focused sites and, perhaps more so, documentation sites. The good news is that there are people working on the tools needed to bridge this gap…we’ll see how this goes!&lt;/p&gt;
+
+&lt;p&gt;You can see the full session recording below or view the &lt;a href=&quot;https://www.youtube.com/watch?v=X5sJIL-nOhg&amp;amp;feature=youtu.be&amp;amp;t=9m32s&quot;&gt;full recording of the day here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/vT7DhK5zbv0?list=PLrxYIq_0LFJcXlsRZD-JCdITfZexwvqsQ&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+</description>
+        <pubDate>Thu, 07 May 2015 07:15:47 -0400</pubDate>
+        <link>http://remotesynthesis.com/general/2015/05/07/jekyll-versus-competition/</link>
+        <guid isPermaLink="true">http://remotesynthesis.com/general/2015/05/07/jekyll-versus-competition/</guid>
+      </item>
+    
+      <item>
+        <title>Tools for Writing and Converting Markdown</title>
+        <description>&lt;p&gt;By now, most developers are familiar on some level with &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt;. It’s become a somewhat ubiquitous part of developer tooling, probably in no small part due to it’s usage for documentation in GitHub. It also plays a big part in nearly all the major static site engines.&lt;/p&gt;
+
+&lt;p&gt;The power of Markdown and probably a significant reason for its success is in its simplicity. But this is also its biggest weakness. Developers love Markdown because it offers a shorthand for probably 80% of their writing use cases - things like blog posts and basic documentation. For the other 20%, developers have no problem switching to straight HTML, which, of course, you can include in a Markdown file without issue.&lt;/p&gt;
+
+&lt;p&gt;For writers and the general public however, this presents a huge obstacle. They cannot use the tools they are comfortable in writing with and they not only are forced to learn Markdown syntax, but they must learn those cases that Markdown doesn’t cover and the HTML to use in these cases. It’s multiple layers of complexity for the sake of simplicity.&lt;/p&gt;
+
+&lt;p&gt;That being said, as Markdown becomes more widespread in its use, the tooling around it is slowly improving. I use Markdown daily and below are some of the tools that I’ve found useful in my own experience.&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;desktop-editors&quot;&gt;Desktop Editors&lt;/h2&gt;
+
+&lt;p&gt;Most code editors such as &lt;a href=&quot;http://brackets.io/&quot;&gt;Brackets&lt;/a&gt; or &lt;a href=&quot;https://atom.io/&quot;&gt;Atom&lt;/a&gt; already include some level of Markdown support. However, if you’re looking for an editor with richer functionality geared specifically towards Markdown, then there are a number of options.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://25.io/mou/&quot;&gt;Mou&lt;/a&gt; is my current go to option for writing Markdown. As with pretty much every Markdown editor out there, you write in Markdown and have a live preview available. There is currently no option that I am aware of where you write in rich text and have it converted to Markdown.&lt;/p&gt;
+
+&lt;p&gt;Mou offers syntax hinting and highlights as well as keyboard shortcuts, but my favorite feature (and why I prefer it) is the export. I rely heavily on the export to HTML feature and, in my experience, it has the most reliable of the editors I have tried. The only quirk I find is that it often stumbles when using backticks for code blocks (and doesn’t recognize the GitHub-flavored Markdown syntax for indicating the type of code within a code block).&lt;/p&gt;
+
+&lt;p&gt;Currently Mou is still free, though a 1.0 looks to be forthcoming that will be paid.&lt;/p&gt;
+
+&lt;p&gt;Another free option is &lt;a href=&quot;http://macdown.uranusjr.com/&quot;&gt;Macdown&lt;/a&gt;, which was created when Mou appeared to be ceasing development. I found it to be quite buggy, personally, but have not tried it much since its initial release.&lt;/p&gt;
+
+&lt;p&gt;If you are on Windows, some options I’ve heard recommended include &lt;a href=&quot;http://www.texts.io/&quot;&gt;Texts&lt;/a&gt; and &lt;a href=&quot;http://markdownpad.com/&quot;&gt;MarkdownPad&lt;/a&gt;, though I have limited experience with either.&lt;/p&gt;
+
+&lt;p&gt;Lastly, while not technically an editor, &lt;a href=&quot;https://github.com/mobily/markdown-live&quot;&gt;Markdown Live&lt;/a&gt; is a useful tool for live-previewing Markdown as you write it. Once installed, you simply change directory into the folder you want to serve up and enter &lt;code&gt;mdlive&lt;/code&gt; and it will open a preview in the browser that will update as you type - without the need to save the file. This can be useful if you prefer to use a plain text editor for writing Markdown.&lt;/p&gt;
+
+&lt;h2 id=&quot;web-based-editors&quot;&gt;Web-based Editors&lt;/h2&gt;
+
+&lt;p&gt;If you are looking for a free web-based option, &lt;a href=&quot;http://dillinger.io/&quot;&gt;Dillinger&lt;/a&gt; is a free (and open source) Markdown editor for the browser. It includes a live preview as well as the ability to import documents from numerous sources and export them to various formats.&lt;/p&gt;
+
+&lt;p&gt;However, one of the things lacking in both desktop and web-based editors is collaboration. If you are working on a team, the ability to share, comment and collaborate on a document is not just useful, but necessary. &lt;a href=&quot;https://beegit.com/&quot;&gt;Beegit&lt;/a&gt; is a commercial offering that includes a number of collaboration features. My team uses it mostly for the ability to share and comment on documents as they are being developed, much as you would within Google Drive.&lt;/p&gt;
+
+&lt;h2 id=&quot;converters&quot;&gt;Converters&lt;/h2&gt;
+
+&lt;p&gt;When you are working with a number of contributors, it’s not always possible to force everyone to use Markdown. While Markdown’s simplicity makes it simple to manually convert short documents, converting long documents or groups of documents could get tedious and time consuming. While they aren’t perfect, in these cases, a converter can be enormously helpful.&lt;/p&gt;
+
+&lt;p&gt;One converter that I rely on frequently is the &lt;a href=&quot;http://word-to-markdown.herokuapp.com/&quot;&gt;Word to Markdown web app&lt;/a&gt;. Simply choose your local file and hit convert. The site will post you the Markdown it generates from the file as well as a live preview. For good or for bad, it even embeds images in the document using Base64 encoding. Personally, I find this can be difficult to clean up and replace with external images, so I often remove them from the source document first and put placeholders.&lt;/p&gt;
+
+&lt;p&gt;Word to Markdown is also available as an &lt;a href=&quot;https://github.com/benbalter/word-to-markdown&quot;&gt;open source project and command line tool&lt;/a&gt;. In my experience, I couldn’t get the command line tool to work properly for some reason, while the web app worked perfectly.&lt;/p&gt;
+
+&lt;p&gt;In other cases, you may encounter rich text that you need converted to Markdown, such as text copy/pasted from the web or some other editor. In these situations, I’ve found &lt;a href=&quot;http://markitdown.medusis.com/&quot;&gt;Mark It Down&lt;/a&gt; to be both reliable and helpful (it is also &lt;a href=&quot;https://github.com/bambax/markitdown.medusis.com&quot;&gt;open source&lt;/a&gt;). Simply paste in the rich text and hit the convert button to get back nice, clean Markdown.&lt;/p&gt;
+
+&lt;h2 id=&quot;other-tools&quot;&gt;Other Tools?&lt;/h2&gt;
+
+&lt;p&gt;This is by no means a comprehensive list of Markdown tools - just the ones that I’ve personally come to rely on at some level or another. Are there any others that you recommend? Be sure to share in the comments as I’m always looking for new ones.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 29 Apr 2015 07:15:47 -0400</pubDate>
+        <link>http://remotesynthesis.com/general/2015/04/29/tools-for-writing-markdown/</link>
+        <guid isPermaLink="true">http://remotesynthesis.com/general/2015/04/29/tools-for-writing-markdown/</guid>
+      </item>
+    
+      <item>
+        <title>Building Static Sites with Node.js and Wintersmith</title>
+        <description>&lt;p&gt;When I’ve spoken on the topic or even when I posted my recent &lt;a href=&quot;http://developer.telerik.com/featured/getting-started-with-jekyll/&quot;&gt;guide to getting started with Jekyll&lt;/a&gt;,  the question I always get is if there is a comparable static site generator to Jekyll that is built with JavaScript and available on npm. The reason people cite is that they aren’t comfortable with Ruby and thus have trouble when they encounter problems with Jekyll or are unable to customize it completely to their needs. Well, there’s good and bad news.&lt;/p&gt;
+
+&lt;p&gt;First, the bad news… I have found nothing comparable to Jekyll in terms of overall features, documentation and community. Now I don’t know every engine out there, but, so far, there’s nothing that even comes close to fully matching Jekyll.&lt;/p&gt;
+
+&lt;p&gt;The good news, however, is that I found &lt;a href=&quot;http://wintersmith.io/&quot;&gt;Wintersmith&lt;/a&gt; to be a viable Jekyll replacement. It has a lot of the key features and is extensible. Plus, there are a reasonable amount of extensions out there for it already. On the other hand, the documentation is awful (let’s be honest) and the community is small. So, if you run into a problem, you’re stuck reviewing the source code. On the upside, I found the source code is pretty self-explanatory when I needed to rely on it.&lt;/p&gt;
+
+&lt;p&gt;Given the lack of a good getting started guide in the Wintersmith documentation, I wrote a two-part series for Sitepoint that walks you through the entire process of building a site. It follows the same exact format of my &lt;a href=&quot;http://developer.telerik.com/featured/getting-started-with-jekyll/&quot;&gt;Jekyll guide&lt;/a&gt; covering everything from installation to templating, creating posts, custom metadata and custom data.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.sitepoint.com/getting-started-wintersmith-nodejs-static-site-generator/&quot;&gt;Getting Started with Wintersmith: A Node.js-based Static Site Generator&lt;/a&gt; - Part 1&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.sitepoint.com/creating-posts-custom-metadata-data-wintersmith/&quot;&gt;Creating Posts, Custom Metadata, and Data in Wintersmith&lt;/a&gt; - Part 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The source code for the example is part of my &lt;a href=&quot;https://github.com/remotesynth/Static-Site-Samples&quot;&gt;Static Site Samples GitHub project&lt;/a&gt; which also includes the aforementioned Jekyll sample as well as examples for Harp and Middleman.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 08 Apr 2015 05:00:00 -0400</pubDate>
+        <link>http://remotesynthesis.com/general/2015/04/08/building-static-sites-wintersmith/</link>
+        <guid isPermaLink="true">http://remotesynthesis.com/general/2015/04/08/building-static-sites-wintersmith/</guid>
+      </item>
+    
+      <item>
+        <title>A Guide to Building Static Sites with Jekyll</title>
+        <description>&lt;p&gt;As I’ve &lt;a href=&quot;http://remotesynthesis.com/general/2015/03/04/comparing-static-site-engines/&quot;&gt;posted about recently&lt;/a&gt;, I’ve been speaking a lot about comparing static site engines. There are a &lt;em&gt;ton&lt;/em&gt; of options out there (389 as of today, according to &lt;a href=&quot;https://staticsitegenerators.net/&quot;&gt;this site&lt;/a&gt;). However, based on my personal experience, I always recommend &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; - granted, that’s based on having used 5 of the 389 so far.&lt;/p&gt;
+
+&lt;p&gt;I already have a &lt;a href=&quot;https://github.com/remotesynth/Static-Site-Samples&quot;&gt;GitHub project&lt;/a&gt; where I have built the same project multiple times with different engines as a means of comparison. The readme will guide you with installing and running each of these should you choose.&lt;/p&gt;
+
+&lt;p&gt;Now, if you wanted to learn how to use Jekyll using this sample, I have written a &lt;a href=&quot;http://developer.telerik.com/featured/getting-started-with-jekyll/&quot;&gt;detailed guide to getting started with Jekyll&lt;/a&gt; for the Telerik Developer Network. It walks through the most common things you need to know about Liquid templating as well as how to create and build your Jekyll site.&lt;/p&gt;
+
+&lt;p&gt;I hope you enjoy it!&lt;/p&gt;
+
+&lt;p&gt;P.S. One common questions I get whenever I recommend Jekyll is from people who don’t know Ruby and would prefer a solution written in JavaScript/Node.js and, preferably, available via npm. The &lt;a href=&quot;https://github.com/remotesynth/Static-Site-Samples&quot;&gt;GitHub project&lt;/a&gt; includes two, Harp and Wintersmith. I have a follow up article that should be published any day now that walks through the same steps laid out in the Jekyll tutorial, but for Wintersmith. I’ll post about that as soon as it is out.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 24 Mar 2015 05:00:00 -0400</pubDate>
+        <link>http://remotesynthesis.com/general/2015/03/24/building-static-sites-jekyll/</link>
+        <guid isPermaLink="true">http://remotesynthesis.com/general/2015/03/24/building-static-sites-jekyll/</guid>
+      </item>
+    
+      <item>
         <title>Can Web Audio be Useful?</title>
         <description>&lt;p&gt;Next month, I will be presenting at the &lt;a href=&quot;http://fluentconf.com&quot;&gt;Fluent Conference&lt;/a&gt; in San Francisco on the topic of “Practical Web Audio.” The idea here is that most every demo or presentation about web audio (including my own) have been fun and cool but not practical unless you build games or music software.&lt;/p&gt;
 
@@ -268,115 +377,6 @@
         <pubDate>Mon, 03 Nov 2014 04:00:00 -0500</pubDate>
         <link>http://remotesynthesis.com/general/2014/11/03/dealing-with-unhappy-communities/</link>
         <guid isPermaLink="true">http://remotesynthesis.com/general/2014/11/03/dealing-with-unhappy-communities/</guid>
-      </item>
-    
-      <item>
-        <title>Boston Festival of Indie Games 2014</title>
-        <description>&lt;p&gt;This past weekend I had the pleasure of attending the latest &lt;a href=&quot;http://bostonfig.com&quot;&gt;Boston Festival of Indie Games&lt;/a&gt; at MIT. This was the third year of the event and my second attending. This year, as last, I attended with my two boys (ages 8 and 12). Here are some thoughts on the event and some of the games that I, personally, found interesting.&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;the-venue&quot;&gt;The Venue&lt;/h2&gt;
-
-&lt;p&gt;This year, as last, the event was held in the athletic center at MIT. However, the event outgrew the downstairs room that it was held in last year and actually took up both floors - the table top games were downstairs and the digital games upstairs (sessions were elsewhere but I didn’t attend any). While I am happy that the event has grown (and plenty happy to pay the small $10 fee to attend), it did come with a major drawback: the upstairs room was hot and humid - uncomfortably so. This even on a day when Boston itself was unusually cool for mid-September. Honestly, we might have spent more time there if it weren’t for the unpleasant conditions.&lt;/p&gt;
-
-&lt;h2 id=&quot;my-favorite-games&quot;&gt;My Favorite Games&lt;/h2&gt;
-
-&lt;p&gt;Here are my favorites from what I was able to try at the &lt;a href=&quot;http://bostonfig.com/digital-game-showcase&quot;&gt;showcase&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;bru-mo&quot;&gt;Bōru mo&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/posts/BoruMo-1024x576.png&quot; alt=&quot;Bōru mo&quot; width=&quot;600&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This was probably my favorite game of the day. It’s a fun 2 to 4 player game where the point of the game is to jump on the other players until they run out of lives and, hopefully, you are the last one standing. The way you do this is that your little creature turns into a ball when he jumps and can smash the opponent. It sounds simple but is harder than you’d think. The multi-level platforms and a variety of power-ups adds some extra fun to the game, which, as I understand it, will be PC only for the moment with other platforms hopefully soon.&lt;/p&gt;
-
-&lt;p&gt;One of the best aspects of this game is the design. It’s colorful and cute, which somehow adds to the sense of fun. This shouldn’t come as a huge surprise given that the developer is a graphic designer during his day job and this was built over nights and weekends.&lt;/p&gt;
-
-&lt;h3 id=&quot;shock-jocks&quot;&gt;Shock Jocks&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/posts/ShockJocks-768x1024.jpg&quot; alt=&quot;Shock Jocks&quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This is a clever iPad game from &lt;a href=&quot;https://twitter.com/BigMikeTheDev&quot;&gt;@BigMikeTheDev&lt;/a&gt;. It’s basically a two-player “air hockey” with a bit of a twist. Your paddle is electric and needs to maintain a charge. Every time you bounce the ball back, depending on a number of factors, it eats into your charge. The strategy is keeping your paddles charged (by placing your fingers along the sides of the game board) but not missing the shot.&lt;/p&gt;
-
-&lt;p&gt;There’s no site just yet, so follow &lt;a href=&quot;https://twitter.com/BigMikeTheDev&quot;&gt;@BigMikeTheDev&lt;/a&gt; for updates.&lt;/p&gt;
-
-&lt;h3 id=&quot;swimsanity&quot;&gt;Swimsanity&lt;/h3&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/9jh9vg87an0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;A Kickstarter project being developed by &lt;a href=&quot;http://decoygames.com&quot;&gt;Decoy Games&lt;/a&gt;, Swimsantity is a 4 player underwater brawler with a variety of game modes. Each player comes with different weapons and different abilities, the later of which charge up as you compete. In one game mode, it was simply a Super Smash Brothers type brawl with the winner being the one who gets knocked out the least. In the latter, it was a cooperative mode where you needed to help each other to get through the level without being caught by the creature following your team.&lt;/p&gt;
-
-&lt;p&gt;The artwork and controls were all nicely done and my boys and I enjoyed playing together.&lt;/p&gt;
-
-&lt;h3 id=&quot;world-zombination&quot;&gt;World Zombination&lt;/h3&gt;
-
-&lt;iframe src=&quot;//player.vimeo.com/video/99045157&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;p&gt;&lt;a href=&quot;http://vimeo.com/99045157&quot;&gt;World Zombination Teaser Trailer&lt;/a&gt; from &lt;a href=&quot;http://vimeo.com/proletariat&quot;&gt;Proletariat Inc&lt;/a&gt; on &lt;a href=&quot;https://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Yes, the zombie thing is getting old, as made clear by the number of zombie games even at this festival, but this one from &lt;a href=&quot;http://proletariat.com/&quot;&gt;Proletariat&lt;/a&gt; stood out. There are two modes. In one you control the heroes trying to defend cities against the hordes of zombies. This mode works much like a tower defense game. In the other (and the mode I got to play), you are the zombie hordes trying to destroy the city. In this mode, you use different “mutations” to give members of your zombie horde different powers. Some powers work better than others to defeat certain heroes (for instance, a stealth zombie is good against the snipers).&lt;/p&gt;
-
-&lt;p&gt;While both modes are takes on existing games, the combination of the two modes, along with nice artwork and easy to understand gameplay, made this one a winner in my mind.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 16 Sep 2014 05:00:00 -0400</pubDate>
-        <link>http://remotesynthesis.com/general/2014/09/16/boston-festival-indie-games/</link>
-        <guid isPermaLink="true">http://remotesynthesis.com/general/2014/09/16/boston-festival-indie-games/</guid>
-      </item>
-    
-      <item>
-        <title>Running Great Technical Conferences</title>
-        <description>&lt;p&gt;As some readers may know, for five years I ran a small (about 350 people) conference here in Boston. Originally called Flex Camp Boston (and obviously focused on Flex), it was renamed RIA Unleashed and subsequently &lt;a href=&quot;http://fitc.ca/event/webu14/&quot;&gt;Web Unleashed&lt;/a&gt;. The event still exists, run by FITC and occurring this September in Toronto.&lt;/p&gt;
-
-&lt;p&gt;I loved running this event, and generally enjoy running events overall. This is why I was interested in reading &lt;a href=&quot;http://www.smashingmagazine.com/2014/08/15/plan-and-run-a-great-conference/&quot;&gt;How To Plan And Run A Great Conference Experience&lt;/a&gt; by Zach Inglis. It’s a very good article and you should definitely read it if you have interest in the topic. However, I had several points I thought needed adding and one I disagreed with. Much of this was mentioned in my &lt;a href=&quot;http://www.smashingmagazine.com/2014/08/15/plan-and-run-a-great-conference/#comment-1220564&quot;&gt;comment&lt;/a&gt; there but not I’ve edited it and amended it a bit.&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;On paying speakers&lt;/strong&gt; - One complication I came across (at least for US based conferences) was paying international speakers. There may be legal/tax laws that complicate paying international speakers (especially over certain dollar amounts), and this may vary from country to country, depending on where you are running your event. I don’t know the specifics but it’s worth noting.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Promotion&lt;/strong&gt; - In my experience, getting the word out was the hardest part of running any event. It’s common for first time organizers to think they can rely on high profile speakers to get out and promote your event, but they are usually mistaken (nothing against the speakers as I’ve been one many times). Promoting the event required a lot of research on things like relevant user groups or mailing lists and the use of targeted discounts (I used codes) to figure out which avenues worked best and double-down on them.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;WiFi, WiFi, WiFi&lt;/strong&gt; - It’s so hard to get this right (because you are often at the mercy of the venue or vendors) but so important for a technical conference. Complaining about WiFi at tech conferences is like complaining about the weather, everyone does it from time to time. It never seems to be perfect, but pay close attention to this as it can really ruin the experience if your WiFi is unusable by a large portion of your audience.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Expect to lose money?&lt;/strong&gt; - The author states that you should and it is the one area I disagree with. I nailed down sponsors to cover the guaranteed costs from day one - before the conference was even announced. I learned quickly (an;d through trial and error) where you can cut costs and minimize risk. Things like find out what the minimum guarantees are to secure your preferred venue and only guarantee that (they can always up food or other expenses but they will never lower them once you sign); and plan on a range of 10-20% no shows (regardless of how much you charge - for free events this is much higher) and plan food and swag accordingly (you’ll learn your percentage range over time and this can be useful even to carefully oversell seats, which can really improve profitability).&lt;/p&gt;
-
-    &lt;p&gt;The point is, with careful planning, this doesn’t have to be a money loser. I always had the expectation that I would not make money but I also was not going to lose money (not including time spent, obviously). Organizers who lose money are less likely to run the event again, which, in and of itself, does a disservice to their attendees.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Be prepared to be scared&lt;/strong&gt; - My first year I sold out quickly. However, this is not necessarily the norm (and wasn’t in subsequent years). In fact, a majority of tickets will be sold during the last 2-3 weeks. A month before, you may be scared out of your mind that the event will be a failure only to find that you sold out or hit your targets in the end. This became a pattern every year after the first and is something I have confirmed with many conference organizers.&lt;/p&gt;
-
-    &lt;p&gt;However, you cannot be reactive, relying on last minute promotions to salvage things. Start any big promotional push early enough that it can have an impact in those final two weeks because, most likely, any promotion you start in the last two weeks doesn’t have enough time to get the traction it needs to succeed. (A side note on this topic, it seems that many people make the decision to attend early but wait until the last minute to make purchases - I’ve done this many times myself, and can explain why last minute promotions don’t have a great impact).&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;If you’ve run an event and have tips and opinions to share, I encourage you to comment on the &lt;a href=&quot;http://www.smashingmagazine.com/2014/08/15/plan-and-run-a-great-conference/&quot;&gt;article&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 16 Aug 2014 05:00:00 -0400</pubDate>
-        <link>http://remotesynthesis.com/general/2014/08/16/running-technical-conferences/</link>
-        <guid isPermaLink="true">http://remotesynthesis.com/general/2014/08/16/running-technical-conferences/</guid>
-      </item>
-    
-      <item>
-        <title>The Best Features in ECMAScript 6?</title>
-        <description>&lt;p&gt;Recently I had the chance to attend &lt;a href=&quot;https://www.qconnewyork.com/&quot;&gt;QCon NY&lt;/a&gt;. Actually, I was fortunate enough to be on the programming committee and to lead a track there. My track was called “Beyond JavaScript” and one of my featured speakers was &lt;a href=&quot;http://www.2ality.com/&quot;&gt;Dr. Axel Rauchsmayer&lt;/a&gt; speaking on ECMAScript 6 (i.e. the next version of JavaScript).&lt;!--more--&gt; I was very excited that Axel was able to attend all the way from Munich, as he is well known expert on ES6 (and author of the new book &lt;a href=&quot;http://speakingjs.com/&quot;&gt;“Speaking JavaScript”&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;During my time at the conference I was able to &lt;a href=&quot;http://www.infoq.com/interviews/axel-rauschmayer-ecmascript-6&quot;&gt;interview Axel&lt;/a&gt;. We mostly discussed the process whereby new features are added to the ES6 spec, using JavaScript for enterprise development and which features Axel is most excited about in ES6.&lt;/p&gt;
-
-&lt;p&gt;So what two features did Axel choose as his favorites in ES6? I think you may be surprised, but you’ll have to &lt;a href=&quot;http://www.infoq.com/interviews/axel-rauschmayer-ecmascript-6&quot;&gt;watch or read the interview on InfoQ&lt;/a&gt; to find out.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 23 Jul 2014 07:12:00 -0400</pubDate>
-        <link>http://remotesynthesis.com/general/2014/07/23/best-features-es6/</link>
-        <guid isPermaLink="true">http://remotesynthesis.com/general/2014/07/23/best-features-es6/</guid>
-      </item>
-    
-      <item>
-        <title>Comparing Static Site Engines</title>
-        <description>&lt;p&gt;As part of researching for restarting this blog as well as for my work developing the &lt;a href=&quot;http://developer.telerik.com&quot;&gt;Telerik Developer Network&lt;/a&gt;, I researched several of the most well-known static site engines.&lt;!--more--&gt; Specifically, I tried to build this site using Jekyll (which is what I ended up using), Harp and Roots. These were the three engines listed prominently on the &lt;a href=&quot;http://staticapps.org&quot;&gt;StaticApps.org&lt;/a&gt; resource site. I really think that many sites, especially those focused purely on content, can potentially move away from dynamic, CMS-driven site architectures that can be a burden to maintain, to purely static HTML with a “back-end” that generates the site locally.&lt;/p&gt;
-
-&lt;p&gt;I wrote up my experiences and review of each for the Telerik Developer Network in an article entitled &lt;a href=&quot;http://developer.telerik.com/featured/comparing-static-site-engines/&quot;&gt;“Static Site Engines Battle Royale”&lt;/a&gt;. If you are interested in static engines, are considering a move or are just curious what the whole thing is about, &lt;a href=&quot;http://developer.telerik.com/featured/comparing-static-site-engines/&quot;&gt;check it out&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 22 Jul 2014 07:15:47 -0400</pubDate>
-        <link>http://remotesynthesis.com/general/2014/07/22/comparing-static-site-engines/</link>
-        <guid isPermaLink="true">http://remotesynthesis.com/general/2014/07/22/comparing-static-site-engines/</guid>
       </item>
     
   </channel>
