@@ -7,8 +7,104 @@
     <atom:link href="http://remotesynthesis.com/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Tips for Writing for a Tech Audience</title>
+        <description>&lt;p&gt;I’ve been writing articles and blog posts about web development and technology for a long time. The original version of this blog started in 2004, but by that time I’d already written a couple articles for the ultra-prestigious ColdFusion Developer’s Journal (it’s ok to feel jealous).&lt;/p&gt;
+
+&lt;p&gt;However, I’ve also been editing articles and blog posts about web development and technology for a while too. It started when I was at Adobe helping to run the Adobe Developer Connection a few years ago and continued when I launched my own site (Flippin’ Awesome which is now Modern Web and not run by me anymore). I still do this on an almost daily basis running the &lt;a href=&quot;developer.telerik.com&quot;&gt;Telerik Developer Network&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;All of this experience has taught me some things that I think help to make a really good (and potentially really popular) article or blog post for a developer or technology audience. In this post I’ll share my recommendations, though I should note that I’m not an expert at always following my own guidelines all the time.&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;have-a-style&quot;&gt;Have a Style&lt;/h2&gt;
+
+&lt;p&gt;It’s important to keep in mind that you aren’t writing API docs. API docs are generally dry, boring and simply stick to the facts. That’s their goal. However, an article or blog post should allow some of your personality to shine through. This helps to make the content both more relatable and more enjoyable to read.&lt;/p&gt;
+
+&lt;p&gt;Keep in mind that your goal is both to educate and to entertain, to some degree. Some developers revert to a litany of code and explanation. It’s better to have a voice and have a story.&lt;/p&gt;
+
+&lt;p&gt;Some things that can help:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Explain &lt;em&gt;why&lt;/em&gt; you are trying to do something, not just what you are trying to do and how you are doing it.&lt;/li&gt;
+  &lt;li&gt;What made you get interested in doing this?&lt;/li&gt;
+  &lt;li&gt;Did you have a struggles along the way? There’s no shame in admitting that you found something difficult - your readers will likely relate to the experience.&lt;/li&gt;
+  &lt;li&gt;Have fun with the demo! Perhaps pick something you are interested in that isn’t technical. For example. I often choose to use some cartoons I enjoy as subject matter for my demos.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;know-your-audience&quot;&gt;Know Your Audience&lt;/h2&gt;
+
+&lt;p&gt;While you should have a voice and a style, it’s important to know when it’s ok to be more or less casual in your voice. If I am writing something for my blog, I am often much more casual than if I am writing for the Telerik Developer Network or Sitepoint.&lt;/p&gt;
+
+&lt;p&gt;If I am writing for my blog, proper grammar, punctuation and spelling are less important. If I am writing for a professional site, these become the difference between seeming like an amateur and not. You’d be surprised how people are affected by these things, even if they do not recognize it themselves. Some sites have editors who help with this, but others don’t - so don’t rely on them to correct your mistakes.&lt;/p&gt;
+
+&lt;p&gt;Try to always have a friend you trust read through the article first - this isn’t critical for a personal blog post but even those can benefit. Even the best writers need a second opinion and there is nothing than can make your content better than a good, critical opinion.&lt;/p&gt;
+
+&lt;h2 id=&quot;stay-on-track&quot;&gt;Stay on Track&lt;/h2&gt;
+
+&lt;p&gt;So many developers tend to think that every little detail is pertinent. So, they get sidetracked. Instead of traveling straight down a path, they don’t just point out the detours, but take you down them.&lt;/p&gt;
+
+&lt;p&gt;As a rule, if the information doesn’t apply to &lt;em&gt;most&lt;/em&gt; situations, don’t spend time on it. These are the kind of scenarios like, if you are running an old version of X operating system and want to perform special action Y, you’ll need to do this a different way - let’s walk through it. Another example is getting lost in caveats, detailing every minor exception that in all likelihood doesn’t apply to the reader.&lt;/p&gt;
+
+&lt;p&gt;The best strategy in these cases is to simply point to the “detour” as an aside and link to the best resource to follow. Or note that there are exceptions but don’t go detailed into the full list of caveats.&lt;/p&gt;
+
+&lt;p&gt;You may feel as though you are being somehow incomplete in your coverage, but you are less likely to lose the 90% of the readers to whom the straightforward path applies by not catering your post to the 10%.&lt;/p&gt;
+
+&lt;h2 id=&quot;avoid-the-wall-of-text&quot;&gt;Avoid the Wall of Text&lt;/h2&gt;
+
+&lt;p&gt;There is nothing harder to read than a post that has no headers and is filled with overly long paragraphs. Adding section headers and even subheaders for long sections not only makes your article easier to read, but also makes it easier to scan - which can help the reader determine it’s value to them.&lt;/p&gt;
+
+&lt;p&gt;Shorter paragraphs also make your content more readable and scannable. Plus, a wall of unbroken text can seem intimidating to a reader. Break up large paragraphs and, whenever possible, place key ideas into lists, which I’ve found can help drive home key points and improve retention.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-are-your-ideas&quot;&gt;What Are Your Ideas?&lt;/h2&gt;
+
+&lt;p&gt;Hopefully you’ve found these ideas helpful. Do you have any strategies you use to improve your writing? Please share.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 18 May 2015 05:00:00 -0400</pubDate>
+        <link>http://remotesynthesis.com/general/2015/05/18/writing-for-tech-audience/</link>
+        <guid isPermaLink="true">http://remotesynthesis.com/general/2015/05/18/writing-for-tech-audience/</guid>
+      </item>
+    
+      <item>
+        <title>Why are Web Developers Hostile to Audio?</title>
+        <description>&lt;p&gt;I like to talk and write about Web Audio. It can be a fun topic. However, most talks and demos fail to touch on anything useful. Sure, we can build drum machines and sequencers to our heart’s content, but how does this apply to 90% of the web? It doesn’t. Thus, when I speak or write about web audio it seems to draw a niche audience.&lt;/p&gt;
+
+&lt;p&gt;However, recently I have been on a mission to talk and write about how web developers can use &lt;a href=&quot;http://developer.telerik.com/featured/practical-web-audio/&quot;&gt;web audio to enhance their applications in practical and useful ways&lt;/a&gt;. The frequent response I get is like the one below:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/webaudio_comment.jpg&quot; alt=&quot;I hate audio on the web&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You gotta love social media because not only did this person make it clear he never bothered to read the article, but 5 people (which on Google Plus is like everyone) gave it a plus one. However, leaving aside those issues, why are web developers so outright hostile and dismissive to even the suggestion of using audio on the web that they aren’t even willing to discuss it or hear arguments as to how it could be useful?&lt;/p&gt;
+
+&lt;p&gt;Let’s recap:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Audio in game UI equals totally expected;&lt;/li&gt;
+  &lt;li&gt;Audio in mobile app UI equals acceptable;&lt;/li&gt;
+  &lt;li&gt;Audio in desktop app UI equals legitimate, within reason;&lt;/li&gt;
+  &lt;li&gt;Audio in web apps equals ARE YOU INSANE?!?!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I have a theory as to why.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-legacy-of-years-of-misuse&quot;&gt;The Legacy of Years of Misuse&lt;/h3&gt;
+
+&lt;p&gt;I expressed this In the early days of the web, we didn’t have the web audio API. What we had was site’s that got clever and used MIDI or, even worse, had some obnoxious “Hamster Dance” like audio.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/hampster_dance.gif&quot; alt=&quot;Hamster Dance&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then came years of Flash Intros and more useless audio. It became ingrained in web developers’ heads that audio on the web was purely a gimmick. It is such a widely accepted “faux pas” to include audio, that even the mention of carefully considering audio brings strong reactions.&lt;/p&gt;
+
+&lt;h3 id=&quot;its-time-to-let-it-go&quot;&gt;It’s Time to Let It Go&lt;/h3&gt;
+
+&lt;p&gt;But do we have to be held back today by the misdeeds of years ago? Sure, the web audio API can be misused. Sure, so far, we’ve mostly shown how it can be used for things like &lt;a href=&quot;http://modernweb.com/2013/09/09/retro-game-music-using-web-audio-and-band-js/&quot;&gt;8 bit video game music&lt;/a&gt; (guilty as charged) and web-based drum machines. (Not that those things are useful, even purely as excercises in having some fun with your programming skills, they are beneficial.) The point is, though, this doesn’t negate there being useful and practical ways to integrate audio into your web application. If it’s ok for every other type of application, why not the web?&lt;/p&gt;
+
+&lt;p&gt;Unlike the commenter above, perhaps you’ll give my &lt;a href=&quot;http://developer.telerik.com/featured/practical-web-audio/&quot;&gt;full article a read&lt;/a&gt;. I’d love to hear your thoughts on the topic.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 14 May 2015 07:15:47 -0400</pubDate>
+        <link>http://remotesynthesis.com/general/2015/05/14/web-developers-hostile-to-audio/</link>
+        <guid isPermaLink="true">http://remotesynthesis.com/general/2015/05/14/web-developers-hostile-to-audio/</guid>
+      </item>
+    
+      <item>
         <title>Jekyll Versus the Competition</title>
-        <description>&lt;p&gt;On Saturday, May 2, the first ever &lt;a href=&quot;http://jekyllconf.com&quot;&gt;JekyllConf&lt;/a&gt; was held online and featured some really prominent speakers including Tom Preston-Werner and Brandon Mathis. I had the honor of opening the event with my session comparing Jekyll to other popular static site engine options including &lt;a href=&quot;http://harpjs.com&quot;&gt;Harp&lt;/a&gt;, &lt;a href=&quot;http://hexo.io/&quot;&gt;Hexo&lt;/a&gt;, &lt;a href=&quot;http://wintersmith.io/&quot;&gt;Wintersmith&lt;/a&gt;, &lt;a href=&quot;http://wintersmith.io/&quot;&gt;Hugo&lt;/a&gt; and &lt;a href=&quot;https://middlemanapp.com/&quot;&gt;Middleman&lt;/a&gt;.&lt;/p&gt;
+        <description>&lt;p&gt;On Saturday, May 2, the first ever &lt;a href=&quot;http://jekyllconf.com&quot;&gt;JekyllConf&lt;/a&gt; was held online and featured some really prominent speakers including Tom Preston-Werner and Brandon Mathis. I had the honor of opening the event with my session comparing Jekyll to other popular static site engine options including &lt;a href=&quot;http://harpjs.com&quot;&gt;Harp&lt;/a&gt;, &lt;a href=&quot;http://hexo.io/&quot;&gt;Hexo&lt;/a&gt;, &lt;a href=&quot;http://wintersmith.io/&quot;&gt;Wintersmith&lt;/a&gt;, &lt;a href=&quot;http://gohugo.io/&quot;&gt;Hugo&lt;/a&gt; and &lt;a href=&quot;https://middlemanapp.com/&quot;&gt;Middleman&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;In summary (and in my personal opinion of course), Jekyll is still in the strongest position of all the engines. It has the strongest community (partly evidenced by JekyllConf itself), the best documentation (not saying it couldn’t be better, but it’s better than the alternatives) and has the largest selection of pre-built templates and plugins.&lt;/p&gt;
 
@@ -259,124 +355,6 @@
         <pubDate>Fri, 16 Jan 2015 04:00:00 -0500</pubDate>
         <link>http://remotesynthesis.com/general/2015/01/16/content-model-of-web-is-broken/</link>
         <guid isPermaLink="true">http://remotesynthesis.com/general/2015/01/16/content-model-of-web-is-broken/</guid>
-      </item>
-    
-      <item>
-        <title>Best Music of 2014</title>
-        <description>&lt;p&gt;One of my New Year’s resolutions was to write and blog more - and that doesn’t mean just on technical topics but also on topics I am generally interested in. I just need to get in the habit of writing more, generally speaking.&lt;/p&gt;
-
-&lt;p&gt;Anyway, any of you who know me know that I am a big fan of music. In fact, until about mid-2013 I was doing a bi-weekly Internet radio show (called Vitamin Sweet) focused only on new music. If you’d listened to that show you might Charli XCX in Februrary of 2013, Foxes in May 2013 and Lorde in July 2013, among others who later became famous.&lt;/p&gt;
-
-&lt;p&gt;Along those lines, before 2015 got too far along, I wanted to share my favorite music from 2014.
-&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;magic-by-paperwhite&quot;&gt;Magic by Paperwhite&lt;/h2&gt;
-
-&lt;p&gt;I have a habit of following bands I like on Facebook, and it has often led to fun discoveries. In this case, one of the two members of &lt;a href=&quot;https://www.facebook.com/paperwhitemusic&quot;&gt;Paperwhite&lt;/a&gt; is also in a band named Savoir Adore, which is how I learned of them. “Magic” is just an EP but there really isn’t a bad song on the entire album. If you love catchy, 80’s infused pop, this is a total winner, with the standout song being “Take Me Back.” Outstanding stuff.&lt;/p&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;450&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/160653287&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true&quot;&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&quot;haerts-by-haerts&quot;&gt;Haerts by Haerts&lt;/h2&gt;
-
-&lt;p&gt;“Wings” by &lt;a href=&quot;https://www.facebook.com/haertsmusic&quot;&gt;Haerts&lt;/a&gt; was probably one of my favorite songs of 2013. It was released as a single, all by itself (as in, no B-sides or even remixes). The band slowly released new music, including their 4 song Hemiplegia EP in 2013, but 2014 finally got a full album. Sure, if you had the EP, all those songs are back again, but there’s plenty more here and every one is a winner. “Wings” is still the best song on the album, though “Call My Name” is my favorite of the songs that had not previously appeared.&lt;/p&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;450&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140704426&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true&quot;&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&quot;siren-by-young-summer&quot;&gt;Siren by Young Summer&lt;/h2&gt;
-
-&lt;p&gt;I don’t even recall how I heard of &lt;a href=&quot;https://www.facebook.com/Youngsummermusic&quot;&gt;Young Summer&lt;/a&gt;. I tend to go searching for new music here and there and have been known to download albums that I proceed to forget about without even a listen. Young Summer nearly fell into this trap for me. I was browsing my iPod and could not even recall downloading the album - boy would I have missed out. Young Summer is electronic alt-pop (if that’s a thing) that is insanely catchy - many mornings I have woken up with one of the songs in my head. My favorite is “Blood Love,” but will admit that the one that sticks in my head most often is “Taken.” If this woman doesn’t become a star soon, I will be very surprised.&lt;/p&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;450&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/161685891&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true&quot;&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&quot;there-for-u-by-astronomyy&quot;&gt;There for U by Astronomyy&lt;/h2&gt;
-
-&lt;p&gt;If you are a fan of chill out, “date night” music along the lines of Rhye (or Milosh), then you will love &lt;a href=&quot;https://www.facebook.com/Astr0nomyy&quot;&gt;Astronomyy&lt;/a&gt;. As of yet, there’s no full album available, but the “There For U” EP features 4 superb songs. He also recently released a new single called “Not Into U.” Hopefully a full album is on the way. Nonetheless, I highly recommend getting everything he’s made available so far. You won’t regret it. My personal favorite is “Pack of Wolves.”&lt;/p&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;450&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/44973422&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true&quot;&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&quot;days-of-abandon-by-the-pains-of-being-pure-at-heart&quot;&gt;Days of Abandon by The Pains of Being Pure at Heart&lt;/h2&gt;
-
-&lt;p&gt;I fell in love with &lt;a href=&quot;https://www.facebook.com/ThePainsofBeingPureatHeart&quot;&gt;The Pains of Being Pure at Heart&lt;/a&gt; way back in 2009 when their debut album was my favorite album of that year. Much of the composition of the band apparently changed between 20011’s “Belong” album and this one (basically, only the band’s founder remained the same from what I recall). You could expect this to mean that the music might suffer, but “Days of Abandon” sounds like what you’d expect from the band - and that’s a great thing in my opinion. If anything, they got more accessible. You may actually recognize “Simple and Sure” (which is one of the standouts) as it was featured in some commercial, but my favorite is “Beautiful You” (though, unfortunately, this isn’t available in their SoundCloud stream).&lt;/p&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;450&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/136713202&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true&quot;&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&quot;pocketknife-by-mr-little-jeans&quot;&gt;PocketKnife by Mr. Little Jeans&lt;/h2&gt;
-
-&lt;p&gt;I love &lt;a href=&quot;https://www.facebook.com/mrlittlejeans&quot;&gt;Mr. Little Jeans&lt;/a&gt; so much that my wife (who loves her too) and I bought tickets to go see Lilly Allen just because Mr. Little Jeans was the opener (not that their is anything wrong with Lilly Allen, but we very rarely go to concerts). I’d paid too much for upper floor, standing room only tickets where we had to stand with our backs against the wall the entire time to allow people to cross in front. Somehow though, Mr. Little Jeans wasn’t there (perhaps a mistake on the &lt;a href=&quot;http://www.songkick.com/&quot;&gt;SongKick&lt;/a&gt; listing, though I did end up discovering &lt;a href=&quot;http://www.samsaya.com/&quot;&gt;Samsaya&lt;/a&gt;, who is not bad). Needless to say, we were willing to put up with a lot just because Mr. Little Jeans is great and this album is fantastic. If you’ve heard a song from it, it is “Oh Sailor,” which is a fabulous song, but my personal favorite is “Mercy” (which, unfortunately, is not embeddable on her SoundCloud stream).&lt;/p&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;450&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/83458007&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true&quot;&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&quot;voices-by-phantogram&quot;&gt;Voices by Phantogram&lt;/h2&gt;
-
-&lt;p&gt;“Voices” is the fifth album, EP or single that I’ve bought from &lt;a href=&quot;https://www.facebook.com/Phantogram/info&quot;&gt;Phantogram&lt;/a&gt; since “Eyelid Moves” in 2010. I liked every single one, but rarely loved them. Voices changed that by being much more consistently good and much more accessible (in my opinion) than their prior releases. It’s a great album and “Nothing But Trouble” is an especially great song. If you’ve enjoyed Phantogram before or even if you haven’t, you should give this album a try.&lt;/p&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;450&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/135848748&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true&quot;&gt;&lt;/iframe&gt;
-</description>
-        <pubDate>Fri, 09 Jan 2015 04:00:00 -0500</pubDate>
-        <link>http://remotesynthesis.com/general/2015/01/09/best-music-2014/</link>
-        <guid isPermaLink="true">http://remotesynthesis.com/general/2015/01/09/best-music-2014/</guid>
-      </item>
-    
-      <item>
-        <title>Dealing with an Unhappy Community</title>
-        <description>&lt;p&gt;Most of us deal with the “community” in our jobs on some level or another. Perhaps we are an engineer on a product that has a community of users, or work for a company that has a community of customers, or, perhaps, are in a position to be part of the public face of a company, product or service who is tasked with communicating with the community as part of your job duties.&lt;/p&gt;
-
-&lt;p&gt;Recently, I wrote an article about a &lt;a href=&quot;http://developer.telerik.com/featured/can-angularjs-maintain-dominance/&quot;&gt;bit of a dust up in the AngularJS community&lt;/a&gt; about the plans for Angular 2.0 and it got me thinking about how we deal with the community - specifically when there is a widespread community backlash.
-&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;were-not-talking-about-trolls&quot;&gt;We’re Not Talking About Trolls&lt;/h2&gt;
-
-&lt;p&gt;There’s a big difference between trolls, whose complaints are almost always singular in nature (and agressive in tone). In my experience, trolls complain alone and specifically target an issue that is very specific to them. In this case, I’m talking about a decision that caused widespread unhappiness in your customer base or users and is being expressed, sometimes angrily but rarely aggressively, by a large swath of your community.&lt;/p&gt;
-
-&lt;h2 id=&quot;i-have-some-experience-in-this&quot;&gt;I Have Some Experience in This&lt;/h2&gt;
-
-&lt;p&gt;I’ve been on both sides of community backlashes. Professionally, I was the Flash and Flex community manager at Adobe around the time of the infamous “Thoughts on Flash” essay by Steve Jobs. At the time and understandably, any actions Adobe took around Flash and Flex were heavily scrutinized. I was still a public face for the products (even if I had technically just been reorged) around the time that Adobe decided to end of life…errr…open source Flex. As you can imagine, I caught a fair share of flak.&lt;/p&gt;
-
-&lt;p&gt;Nonetheless, I think it taught me a lot of great lessons that I’ve carried into my positions since, both for and after Adobe.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-different-kinds-of-decisions-that-cause-backlash&quot;&gt;The Different Kinds of Decisions that Cause Backlash&lt;/h2&gt;
-
-&lt;p&gt;In my experience there are three core types of decisions (by a product team, company, open source project, etc.) that can often lead to a backlash. The first two are relatively easy to handle.&lt;/p&gt;
-
-&lt;h3 id=&quot;necessary-decisions&quot;&gt;Necessary Decisions&lt;/h3&gt;
-
-&lt;p&gt;Let’s face it - sometimes there are decisions that you, your company, or your product team may make that simply have to be made, but will, nonetheless, make your community unhappy. Sometimes, you, personally, don’t even like the decision. However, there’s a big difference betwen liking a decision and understanding and supporting why it was made.&lt;/p&gt;
-
-&lt;p&gt;To me this is easy to handle as your options are very limited. You can and should be understanding of your communities right to be upset about the decision. You can communicate why the decision was necessary and, if applicable, explain that you aren’t happy either, even if you support its necessity.&lt;/p&gt;
-
-&lt;p&gt;The last thing you can do in this case is simply develop a thick skin. You’re gonna get some lumps and that’s ok. Keep in mind that these things pass and often seem much worse in the moment than they do in retrospect.&lt;/p&gt;
-
-&lt;h3 id=&quot;poorly-communicated-decisions&quot;&gt;Poorly Communicated Decisions&lt;/h3&gt;
-
-&lt;p&gt;Sometimes it isn’t really what changed that upset your community but how you, your company or others communicated that decision to them. In my experience, sometimes companies spend so much time wordsmithing their communications that they remove all humanity from them - they sound like they are coming from a committee who is more concerned with protecting the company than with the impact of decisions on their customers. This (and other things) can lead to communicating a the impact of a change poorly.&lt;/p&gt;
-
-&lt;p&gt;In this case, I also think the response is simple, if not easy, which is to clear up the miscommunication (and soften any hard feelings it may have caused). For instance, you could draft a clear and personal message expressing concern for the misunderstanding and clarifying the impact. Make this the opposite of the company-type PR response - make sure they understand that you are a part of that community and care personally about it.&lt;/p&gt;
-
-&lt;p&gt;Of course, if you can smooth some hurt feelings with free stuff of some sort, that always helps too.&lt;/p&gt;
-
-&lt;h3 id=&quot;best-intention-decisions&quot;&gt;“Best Intention” Decisions&lt;/h3&gt;
-
-&lt;p&gt;What the heck do I mean by this? Well, this is kind of where AngularJS was. Sometimes decisions are made that impact our customers, users, or whatever that are made with the best intentions, but, in the end, we misread the needs of our customers/users/etc. It wasn’t that we miscommunicated. They understood - they just didn’t like what they heard.&lt;/p&gt;
-
-&lt;p&gt;You may think these would actually be the easiest decisions to deal with - simply walk back the choice that made them unhappy. However, assuming this is the best response isn’t correct.&lt;/p&gt;
-
-&lt;p&gt;Sometimes, as it turns out, the decision you made is the right decision for the future of the product, service, company, etc. This can get lost in the fog of loud and unhappy users. However, if you let the dust settle, it turns out that it wasn’t as big a deal as it sounded and the “mob” seemed much larger because it was loud.&lt;/p&gt;
-
-&lt;p&gt;Sometimes, the decision was in the right direction, but it’s now up to you to translate your customer anger into adjustments to the choice (this appears to be &lt;a href=&quot;https://github.com/angular/angular/issues/133&quot;&gt;what AngularJS is doing by the way&lt;/a&gt;). You were headed down the right path, you just went a little too far or veered slightly off course. Now you just need to take a few steps back or to the right/left, and your community will be happy again.&lt;/p&gt;
-
-&lt;p&gt;Sometimes, the decision was a poor one made with the best of intentions and should, in fact, be walked back entirely.&lt;/p&gt;
-
-&lt;p&gt;The point is, there are many options to choose from in this case, and knowing which is the right one isn’t always easy when you are receiving a barrage of unhappy tweets, blog posts, comments and more coming your way.&lt;/p&gt;
-
-&lt;h2 id=&quot;whatever-you-do-dont-assume-your-community-is-wrong&quot;&gt;Whatever You Do, Don’t Assume Your Community Is Wrong&lt;/h2&gt;
-
-&lt;p&gt;Here’s the thing to recognize - in none of these cases is the community wrong. Remember, these aren’t trolls - they are community members we care about with a legitimate complaint. In case 1, they have every right to be unhappy even if there’s little we can do about it. In case 2, we communicated poorly and this led to them being unhappy. In case 3, we probably just need to adjust a little - even if the reaction may have seemed overly harsh. The single biggest mistake you can make in any of these cases is thinking you are somehow better or more enlightened than your commmunity and plowing ahead with your decisions accordingly.&lt;/p&gt;
-
-&lt;p&gt;I’d love to hear thoughts.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 03 Nov 2014 04:00:00 -0500</pubDate>
-        <link>http://remotesynthesis.com/general/2014/11/03/dealing-with-unhappy-communities/</link>
-        <guid isPermaLink="true">http://remotesynthesis.com/general/2014/11/03/dealing-with-unhappy-communities/</guid>
       </item>
     
   </channel>

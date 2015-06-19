@@ -1,5 +1,7 @@
 -   name: "Telerik Developer Network"
     articles:
+      - title: "Practical Web Audio"
+        URL: "http://developer.telerik.com/featured/practical-web-audio/"
       - title: "Getting Started with Jekyll"
         URL: "http://developer.telerik.com/featured/getting-started-with-jekyll/"
       - title: "Adding Audio to Web Apps"
