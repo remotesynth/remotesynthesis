@@ -7,6 +7,33 @@
     <atom:link href="http://remotesynthesis.com/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>The Web is Boring</title>
+        <description>&lt;p&gt;When I was growing up, flying was fun. This wasn’t the kind of fun that a kid finds in simply new experiences - it was a legitimately enjoyable experience. The airport was a much less stressful place than it is today, with far less security and fewer lines. The planes seemed more spacious (though perhaps that part was really just that I was a kid). They served you food on most flights - with a real, metal fork and knife. Perhaps it wasn’t the greatest food, but wouldn’t we just love to get something, anything, nowadays? They’d even let kids go into the cabin and meet the crew, often handing them a junior crew member pin to wear.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/posts/twa_pin.jpg&quot; alt=&quot;twa pin&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I fly more nowadays than I did back then, but flying is generally painful. The airport is stressful. The airline customer service is generally awful. There are few, if any, meals or snacks served. Flying has become something I need - for work, to visit family, to get to somewhere for vacation - not something I enjoy. Even on vacation, flying is something we power through to get where we want to be rather than being part of the vacation experience.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-web-too-has-lost-its-luster&quot;&gt;The Web, Too, Has Lost Its Luster&lt;/h2&gt;
+
+&lt;p&gt;Much like the joy of flying, I am finally ready to openly admit that the web is no longer fun. Just like flying, I use it more today than I ever did back when it was fun, but it is purely out of necessity rather than desire. On a personal level, I use web sites to get news and to keep up with friends and family. The web is, obviously, an integral part of my work too, for news and information as well as the focus of my actual job. All of these things I need, but none of them bring the joy and exitement that the web used to bring.&lt;/p&gt;
+
+&lt;p&gt;Perhaps you are not old enough to remember when the web was fun. If so, you may even think that it &lt;em&gt;is&lt;/em&gt; fun. But back in the mid-to-late-90s, the web had the power to amaze us. New sites and new businesses would launch regularly and everyone had to try them out because each one seemed to bring something new and creative to the table. Sure, many didn’t survive long (and we had tons of useless accounts), but they all seemed to be part of an inexorable path towards something special - a future where the web would make our lives more enjoyable, easier and, yes, more fun. Many of us firmly believed that the web was the future of computing - who’d need a desktop or operating system when the web was eventually going to replace the need for either.&lt;/p&gt;
+
+&lt;h2 id=&quot;that-didnt-happen&quot;&gt;That Didn’t Happen&lt;/h2&gt;
+
+&lt;p&gt;Let’s be honest. None of that ever happened. You may be thinking, “But what about my streaming movies or my streaming music or my multiplayer games? Aren’t those fun?” To which I’d say, “Don’t confuse the internet with the web.” The internet enables each of these, but they are rarely done via the web (yes, they all have web interfaces, but I’d bet the majority of people do not access them this way).&lt;/p&gt;
+
+&lt;p&gt;There’s been a lot of talk about how the &lt;a href=&quot;http://www.quirksmode.org/blog/archives/2015/05/web_vs_native_l.html&quot;&gt;web is losing&lt;/a&gt; some unofficial battle for survival. Much of that has focused on the overwhelming amount of tools for web development and the way these tools are impacting the performance of the web. I am not disagreeing with those, per se, but I can say that the web was actually much more fun back when it was also horribly slow (most of us were on dial-up after all).&lt;/p&gt;
+
+&lt;p&gt;I feel that the thing holding the web back is a lack of real, creative innovation. I read every day about new little features of the web platform, but I can’t remember the last time I read about something built on the web that really excited me. Until then, I’ll keep passionlessly reading my news and blog posts or getting my gmail and hating myself for checking Facebook for lack of something more interesting to do. Sorry, web, but you bore me.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 24 Jun 2015 05:00:00 -0400</pubDate>
+        <link>http://remotesynthesis.com/general/2015/06/24/the-internet-is-boring/</link>
+        <guid isPermaLink="true">http://remotesynthesis.com/general/2015/06/24/the-internet-is-boring/</guid>
+      </item>
+    
+      <item>
         <title>Tips for Writing for a Tech Audience</title>
         <description>&lt;p&gt;I’ve been writing articles and blog posts about web development and technology for a long time. The original version of this blog started in 2004, but by that time I’d already written a couple articles for the ultra-prestigious ColdFusion Developer’s Journal (it’s ok to feel jealous).&lt;/p&gt;
 
@@ -292,69 +319,6 @@
         <pubDate>Wed, 21 Jan 2015 04:00:00 -0500</pubDate>
         <link>http://remotesynthesis.com/general/2015/01/21/patterns-of-development/</link>
         <guid isPermaLink="true">http://remotesynthesis.com/general/2015/01/21/patterns-of-development/</guid>
-      </item>
-    
-      <item>
-        <title>The Content Model of the Web is Broken</title>
-        <description>&lt;p&gt;Print is dead. This is one of those supposed truisms we’re all lead to believe. It may or may not actually be true, but if print isn’t dead, it’s not healthy. This is especially true when it comes to news and information. Magazines and newspapers are failing all over the place.&lt;/p&gt;
-
-&lt;p&gt;However, what you may not realize is that this same type of information is dying on the web as well. Sites are disappearing and the ones that aren’t, in large part, don’t make money off their content. Basically, as of right now, the content model of the web is thoroughly broken, and you are paying the price.&lt;/p&gt;
-
-&lt;p&gt;In this post, I’ll speak mostly about sites that focus on content around technology and development, but I think much of this could apply to most any topic area. Keep in mind this is, obviously, all just my personal opinion and some of the information is based on speculation about certain business models.&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;the-symptoms&quot;&gt;The Symptoms&lt;/h2&gt;
-
-&lt;p&gt;Some popular developer and technology sites have begun to close such as &lt;a href=&quot;http://www.drdobbs.com/architecture-and-design/farewell-dr-dobbs/240169421&quot;&gt;Dr. Dobb’s&lt;/a&gt; and &lt;a href=&quot;http://www.h-online.com/news/item/The-H-is-closing-down-1920027.html&quot;&gt;The H&lt;/a&gt;, to name a couple of recent ones. While these may not seem like horrible losses, I think they are essentially the canary in the coal mine.&lt;/p&gt;
-
-&lt;p&gt;In fact, other sites you may care about more, such as &lt;a href=&quot;http://blog.sfgate.com/techchron/2014/09/10/macworld-kills-print-edition-amid-layoffs-at-idg/&quot;&gt;MacWorld&lt;/a&gt;, InfoQ (run by C4Media) and SD Times (run by BZ Media) have also had to adjust their online businesses to adjust to changing times.&lt;/p&gt;
-
-&lt;p&gt;These are just a few examples, and by no means a comprehensive list.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-changed&quot;&gt;What changed?&lt;/h2&gt;
-
-&lt;p&gt;There’s simply no money in advertising for content sites. Ad networks, most notably Google, don’t pay what they once did. Direct advertising dollars are now very hard to come by.&lt;/p&gt;
-
-&lt;p&gt;I used to run a site called Flippin’ Awesome (now called &lt;a href=&quot;http://modernweb.com&quot;&gt;Modern Web&lt;/a&gt;), and I can tell you first-hand that the amount of money available for ads was paltry - especially when placed against the amount of space they occupy (and the nuisance they are). Sure, I only got a couple hundred thousand page views a month, but that netted me generally less than $300/mo. Once you factor in the costs of hosting/running the site, plus my time, this was not a profitable venture by any means.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-three-types-of-surviving-sites&quot;&gt;The Three Types of Surviving Sites&lt;/h2&gt;
-
-&lt;p&gt;Of course, many sites still survive, but mostly because of trade offs that you may or may not be aware of.&lt;/p&gt;
-
-&lt;h3 id=&quot;no-longer-really-about-written-content&quot;&gt;1. No Longer Really About Written Content&lt;/h3&gt;
-
-&lt;p&gt;Many sites survive because their content is really simply a means of promoting their actual revenue generating side of the business. For example, sites like Smashing Magazine, A List Apart and InfoQ (to name a few off the top of my head), primarily serve as promotional vehicles for their conferences, which make money (I know no financial details - I’m purely speculating).&lt;/p&gt;
-
-&lt;p&gt;While this doesn’t mean that their content isn’t still for the most part very good, it does mean that it isn’t the driving force of their business. This can mean they cut down on publishing, cut down on paying writers, cut down on other things (editorial, technical editing) or some combination of all three. &lt;/p&gt;
-
-&lt;p&gt;In the end, however, if you’re site is just promotion expense for some other part of the business, cutting either quality or quantity helps keep the costs manageable.&lt;/p&gt;
-
-&lt;h3 id=&quot;corporate-sponsored&quot;&gt;2. Corporate Sponsored&lt;/h3&gt;
-
-&lt;p&gt;I have some experience in this area as I used to run part of the Adobe Developer Connection (ADC) and now run the Telerik Developer Network. This type of site is similar to the first in that its primary purpose is actually as a promotional vehicle for something else - in this case, to sell you the products and/or services of the company that runs it.&lt;/p&gt;
-
-&lt;p&gt;This also doesn’t mean the content is bad. In fact, these types of sites often have the budget to properly compensate authors (or compensate them at all). Paying authors makes it easier to get good authors.&lt;/p&gt;
-
-&lt;p&gt;Nonetheless, these sites have a clear cut agenda which is to benefit the company footing the bill (that makes sense - it’s not a criticism). The content is only as independent as the company behind it chooses (I’ve been lucky in this sense to have always had freedom). In addition, the site is at the whims of the company - thus, one day the ADC was growing and healthy, the next day it was effectively dead. Running these sorts of sites is not cheap and its impact on sales is tenuous to track (I think they are important, but it can be hard to find a direct link to actual sales).&lt;/p&gt;
-
-&lt;h3 id=&quot;they-rely-on-free-content&quot;&gt;3. They Rely on Free Content&lt;/h3&gt;
-
-&lt;p&gt;This type of site doesn’t always even exist to be profitable would include most blogs but also sites like my old site (at least when I ran it) and even sites like Huffington Post, who often rely on free or reprinted content, especially outside their main areas.&lt;/p&gt;
-
-&lt;p&gt;The problem with free content is that it isn’t always the best quality. I spent a lot of time working on articles and with authors to make sure the content on Flippin’ Awesome was worthy of printing. I also had to reject countless submissions, many of which were the article equivalent of spam. Many sites don’t have the time, money or interest to do this.&lt;/p&gt;
-
-&lt;p&gt;Other sites, like most blogs, rely on the generosity of their authors. However, this means that a) their’s usually no one reviewing what they wite and b) it’s rarely a top priority, and often die.&lt;/p&gt;
-
-&lt;h2 id=&quot;weve-thoroughly-devalued-content-and-writers&quot;&gt;We’ve Thoroughly Devalued Content and Writers&lt;/h2&gt;
-
-&lt;p&gt;I hate to say it, but the reason behind all this is that we, the consumers, want our content to be free. Not only that, we also think it should be free of obnoxious ads. This means that, even the sites of types 1 and 2 above, pay authors crap. Let’s be honest, no author is making a living on writing articles at $200-300 a pop (which is more or less the going rate). Sure, it’s better than nothing, but other motivations have to come into play.&lt;/p&gt;
-
-&lt;p&gt;Personally, I worry that this model is only going to further deteriorate. If you want to make money on content given the money there is on advertising, you either have to produce gobs of content (and raise your page views based on volume) or you use link-bait (and raise your page views based on trickery). Often, it is a combination of both.&lt;/p&gt;
-
-&lt;p&gt;In either case, the quality is what suffers and you pay the price. So the next time you do a Google search and the top 10 articles are filled with link-bait junk written by content farms, just think that this may only get worse.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 16 Jan 2015 04:00:00 -0500</pubDate>
-        <link>http://remotesynthesis.com/general/2015/01/16/content-model-of-web-is-broken/</link>
-        <guid isPermaLink="true">http://remotesynthesis.com/general/2015/01/16/content-model-of-web-is-broken/</guid>
       </item>
     
   </channel>
