@@ -7,10 +7,125 @@
     <atom:link href="http://remotesynthesis.com/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Get Started with Static Site Generators</title>
+        <description>&lt;p&gt;In the early days of the web, there was no such category as “static sites” - the web was made up of static resources. This was a maintainable solution when the web was simple. That didn’t last long.&lt;/p&gt;
+
+&lt;p&gt;Static sites had enormous limitations that made them an impractical solution for most web sites - even the relatively simple ones.&lt;/p&gt;
+
+&lt;p&gt;More recently, however, a combination of asynchronous content, third-party services and new tools, called static site generators, have made the old skool static site both feasible and cool again. Tools like &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; are used to run thousands of sites across the web (including this one…though it admittedly deserves more love).&lt;/p&gt;
+
+&lt;p&gt;But what are static site genertors? Which one of the 400 or so of them should you consider using? What types of sites are they most suitable for?&lt;/p&gt;
+
+&lt;p&gt;These are some of the questions I aim to answer in a &lt;a href=&quot;http://www.oreilly.com/web-platform/free/static-site-generators.csp&quot;&gt;&lt;em&gt;free&lt;/em&gt; report on static site generators for O’Reilly Media&lt;/a&gt;. I know what you are thinking - “Awesome, just in time for the weekend!” You’re right! Did I mention it is free? Also, I should note that it is free.&lt;/p&gt;
+
+&lt;p&gt;Hopefully this report will answer any questions you may have about static site generators and help you get started in choosing one.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.oreilly.com/web-platform/free/static-site-generators.csp&quot;&gt;&lt;img src=&quot;http://covers.oreillystatic.com/images/0636920040095/cat.gif&quot; alt=&quot;Static Site Generators - Modern Tools for Static Website Development&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.oreilly.com/web-platform/free/static-site-generators.csp&quot;&gt;Static Site Generators - Modern Tools for Static Website Development&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 25 Sep 2015 00:00:00 -0400</pubDate>
+        <link>http://remotesynthesis.com/general/2015/09/25/get-started-with-static-site-generators/</link>
+        <guid isPermaLink="true">http://remotesynthesis.com/general/2015/09/25/get-started-with-static-site-generators/</guid>
+      </item>
+    
+      <item>
+        <title>Which Free Code Editor Is Right For You?</title>
+        <description>&lt;p&gt;We live in a day and age as web developers where our biggest complaint seems to be a overabundance of free tools. In the case of code editors, there are a few prominent free ones: &lt;a href=&quot;http://atom.io&quot;&gt;Atom&lt;/a&gt;, &lt;a href=&quot;http://brackets.io/&quot;&gt;Brackets&lt;/a&gt; and, most recently, &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;Visual Studio Code&lt;/a&gt;. Each editor has its own set of strengths and weaknesses. Each is backed by a large corporation - GitHub for Atom, Adobe for Brackets and Microsoft for Visual Studio Code - so obviously they will be geared towards the target audience of each respective company.&lt;/p&gt;
+
+&lt;p&gt;Nonetheless, they are all good editors. So which one should you choose?&lt;/p&gt;
+
+&lt;p&gt;Well, &lt;a href=&quot;http://developer.telerik.com/featured/battle-of-the-free-code-editors/&quot;&gt;it depends&lt;/a&gt;. You knew I was going to say that!&lt;/p&gt;
+
+&lt;p&gt;In my latest article, &lt;a href=&quot;http://developer.telerik.com/featured/battle-of-the-free-code-editors/&quot;&gt;Battle of the Free Code Editors&lt;/a&gt;, I go into the distinguishing features of each editor and what type of developer it is best suited for.&lt;/p&gt;
+
+&lt;p&gt;Please, &lt;a href=&quot;http://developer.telerik.com/featured/battle-of-the-free-code-editors/&quot;&gt;check out the article&lt;/a&gt; and feel free to share your thoughts.&lt;/p&gt;
+
+&lt;h3 id=&quot;a-note-on-sublime&quot;&gt;A Note on Sublime&lt;/h3&gt;
+
+&lt;p&gt;I was asked numerous times after writing this article, why did I not include &lt;a href=&quot;http://www.sublimetext.com/&quot;&gt;Sublime&lt;/a&gt;? After all, Sublime is, for all intents and purposes, the market leader for lightweight code editors. The article compared &lt;em&gt;free&lt;/em&gt; editors. However, &lt;em&gt;Sublime is not free!&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Yes, you can try it for free and, as many responses noted, use it forever without paying if you are willing to live with dismissing the prompt to buy regularly. One person even noted to me that if the author didn’t want people to use it for free forever, they’d have a different license method.&lt;/p&gt;
+
+&lt;p&gt;I’m sorry, that’s not how this works. The author clearly states:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sublime Text may be downloaded and evaluated for free, however a license must be purchased for continued use.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;As I said on Twitter…&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;It surprises me how many people seem to advocate using Sublime for free. If you think the software is great, why not pay what they ask?&lt;/p&gt;&amp;mdash; Brian Rinaldi (@remotesynth) &lt;a href=&quot;https://twitter.com/remotesynth/status/644542401911083008&quot;&gt;September 17, 2015&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+</description>
+        <pubDate>Wed, 23 Sep 2015 00:00:00 -0400</pubDate>
+        <link>http://remotesynthesis.com/general/2015/09/23/which-free-code-editor-is-right-for-you/</link>
+        <guid isPermaLink="true">http://remotesynthesis.com/general/2015/09/23/which-free-code-editor-is-right-for-you/</guid>
+      </item>
+    
+      <item>
+        <title>Picking the Right Speakers for Conferences</title>
+        <description>&lt;p&gt;I have been involved in events for some years, ever since running Flex Camp Boston back in 2007 and as recently as handling many aspects of the planning, in particular the speaker lineup, for this year’s TelerikNEXT event. I’ve also served on conference committees for events like QCon New York and Fluent. In my personal experience, the hardest part of running events are getting the word out and choosing the right speakers. Arguably, choosing the right speakers can heavily impact your ability to get the word out - after all, your content is the biggest selling point of your event.&lt;/p&gt;
+
+&lt;p&gt;Yesterday, &lt;a href=&quot;http://lea.verou.me/2015/08/on-the-blindness-of-blind-reviews/&quot;&gt;Lea Verou posted&lt;/a&gt; an opinion piece saying that blind reviews for technical conferences is a broken model. You should read the &lt;a href=&quot;http://lea.verou.me/2015/08/on-the-blindness-of-blind-reviews/&quot;&gt;full post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In summary, she believes that while the goal is to reduce bias and allow unknown speakers an opportunity, it ends up leading towards choosing “safe” topics. This is because the fear is that the more advanced or atypical topics, in the hands of the wrong speaker, could totally bomb (I’m paraphrasing - these are my words not hers).&lt;/p&gt;
+
+&lt;p&gt;I agree with her, and while I laud the goals of making the speaker selection more egalitarian, there is simply not enough information in a typical abstract to know how successful a presentation will be as the text doesn’t indicate the speaker’s ability to communicate effectively in the format of a session (and requiring a prior session recording already starts making the process less open to fresh faces).&lt;/p&gt;
+
+&lt;p&gt;Here’s the &lt;a href=&quot;http://lea.verou.me/2015/08/on-the-blindness-of-blind-reviews/#comment-2191109856&quot;&gt;response&lt;/a&gt; I added to her post:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I totally agree with this. When I ran a conference for 5 years, I was of the mind that who gave the talk was generally more important than what they were talking about. There are people whose talks I want to see regardless of what the topic is - they are engaging, thought provoking and I always come away learning something. Other people could pick the best topic and even have the best slide deck and bomb.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I chose to have invite-only speakers list. That being said, I always set aside a certain amount of slots for speakers I’d never seen or who were new. The trouble with invite only events is the tendency to invite from within the same group every time.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;To me the best option is to have a committee that you trust and who represent a diverse set of experiences, backgrounds and views. Have this committee be conscious of efforts to be inclusive and make sure there is room for some fresh faces (even acknowledging that some of these will inevitably bomb).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;As you say, each method has its flaws and potential for bias, but even the blind review (as you point out) has bias, just of a different kind.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Fri, 14 Aug 2015 05:00:00 -0400</pubDate>
+        <link>http://remotesynthesis.com/general/2015/08/14/picking-the-right-speakers/</link>
+        <guid isPermaLink="true">http://remotesynthesis.com/general/2015/08/14/picking-the-right-speakers/</guid>
+      </item>
+    
+      <item>
+        <title>Is the Web Really in Trouble?</title>
+        <description>&lt;p&gt;This morning I published a post on the &lt;a href=&quot;http://developer.telerik.com&quot;&gt;Telerik Developer Network&lt;/a&gt; that asks the question “&lt;a href=&quot;http://developer.telerik.com/featured/whats-wrong-with-the-web/&quot;&gt;What’s Wrong with the Web?&lt;/a&gt;”? If you read about web development at all (and apparently you do, since you are reading this), you can’t possibly have missed the long list of posts declaring that the web, as we know it, is in serious jeopardy. The main issues are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The web is losing the battle to native&lt;/li&gt;
+  &lt;li&gt;The web is too slow, largely due to the weight of advertising&lt;/li&gt;
+  &lt;li&gt;The web is too slow, largely due to the cruft of too many libraries and frameworks&lt;/li&gt;
+  &lt;li&gt;The web is trying to be something it isn’t (i.e. native) and adding too many unecessary features&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There may be more, but these are the core debates.&lt;/p&gt;
+
+&lt;p&gt;The thing about all these debates is they are very technical - they are about &lt;em&gt;how&lt;/em&gt; we build web apps or the underlying technology of the web. None of these debates seems concerned with &lt;em&gt;what&lt;/em&gt; we are building. As I argue in the conclusion of my &lt;a href=&quot;http://developer.telerik.com/featured/whats-wrong-with-the-web/&quot;&gt;post&lt;/a&gt;, perhaps we’re worried about the wrong thing. Perhaps if we focused on building awesome and creative things on the web again, the answer to these problems would work itself out.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I worry that web developers have become like bureaucrats, too worried the procedure of building web apps, having lost sight of the point of building them in the first place.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I’d love to hear your thoughts. Please comment on the &lt;a href=&quot;http://developer.telerik.com/featured/whats-wrong-with-the-web/&quot;&gt;post on the Telerik Developer Network&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 02 Aug 2015 05:00:00 -0400</pubDate>
+        <link>http://remotesynthesis.com/general/2015/08/02/is-the-web-in-trouble/</link>
+        <guid isPermaLink="true">http://remotesynthesis.com/general/2015/08/02/is-the-web-in-trouble/</guid>
+      </item>
+    
+      <item>
         <title>The Web is Boring</title>
         <description>&lt;p&gt;When I was growing up, flying was fun. This wasn’t the kind of fun that a kid finds in simply new experiences - it was a legitimately enjoyable experience. The airport was a much less stressful place than it is today, with far less security and fewer lines. The planes seemed more spacious (though perhaps that part was really just that I was a kid). They served you food on most flights - with a real, metal fork and knife. Perhaps it wasn’t the greatest food, but wouldn’t we just love to get something, anything, nowadays? They’d even let kids go into the cabin and meet the crew, often handing them a junior crew member pin to wear.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;images/posts/twa_pin.jpg&quot; alt=&quot;twa pin&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/twa_pin.jpg&quot; alt=&quot;twa pin&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I fly more nowadays than I did back then, but flying is generally painful. The airport is stressful. The airline customer service is generally awful. There are few, if any, meals or snacks served. Flying has become something I need - for work, to visit family, to get to somewhere for vacation - not something I enjoy. Even on vacation, flying is something we power through to get where we want to be rather than being part of the vacation experience.&lt;/p&gt;
 
@@ -29,8 +144,8 @@
 &lt;p&gt;I feel that the thing holding the web back is a lack of real, creative innovation. I read every day about new little features of the web platform, but I can’t remember the last time I read about something built on the web that really excited me. Until then, I’ll keep passionlessly reading my news and blog posts or getting my gmail and hating myself for checking Facebook for lack of something more interesting to do. Sorry, web, but you bore me.&lt;/p&gt;
 </description>
         <pubDate>Wed, 24 Jun 2015 05:00:00 -0400</pubDate>
-        <link>http://remotesynthesis.com/general/2015/06/24/the-internet-is-boring/</link>
-        <guid isPermaLink="true">http://remotesynthesis.com/general/2015/06/24/the-internet-is-boring/</guid>
+        <link>http://remotesynthesis.com/general/2015/06/24/the-web-is-boring/</link>
+        <guid isPermaLink="true">http://remotesynthesis.com/general/2015/06/24/the-web-is-boring/</guid>
       </item>
     
       <item>
@@ -219,106 +334,6 @@
         <pubDate>Wed, 08 Apr 2015 05:00:00 -0400</pubDate>
         <link>http://remotesynthesis.com/general/2015/04/08/building-static-sites-wintersmith/</link>
         <guid isPermaLink="true">http://remotesynthesis.com/general/2015/04/08/building-static-sites-wintersmith/</guid>
-      </item>
-    
-      <item>
-        <title>A Guide to Building Static Sites with Jekyll</title>
-        <description>&lt;p&gt;As I’ve &lt;a href=&quot;http://remotesynthesis.com/general/2015/03/04/comparing-static-site-engines/&quot;&gt;posted about recently&lt;/a&gt;, I’ve been speaking a lot about comparing static site engines. There are a &lt;em&gt;ton&lt;/em&gt; of options out there (389 as of today, according to &lt;a href=&quot;https://staticsitegenerators.net/&quot;&gt;this site&lt;/a&gt;). However, based on my personal experience, I always recommend &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; - granted, that’s based on having used 5 of the 389 so far.&lt;/p&gt;
-
-&lt;p&gt;I already have a &lt;a href=&quot;https://github.com/remotesynth/Static-Site-Samples&quot;&gt;GitHub project&lt;/a&gt; where I have built the same project multiple times with different engines as a means of comparison. The readme will guide you with installing and running each of these should you choose.&lt;/p&gt;
-
-&lt;p&gt;Now, if you wanted to learn how to use Jekyll using this sample, I have written a &lt;a href=&quot;http://developer.telerik.com/featured/getting-started-with-jekyll/&quot;&gt;detailed guide to getting started with Jekyll&lt;/a&gt; for the Telerik Developer Network. It walks through the most common things you need to know about Liquid templating as well as how to create and build your Jekyll site.&lt;/p&gt;
-
-&lt;p&gt;I hope you enjoy it!&lt;/p&gt;
-
-&lt;p&gt;P.S. One common questions I get whenever I recommend Jekyll is from people who don’t know Ruby and would prefer a solution written in JavaScript/Node.js and, preferably, available via npm. The &lt;a href=&quot;https://github.com/remotesynth/Static-Site-Samples&quot;&gt;GitHub project&lt;/a&gt; includes two, Harp and Wintersmith. I have a follow up article that should be published any day now that walks through the same steps laid out in the Jekyll tutorial, but for Wintersmith. I’ll post about that as soon as it is out.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 24 Mar 2015 05:00:00 -0400</pubDate>
-        <link>http://remotesynthesis.com/general/2015/03/24/building-static-sites-jekyll/</link>
-        <guid isPermaLink="true">http://remotesynthesis.com/general/2015/03/24/building-static-sites-jekyll/</guid>
-      </item>
-    
-      <item>
-        <title>Can Web Audio be Useful?</title>
-        <description>&lt;p&gt;Next month, I will be presenting at the &lt;a href=&quot;http://fluentconf.com&quot;&gt;Fluent Conference&lt;/a&gt; in San Francisco on the topic of “Practical Web Audio.” The idea here is that most every demo or presentation about web audio (including my own) have been fun and cool but not practical unless you build games or music software.&lt;/p&gt;
-
-&lt;p&gt;So, are there useful purposes for web audio in a standard web app? I wrote an article called &lt;a href=&quot;http://developer.telerik.com/featured/adding-audio-to-web-apps/&quot;&gt;Adding Audio to Web Apps&lt;/a&gt; that begins to explore some ideas. In almost every case, the demo uses very brief portions of audio to try to add context to some form of input. Notifications seemed obvious - but, admittedly, others are harder to make a strong case for except in very specific circumstances. These were just some of my initial ideas - I have a few others and some variations to the ones I showed already that I am working on.&lt;/p&gt;
-
-&lt;p&gt;Have you used web audio in your web app for something useful? If so, please share (and maybe I can even show it at Fluent).&lt;/p&gt;
-</description>
-        <pubDate>Sat, 14 Mar 2015 05:00:00 -0400</pubDate>
-        <link>http://remotesynthesis.com/general/2015/03/14/can-web-audio-be-useful/</link>
-        <guid isPermaLink="true">http://remotesynthesis.com/general/2015/03/14/can-web-audio-be-useful/</guid>
-      </item>
-    
-      <item>
-        <title>Comparing Static Site Engines</title>
-        <description>&lt;p&gt;On February 18, I had the pleasure of gaving a &lt;a href=&quot;http://www.meetup.com/sfhtml5/events/219180801/&quot;&gt;talk&lt;/a&gt; to the San Francisco HTML5 User Group. The topic was static site engines, covering the basics of what they are and what they are good for (or what they are not good for). The latter half of the session focused on comparing three popular static site engines: &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;, &lt;a href=&quot;https://middlemanapp.com/&quot;&gt;Middleman&lt;/a&gt; and &lt;a href=&quot;http://harpjs.com/&quot;&gt;Harp&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;You can view the presentation below (I am also giving an updated version of this presentation at &lt;a href=&quot;https://www.devnexus.com/s/index&quot;&gt;DevNexus&lt;/a&gt; in Atlanta later this month).&lt;/p&gt;
-
-&lt;h2 id=&quot;sample-application&quot;&gt;Sample Application&lt;/h2&gt;
-
-&lt;p&gt;In order to compare the engines, I created a simple sample site, using data from the &lt;a href=&quot;http://adventuretime.wikia.com/wiki/Adventure_Time_with_Finn_and_Jake_Wiki&quot;&gt;Adventure Time Wiki&lt;/a&gt;. The site is intentionally simple, but uses things like custom post attributes, custom global attributes, data and, of course, posts.&lt;/p&gt;
-
-&lt;p&gt;You can get the samples as well as the slide deck &lt;a href=&quot;https://github.com/remotesynth/Static-Site-Samples&quot;&gt;on GitHub&lt;/a&gt;. I am hoping to add additional samples in the coming weeks.&lt;/p&gt;
-
-&lt;h2 id=&quot;recording&quot;&gt;Recording&lt;/h2&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/R-fJWOO1bjE&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-</description>
-        <pubDate>Wed, 04 Mar 2015 04:00:00 -0500</pubDate>
-        <link>http://remotesynthesis.com/general/2015/03/04/comparing-static-site-engines/</link>
-        <guid isPermaLink="true">http://remotesynthesis.com/general/2015/03/04/comparing-static-site-engines/</guid>
-      </item>
-    
-      <item>
-        <title>Patterns of Development</title>
-        <description>&lt;p&gt;Patterns are something that you cannot view close up - a narrow view obscures the pattern. However, given distance and time, we can begin to make out the sequences that repeat. This is one of the few benefits of being old, which I am compared to many developers.&lt;/p&gt;
-
-&lt;p&gt;In this post, I am not talking about development patterns as in software design patterns (or anti-patterns), but rather patterns in attitudes and behavior among developers that change the way a large number of us approach our work.&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;front-to-back-to-front-to&quot;&gt;Front to Back to Front to…&lt;/h2&gt;
-
-&lt;p&gt;I want to discuss a pattern I have noticed throughout my career and has only become more obvious over time. This pattern is the constant shifting in focus from front-end heavy applications to back-end heavy applications. I’m bringing the topic up becuase I believe we’re seeing a shift again, which becomes clear in recent &lt;a href=&quot;http://www.quirksmode.org/blog/archives/2015/01/the_problem_wit.html&quot;&gt;controversies over AngularJS&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Basically the pattern is that every 5 to 10 years (or so), developers seem to shift in attitude and opinion on where to place much of the burden of the application - moving from placing much of the application and business logic on the front-end, to placing it on the back-end. I think a little history might make this pattern seem clear (though you can feel free to disagree with me).&lt;/p&gt;
-
-&lt;h2 id=&quot;back-in-my-day&quot;&gt;Back in My Day…&lt;/h2&gt;
-
-&lt;p&gt;As an old person, let me give a very oversimplified history.&lt;/p&gt;
-
-&lt;p&gt;So, I’m not that old - really I am not. But even when I went to college it was still fairly common for many applications, especially in the enterprise, to simply be a lightweight terminal-type interface to a mainframe that had the power to run the actual application logic. In this case, obviously, the “front-end” application was little more than a text entry interface for entering commands into and receiving data back from the mainframe (which was effectively the server in this case).&lt;/p&gt;
-
-&lt;h3 id=&quot;rich-client-server-desktops-applications&quot;&gt;Rich Client Server Desktops Applications&lt;/h3&gt;
-
-&lt;p&gt;As PC’s became more powerful, development tools (PowerBuilder was a popular one) helped developers create more complex and interactive native applications for the desktop. While the back-end might retain a good chunk of logic, the interface itself contained a lot of interactivity and the flow of the application was based upon certain business rules. Basically, many aspects that previously had to be kept on the back-end could now be pushed to the front.&lt;/p&gt;
-
-&lt;h3 id=&quot;early-web-applications&quot;&gt;Early Web Applications&lt;/h3&gt;
-
-&lt;p&gt;The rise of the web changed this. Why? Well, the early web was slow and limiting in many ways. It was powerful in the sense that I no longer needed to deploy applications across multiple desktops, make sure they were updated and so on. It allowed us to interact with our applications from anywhere. However, the capabilities of the browser meant that our applications were closer to the dumb terminals of earlier days than the rich applications on the desktop. Sure, they may have looked pretty with forms and tables and blinking text, but they were mostly dumb - the application logic residing almost entirely on the server.&lt;/p&gt;
-
-&lt;h3 id=&quot;flash-flex-silverlight&quot;&gt;Flash, Flex, Silverlight…&lt;/h3&gt;
-
-&lt;p&gt;This didn’t change because browsers improved - at least not initially. Plugins like Flash built upon the initial attempts (like Java Applets) to give browsers the ability to create rich, desktop-like experiences on the web. Soon Flex and Silverlight were hot and much of the application and even business logic was moving back onto the client. Sure, we had to build portions of our business logic and validation twice, but the experience for the user was much improved. We called these Rich Internet Applications in part to recognize them as an attempt to recreate the interactivity of desktop applications but served in the browser.&lt;/p&gt;
-
-&lt;h3 id=&quot;html5&quot;&gt;HTML5&lt;/h3&gt;
-
-&lt;p&gt;This focus on the front-end didn’t change with the death of Flash and the growth of HTML5. Actually, if anything, it increased. The primary difference was that now we were writing complex, desktop-like applications in JavaScript rather than ActionScript. In fact, many back-ends became so lightweight that, in many cases, applications would connect directly to data on the cloud or in NoSQL databases.&lt;/p&gt;
-
-&lt;h2 id=&quot;a-shift-imo&quot;&gt;A Shift (imo)&lt;/h2&gt;
-
-&lt;p&gt;I actually wondered if we might be hitting a point where this pattern would break, but a couple of things changed as I see it.&lt;/p&gt;
-
-&lt;p&gt;First, there’s the rise of JavaScript on the back-end using things like Node.js (or io.js if you now prefer). This isn’t because JavaScript is so awesome, but because it allowed us to write business logic and validation and such in one language and it could run on both ends - meaning, for example, I don’t have to write data validation in JavaScript on the front-end and Java (or PHP or whatever) on the back. Also, these servers are fast and built for running the types of web applications people seem to be building today.&lt;/p&gt;
-
-&lt;p&gt;However, that isn’t the big reason. The major shift is because of mobile (of course!). As you may have seen in some of the recent AngularJS debates (among other related topics), placing too much burden for processing and logic on the front-end can make an application run poorly on mobile. And nevermind writing things like writing validation rules twice, we certainly don’t want to have to write our applications once for the desktop and then for each mobile platform. Thus, we need to move some of the code that we’d perhaps become accustomed to placing on the client back onto our back-end server…and so goes the cycle.&lt;/p&gt;
-
-&lt;p&gt;Now, perhaps this trend will cease. Mobile devices are rapidly becoming very powerful computers in their own right. Or perhaps I am old and my mind is causing me to see patterns that don’t exist. But given the back and forth on this that I have witnessed over my career, I suspect we may be in the midst of yet another shift.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 21 Jan 2015 04:00:00 -0500</pubDate>
-        <link>http://remotesynthesis.com/general/2015/01/21/patterns-of-development/</link>
-        <guid isPermaLink="true">http://remotesynthesis.com/general/2015/01/21/patterns-of-development/</guid>
       </item>
     
   </channel>

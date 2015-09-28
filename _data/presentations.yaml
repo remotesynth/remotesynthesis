@@ -1,3 +1,12 @@
+-   name: "September 2015"
+    presentations:
+      - "Web Unleashed - They're Back! - Modern Tools for Static Site Development"
+-   name: "August 2015"
+    presentations:
+      - "That Conference - They're Back! - Modern Tools for Static Site Development"
+-   name: "May 2015"
+    presentations:
+      - "Mobile Tea, Boston - Practical Web Audio"
 -   name: "May 2015"
     presentations:
       - "Fluent 2015 - Practical Web Audio"
@@ -9,115 +18,115 @@
     presentations:
       - "San Francisco HTML5 User Group - Comparing Static Site Engines"
 -   name: "September 2014"
-    presentations: 
+    presentations:
       - "Web Unleashed, Toronto - 8-bit Game Music with Web Audio API"
       - "Mobile Tea, Boston - Important Lessons in Responsive Web Design"
 -   name: "June 2014"
-    presentations: 
+    presentations:
       - "QCon NY (Conference Committee) - Beyond JavaScript (Track Chair)"
 -   name: "May 2014"
-    presentations: 
+    presentations:
       - "cf.Objective() - Leveling Up at Javascript: DOM Traversal"
       - "Boston ColdFusion User Group - Leveling Up at Javascript: DOM Traversal"
 -   name: "March 2014"
-    presentations: 
+    presentations:
       - "Fluent - Creating 8-bit Game Music in the Browser"
 -   name: "February 2014"
-    presentations: 
+    presentations:
       - "DevNexus - Approaches to DOM Traversal"
       - "DevNexus - Getting Started with Responsive Web Design (workshop)"
 -   name: "November 2013"
-    presentations: 
+    presentations:
       - "Web Unleashed - Getting Started with Responsive Design (Workshop), Node in Command - Node CLI Tools"
 -   name: "October 2013"
-    presentations: 
+    presentations:
       - "Worcester Web Technology Group - Develop Node.JS, HTML and JavaScript Apps Using Open Source Adobe Brackets"
 -   name: "July 2013"
-    presentations: 
+    presentations:
       - "Mobile and Web Devcon - Introduction to Responsive Web Design and Adobe Edge Reflow"
 -   name: "May 2013"
-    presentations: 
+    presentations:
       - "Fluent - Go Node Without Code"
       - "cf.Objective - Go Node Without Code"
 -   name: "April 2013"
-    presentations: 
+    presentations:
       - "HTML5 Developers Conference - Introduction to Responsive Web Design and Adobe Edge Reflow"
       - "Adobe Community Tech Weds - Introduction to Responsive Web Design and Adobe Edge Reflow"
 -   name: "February 2013"
-    presentations: 
+    presentations:
       - "HTML5tx - Web Application Architecture: Learning from Adobe Brackets"
 -   name: "November 2012"
-    presentations: 
+    presentations:
       - "Web Unleashed - Developing Mobile Apps with PhoneGap Build (Half-day Workshop)"
       - "Web Unleashed - PhoneGap Build: Building Multiplatform Apps with HTML, CSS and JavaScript"
       - "Refresh Denver - Create the Web Tour"
 -   name: "October 2012"
-    presentations: 
+    presentations:
       - "HTML5 Developer Conference - Web Application Architecture: Lessons Learned from Adobe Brackets"
       - "DevReach - PhoneGap Build: Building Multiplatform Apps with HTML, CSS and JavaScript"
       - "DevReach - Web Application Architecture: Lessons Learned from Adobe Brackets"
 -   name: "May 2012"
-    presentations: 
+    presentations:
       - "Fluent - Adobe & HTML & JavaScript"
       - "cf.Objective() - Mapping Out the Frontier of HTML5 & JavaScript Development"
 -   name: "April 2012"
-    presentations: 
+    presentations:
       - "360Flex - Mapping Out the Frontier of HTML5 & JavaScript Development"
 -   name: "March 2012"
-    presentations: 
+    presentations:
       - "Denver CFUG - Mapping Out the Frontier of HTML5 & JavaScript Development"
 -   name: "February 2012"
-    presentations: 
+    presentations:
       - "Presentation to the Community Roundtable"
 -   name: "July 2011"
-    presentations: 
+    presentations:
       - "eCoast Mobile Summit - Panel : Native vs. Web/Hybrid Development"
 -   name: "June 2011"
-    presentations: 
+    presentations:
       - "Flash and the City Conference - Adobe Keynote (portion), Developing Applications for Mobile & Devices Using Flex 4.5 and Flash Builder 4.5"
 -   name: "April 2011"
-    presentations: 
+    presentations:
       - "Denver CFUG - Developing Applications for Mobile & Devices Using Flex \"Hero\" and Flash Builder \"Burrito\""
 -   name: "February 2011"
-    presentations: 
+    presentations:
       - "Boston Flash Platform User Group - Developing Applications for Mobile & Devices Using Flex \"Hero\" and Flash Builder \"Burrito\""
 -   name: "July 2010"
-    presentations: 
+    presentations:
       - "CFUnited 2010 - Beginning Flex for ColdFusion Developers"
       - "CFUnited 2010 - Building Self-Updating ColdFusion Builder Extensions"
 -   name: "June 2010"
-    presentations: 
+    presentations:
       - "Bay Area ColdFusion User Group - Building Self-Updating ColdFusion Builder Extensions"
 -   name: "January 2010"
-    presentations: 
+    presentations:
       - "Online ColdFusion Meetup - Introduction to ColdSpring"
 -   name: "October 2009"
-    presentations: 
+    presentations:
       - "Hartford AUG - Introduction to ColdSpring"
 -   name: "September 2009"
-    presentations: 
+    presentations:
       - "Devon CFUG - Introduction to ColdSpring"
       - "Boeing CFUG - Introduction to ColdSpring"
 -   name: "August 2009"
-    presentations: 
+    presentations:
       - "CFUnited 2009 - A CF Developer's Guide to the Mate Flex Framework"
 -   name: "January 2009"
-    presentations: 
+    presentations:
       - "Harvard University Extension School - ColdFusion 8"
 -   name: "June 2008"
-    presentations: 
+    presentations:
       - "CFUnited 2008 - Writing an RIA? Secure Your Data!"
 -   name: "May 2008"
-    presentations: 
+    presentations:
       - "cf.Objective 2008 Conference - Cairngorm for ColdFusion Developers"
       - "Boeing ColdFusion User Group - Practical Code Generation"
 -   name: "January 2008"
-    presentations: 
+    presentations:
       - "Harvard University Extension School - ColdFusion 8: Server Administration and Development Basics"
       - "Boeing Corporation (Connect Presentation) - Generating Framework Code with Illudium"
 -   name: "August 2007"
-    presentations: 
+    presentations:
       - "Hartford CT Adobe User Group: Generating Framework Code with Illudium"
 -   name: "July 2007"
-    presentations: 
+    presentations:
       - "cfFrameworks (Connect Presentation): Generating Framework Code with Illudium"

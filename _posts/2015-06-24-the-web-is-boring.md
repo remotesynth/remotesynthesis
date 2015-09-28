@@ -7,7 +7,7 @@ categories: general
 
 When I was growing up, flying was fun. This wasn't the kind of fun that a kid finds in simply new experiences - it was a legitimately enjoyable experience. The airport was a much less stressful place than it is today, with far less security and fewer lines. The planes seemed more spacious (though perhaps that part was really just that I was a kid). They served you food on most flights - with a real, metal fork and knife. Perhaps it wasn't the greatest food, but wouldn't we just love to get something, anything, nowadays? They'd even let kids go into the cabin and meet the crew, often handing them a junior crew member pin to wear.
 
-![twa pin](images/posts/twa_pin.jpg)
+![twa pin](/images/posts/twa_pin.jpg)
 
 I fly more nowadays than I did back then, but flying is generally painful. The airport is stressful. The airline customer service is generally awful. There are few, if any, meals or snacks served. Flying has become something I need - for work, to visit family, to get to somewhere for vacation - not something I enjoy. Even on vacation, flying is something we power through to get where we want to be rather than being part of the vacation experience.
 
