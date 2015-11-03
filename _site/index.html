@@ -83,6 +83,116 @@
       
       
       <li class="post-content">
+        <span class="post-date">Oct 2, 2015</span>
+        <a class="post-link" href="/general/2015/10/02/advanced-jekyll-templates/">Some Advanced Jekyll/Liquid Template Techniques</a>
+        <p>Generally speaking, Liquid templates for Jekyll are pretty easy to create - Liquid is a powerful templating tool and offers a large number of helpers and formatters to get complex tasks done. However, recently I had the opportunity to build a site that required me to use some techniques I’d never needed before with Liquid and Jekyll.</p>
+
+<p>The home page had a number of repeating sections that listed the content for each category of content. If there was no content, the section shouldn’t show. More importantly, each section was essentially the same except for some category metadata and styling. Rather than repeat the same code for each section, I decided to use includes - but this required some creative workarounds to make the styling show.</p>
+
+<p>In this post, I’ll show some of the techniques I used. I am not entirely certain that these are necessarily “best practices,” but since there wasn’t a lot of information I could find around the web on this, I thought it might be worth sharing. (And if you have better ways of solving these problems, please share.)</p>
+
+<h2 id="determining-if-a-category-has-posts-and-how-many">Determining If a Category Has Posts (and How Many)</h2>
+
+<p>This one is actually pretty straightforward. Each category has a size property which you can use.</p>
+
+<div class="highlight"><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">categories</span><span class="p">.</span><span class="nv">categoryname</span><span class="p">.</span><span class="nv">size</span><span class="p">%}</span>
+ &lt;!-- do something --&gt;
+<span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="p">%}</span></code></pre></div>
+
+<p>Obviously, replace <code>categoryname</code> with the actual category you used for your posts. Don’t worry, it won’t error if the category doesn’t exist. Now, I suppose you could leave the <code>.size</code> off assuming that if the category doesn’t exist, that is because it contains no posts, but this works just as well (and reads easier perhaps).</p>
+
+<h2 id="assign-the-value-of-a-variable">Assign the Value of a Variable</h2>
+
+<p>In this scenario, I had a variable that would have the current category. Assigning a variable is easy. Liquid has an <code>assign</code> keyword for this purpose.</p>
+
+<div class="highlight"><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">categoryname</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'foobar'</span><span class="p">%}</span></code></pre></div>
+
+<p>Some examples claimed that you could not reassign the value of a variable once initially assigned. I didn’t find this to be the case. However, you can, alternatively, assign a variable with <code>capture</code>.</p>
+
+<div class="highlight"><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">capture</span><span class="w"> </span><span class="na">categoryname</span><span class="w"> </span><span class="p">%}</span>foobar<span class="p">{%</span><span class="w"> </span><span class="nt">endcapture</span><span class="w"> </span><span class="p">%}</span></code></pre></div>
+
+<h2 id="using-a-variable-with-an-include">Using a Variable with an Include</h2>
+
+<p>There’s really nothing special to do here. If the variable is assigned, you can simply use it within any include thereafter. (Note: I tried using the <code>with</code> keyword to pass the variable in the include rather than assigning it each time, but couldn’t get this to work properly.)</p>
+
+<p>The fun part here is that the include was always the same, just the value of the variable changed. Let’s look at a small portion.</p>
+
+<div class="highlight"><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">categories</span><span class="p">.</span><span class="nv">foobar</span><span class="p">.</span><span class="nv">size</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">categoryname</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"foobar"</span><span class="w"> </span><span class="p">%}</span>
+  &lt;section&gt;
+    <span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">index_article</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="p">%}</span>
+  &lt;/section&gt;
+<span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+
+<span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">categories</span><span class="p">.</span><span class="nv">barbar</span><span class="p">.</span><span class="nv">size</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">categoryname</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"barbar"</span><span class="w"> </span><span class="p">%}</span>
+  &lt;section&gt;
+    <span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">index_article</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="p">%}</span>
+  &lt;/section&gt;
+<span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span></code></pre></div>
+
+<p>Within that include (which I poorly named <code>index_article.html</code>), I can loop over the posts within that category by using the variable.</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html">{% include banner.html %}
+<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"ArticleList"</span><span class="nt">&gt;</span>
+  {% for post in site.categories[categoryname] %}
+	<span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;h4&gt;&lt;a</span> <span class="na">href=</span><span class="s">"{{ post.url | prepend: site.baseurl }}"</span><span class="nt">&gt;</span>{{ post.title }}<span class="nt">&lt;/a&gt;&lt;/h4&gt;</span>
+        <span class="nt">&lt;p&gt;</span>{{ post.description }}<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;span</span> <span class="na">class=</span><span class="s">"Author"</span><span class="nt">&gt;</span>{{ post.author }}<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"PublishDate"</span><span class="nt">&gt;</span>{{ post.date | date: "%b %-d, %Y" }}<span class="nt">&lt;/span&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+  {% endfor %}
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+<h2 id="dynamically-load-data">Dynamically Load Data</h2>
+
+<p>So, remember I said that the banner changed based upon some category metadata? Well, in order to do that, I decided to place the necessary metadata items in a YAML data file under <code>_data</code>. Each category had the same key name as the actual post category so that I could easily look it up. (Yes, this is probably a little brittle, but remember we are talking a static site - it’s not like I’m going to push something broken live.)</p>
+
+<p>Let’s look at a sample of the YAML.</p>
+
+<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="s">foobar</span><span class="pi">:</span>
+  <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Foo</span><span class="nv"> </span><span class="s">Bar"</span>
+  <span class="s">description</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Foo</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">best</span><span class="nv"> </span><span class="s">kind</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">bar</span><span class="nv"> </span><span class="s">around"</span>
+  <span class="s">logo</span><span class="pi">:</span> <span class="s2">"</span><span class="s">foobar.png"</span>
+  <span class="s">color</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Purple"</span>
+<span class="s">barbar</span><span class="pi">:</span>
+  <span class="s">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Bar</span><span class="nv"> </span><span class="s">Bar"</span>
+  <span class="s">description</span><span class="pi">:</span> <span class="s2">"</span><span class="s">There's</span><span class="nv"> </span><span class="s">no</span><span class="nv"> </span><span class="s">doubt</span><span class="nv"> </span><span class="s">that</span><span class="nv"> </span><span class="s">bar</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">original</span><span class="nv"> </span><span class="s">kind</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">bar"</span>
+  <span class="s">color</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Orange"</span></code></pre></div>
+
+<p>Notice that they don’t all contain the exact same metadata - the first has a logo but the second doesn’t. In the <code>index_article.html</code> code sample above I included <code>banner.html</code>. Let’s take a look at that.</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"SectionHead {{ site.data.categories[categoryname].color }}Box }}"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"LogoSpot"</span><span class="nt">&gt;</span>
+  {% if site.data.categories[categoryname].logo %}
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"{{ site.baseurl }}/images/{{ site.data.categories[categoryname].logo }}"</span>
+      <span class="na">alt=</span><span class="s">"{{ site.data.categories[categoryname].name }}"</span><span class="nt">/&gt;</span>
+  {% elsif site.data.categories[categoryname].subtitle %}
+    {{ site.data.categories[categoryname].subtitle }}
+  {% else %}
+    {{ site.data.categories[categoryname].name }}
+  {% endif %}
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;h2&gt;</span>{{ site.data.categories[categoryname].name }}<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>{{ site.data.categories[categoryname].description }}<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<p>Notice that I am able to dynamically pull the category name via the variable (and even though this is an include within an include after the variable was set). Also notice that I can test if particular properties exist on the category - for example I show the logo if it exists, if not the subtitle (if it exists) and else just the category name.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Hopefully these examples are useful - I know they would have helped me. If anyone has suggestions on how I could have achieved the same results in a better fashion, please share.</p>
+
+<p>Also, be sure to check out my free ebook from O’Reilly - <a href="http://www.oreilly.com/web-platform/free/static-site-generators.csp">Static Site Generators - Modern Tools for Static Website Development</a></p>
+
+
+        
+      </li>
+    
+      
+      
+      <li class="post-content">
         <span class="post-date">Sep 25, 2015</span>
         <a class="post-link" href="/general/2015/09/25/get-started-with-static-site-generators/">Get Started with Static Site Generators</a>
         <p>In the early days of the web, there was no such category as “static sites” - the web was made up of static resources. This was a maintainable solution when the web was simple. That didn’t last long.</p>
@@ -197,35 +307,6 @@
 <p><strong>I worry that web developers have become like bureaucrats, too worried the procedure of building web apps, having lost sight of the point of building them in the first place.</strong></p>
 
 <p>I’d love to hear your thoughts. Please comment on the <a href="http://developer.telerik.com/featured/whats-wrong-with-the-web/">post on the Telerik Developer Network</a>.</p>
-
-
-        
-      </li>
-    
-      
-      
-      <li class="post-content">
-        <span class="post-date">Jun 24, 2015</span>
-        <a class="post-link" href="/general/2015/06/24/the-web-is-boring/">The Web is Boring</a>
-        <p>When I was growing up, flying was fun. This wasn’t the kind of fun that a kid finds in simply new experiences - it was a legitimately enjoyable experience. The airport was a much less stressful place than it is today, with far less security and fewer lines. The planes seemed more spacious (though perhaps that part was really just that I was a kid). They served you food on most flights - with a real, metal fork and knife. Perhaps it wasn’t the greatest food, but wouldn’t we just love to get something, anything, nowadays? They’d even let kids go into the cabin and meet the crew, often handing them a junior crew member pin to wear.</p>
-
-<p><img src="/images/posts/twa_pin.jpg" alt="twa pin" /></p>
-
-<p>I fly more nowadays than I did back then, but flying is generally painful. The airport is stressful. The airline customer service is generally awful. There are few, if any, meals or snacks served. Flying has become something I need - for work, to visit family, to get to somewhere for vacation - not something I enjoy. Even on vacation, flying is something we power through to get where we want to be rather than being part of the vacation experience.</p>
-
-<h2 id="the-web-too-has-lost-its-luster">The Web, Too, Has Lost Its Luster</h2>
-
-<p>Much like the joy of flying, I am finally ready to openly admit that the web is no longer fun. Just like flying, I use it more today than I ever did back when it was fun, but it is purely out of necessity rather than desire. On a personal level, I use web sites to get news and to keep up with friends and family. The web is, obviously, an integral part of my work too, for news and information as well as the focus of my actual job. All of these things I need, but none of them bring the joy and exitement that the web used to bring.</p>
-
-<p>Perhaps you are not old enough to remember when the web was fun. If so, you may even think that it <em>is</em> fun. But back in the mid-to-late-90s, the web had the power to amaze us. New sites and new businesses would launch regularly and everyone had to try them out because each one seemed to bring something new and creative to the table. Sure, many didn’t survive long (and we had tons of useless accounts), but they all seemed to be part of an inexorable path towards something special - a future where the web would make our lives more enjoyable, easier and, yes, more fun. Many of us firmly believed that the web was the future of computing - who’d need a desktop or operating system when the web was eventually going to replace the need for either.</p>
-
-<h2 id="that-didnt-happen">That Didn’t Happen</h2>
-
-<p>Let’s be honest. None of that ever happened. You may be thinking, “But what about my streaming movies or my streaming music or my multiplayer games? Aren’t those fun?” To which I’d say, “Don’t confuse the internet with the web.” The internet enables each of these, but they are rarely done via the web (yes, they all have web interfaces, but I’d bet the majority of people do not access them this way).</p>
-
-<p>There’s been a lot of talk about how the <a href="http://www.quirksmode.org/blog/archives/2015/05/web_vs_native_l.html">web is losing</a> some unofficial battle for survival. Much of that has focused on the overwhelming amount of tools for web development and the way these tools are impacting the performance of the web. I am not disagreeing with those, per se, but I can say that the web was actually much more fun back when it was also horribly slow (most of us were on dial-up after all).</p>
-
-<p>I feel that the thing holding the web back is a lack of real, creative innovation. I read every day about new little features of the web platform, but I can’t remember the last time I read about something built on the web that really excited me. Until then, I’ll keep passionlessly reading my news and blog posts or getting my gmail and hating myself for checking Facebook for lack of something more interesting to do. Sorry, web, but you bore me.</p>
 
 
         

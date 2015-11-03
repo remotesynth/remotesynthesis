@@ -9,6 +9,7 @@ username: remotesynth
 # Build settings
 markdown: kramdown
 permalink: pretty
+highlighter: rouge
 
 #pagination
 paginate: 5

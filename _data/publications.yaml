@@ -4,6 +4,12 @@
         URL: "http://www.oreilly.com/web-platform/free/static-site-generators.csp"
 -   name: "Telerik Developer Network"
     articles:
+      - title: "Defining a New Breed of Cross-Platform Mobile Apps (with TJ VanToll)"
+        URL: "http://developer.telerik.com/featured/defining-a-new-breed-of-cross-platform-mobile-apps/"
+      - title: "Lazy Loading Images on the Web"
+        URL: "http://developer.telerik.com/featured/lazy-loading-images-on-the-web/"
+      - title: "Static Site or CMS?"
+        URL: "http://developer.telerik.com/featured/static-site-or-cms/"
       - title: "Battle of the Free Code Editors"
         URL: "http://developer.telerik.com/featured/battle-of-the-free-code-editors/"
       - title: "What's Wrong with the Web?"

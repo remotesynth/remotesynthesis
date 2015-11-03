@@ -7,6 +7,114 @@
     <atom:link href="http://remotesynthesis.com/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Some Advanced Jekyll/Liquid Template Techniques</title>
+        <description>&lt;p&gt;Generally speaking, Liquid templates for Jekyll are pretty easy to create - Liquid is a powerful templating tool and offers a large number of helpers and formatters to get complex tasks done. However, recently I had the opportunity to build a site that required me to use some techniques I’d never needed before with Liquid and Jekyll.&lt;/p&gt;
+
+&lt;p&gt;The home page had a number of repeating sections that listed the content for each category of content. If there was no content, the section shouldn’t show. More importantly, each section was essentially the same except for some category metadata and styling. Rather than repeat the same code for each section, I decided to use includes - but this required some creative workarounds to make the styling show.&lt;/p&gt;
+
+&lt;p&gt;In this post, I’ll show some of the techniques I used. I am not entirely certain that these are necessarily “best practices,” but since there wasn’t a lot of information I could find around the web on this, I thought it might be worth sharing. (And if you have better ways of solving these problems, please share.)&lt;/p&gt;
+
+&lt;h2 id=&quot;determining-if-a-category-has-posts-and-how-many&quot;&gt;Determining If a Category Has Posts (and How Many)&lt;/h2&gt;
+
+&lt;p&gt;This one is actually pretty straightforward. Each category has a size property which you can use.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-liquid&quot; data-lang=&quot;liquid&quot;&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;categories&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;categoryname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+ &amp;lt;!-- do something --&amp;gt;
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;endif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Obviously, replace &lt;code&gt;categoryname&lt;/code&gt; with the actual category you used for your posts. Don’t worry, it won’t error if the category doesn’t exist. Now, I suppose you could leave the &lt;code&gt;.size&lt;/code&gt; off assuming that if the category doesn’t exist, that is because it contains no posts, but this works just as well (and reads easier perhaps).&lt;/p&gt;
+
+&lt;h2 id=&quot;assign-the-value-of-a-variable&quot;&gt;Assign the Value of a Variable&lt;/h2&gt;
+
+&lt;p&gt;In this scenario, I had a variable that would have the current category. Assigning a variable is easy. Liquid has an &lt;code&gt;assign&lt;/code&gt; keyword for this purpose.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-liquid&quot; data-lang=&quot;liquid&quot;&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;assign&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;categoryname&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;foobar&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Some examples claimed that you could not reassign the value of a variable once initially assigned. I didn’t find this to be the case. However, you can, alternatively, assign a variable with &lt;code&gt;capture&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-liquid&quot; data-lang=&quot;liquid&quot;&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;capture&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;categoryname&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;foobar&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;endcapture&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;using-a-variable-with-an-include&quot;&gt;Using a Variable with an Include&lt;/h2&gt;
+
+&lt;p&gt;There’s really nothing special to do here. If the variable is assigned, you can simply use it within any include thereafter. (Note: I tried using the &lt;code&gt;with&lt;/code&gt; keyword to pass the variable in the include rather than assigning it each time, but couldn’t get this to work properly.)&lt;/p&gt;
+
+&lt;p&gt;The fun part here is that the include was always the same, just the value of the variable changed. Let’s look at a small portion.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-liquid&quot; data-lang=&quot;liquid&quot;&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;categories&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;foobar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;assign&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;categoryname&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;foobar&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+  &amp;lt;section&amp;gt;
+    &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;index_article&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+  &amp;lt;/section&amp;gt;
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;endif&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;categories&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;barbar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;assign&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;categoryname&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;barbar&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+  &amp;lt;section&amp;gt;
+    &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;index_article&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+  &amp;lt;/section&amp;gt;
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;endif&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Within that include (which I poorly named &lt;code&gt;index_article.html&lt;/code&gt;), I can loop over the posts within that category by using the variable.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;{% include banner.html %}
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ArticleList&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  {% for post in site.categories[categoryname] %}
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;h4&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{ post.url | prepend: site.baseurl }}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;{{ post.title }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/h4&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;{{ post.description }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Author&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;{{ post.author }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;PublishDate&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;{{ post.date | date: &quot;%b %-d, %Y&quot; }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+  {% endfor %}
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;dynamically-load-data&quot;&gt;Dynamically Load Data&lt;/h2&gt;
+
+&lt;p&gt;So, remember I said that the banner changed based upon some category metadata? Well, in order to do that, I decided to place the necessary metadata items in a YAML data file under &lt;code&gt;_data&lt;/code&gt;. Each category had the same key name as the actual post category so that I could easily look it up. (Yes, this is probably a little brittle, but remember we are talking a static site - it’s not like I’m going to push something broken live.)&lt;/p&gt;
+
+&lt;p&gt;Let’s look at a sample of the YAML.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;foobar&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Foo&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Bar&quot;&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Foo&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;is&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;the&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;best&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;kind&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;around&quot;&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;logo&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;foobar.png&quot;&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Purple&quot;&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;barbar&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Bar&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Bar&quot;&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;There&#39;s&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;no&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;doubt&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;that&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;is&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;the&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;original&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;kind&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;bar&quot;&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Orange&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Notice that they don’t all contain the exact same metadata - the first has a logo but the second doesn’t. In the &lt;code&gt;index_article.html&lt;/code&gt; code sample above I included &lt;code&gt;banner.html&lt;/code&gt;. Let’s take a look at that.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;SectionHead {{ site.data.categories[categoryname].color }}Box }}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;LogoSpot&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  {% if site.data.categories[categoryname].logo %}
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{ site.baseurl }}/images/{{ site.data.categories[categoryname].logo }}&quot;&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{ site.data.categories[categoryname].name }}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+  {% elsif site.data.categories[categoryname].subtitle %}
+    {{ site.data.categories[categoryname].subtitle }}
+  {% else %}
+    {{ site.data.categories[categoryname].name }}
+  {% endif %}
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;{{ site.data.categories[categoryname].name }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;h3&amp;gt;&lt;/span&gt;{{ site.data.categories[categoryname].description }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h3&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Notice that I am able to dynamically pull the category name via the variable (and even though this is an include within an include after the variable was set). Also notice that I can test if particular properties exist on the category - for example I show the logo if it exists, if not the subtitle (if it exists) and else just the category name.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Hopefully these examples are useful - I know they would have helped me. If anyone has suggestions on how I could have achieved the same results in a better fashion, please share.&lt;/p&gt;
+
+&lt;p&gt;Also, be sure to check out my free ebook from O’Reilly - &lt;a href=&quot;http://www.oreilly.com/web-platform/free/static-site-generators.csp&quot;&gt;Static Site Generators - Modern Tools for Static Website Development&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 02 Oct 2015 00:00:00 -0400</pubDate>
+        <link>http://remotesynthesis.com/general/2015/10/02/advanced-jekyll-templates/</link>
+        <guid isPermaLink="true">http://remotesynthesis.com/general/2015/10/02/advanced-jekyll-templates/</guid>
+      </item>
+    
+      <item>
         <title>Get Started with Static Site Generators</title>
         <description>&lt;p&gt;In the early days of the web, there was no such category as “static sites” - the web was made up of static resources. This was a maintainable solution when the web was simple. That didn’t last long.&lt;/p&gt;
 
@@ -312,28 +420,6 @@
         <pubDate>Wed, 29 Apr 2015 07:15:47 -0400</pubDate>
         <link>http://remotesynthesis.com/general/2015/04/29/tools-for-writing-markdown/</link>
         <guid isPermaLink="true">http://remotesynthesis.com/general/2015/04/29/tools-for-writing-markdown/</guid>
-      </item>
-    
-      <item>
-        <title>Building Static Sites with Node.js and Wintersmith</title>
-        <description>&lt;p&gt;When I’ve spoken on the topic or even when I posted my recent &lt;a href=&quot;http://developer.telerik.com/featured/getting-started-with-jekyll/&quot;&gt;guide to getting started with Jekyll&lt;/a&gt;,  the question I always get is if there is a comparable static site generator to Jekyll that is built with JavaScript and available on npm. The reason people cite is that they aren’t comfortable with Ruby and thus have trouble when they encounter problems with Jekyll or are unable to customize it completely to their needs. Well, there’s good and bad news.&lt;/p&gt;
-
-&lt;p&gt;First, the bad news… I have found nothing comparable to Jekyll in terms of overall features, documentation and community. Now I don’t know every engine out there, but, so far, there’s nothing that even comes close to fully matching Jekyll.&lt;/p&gt;
-
-&lt;p&gt;The good news, however, is that I found &lt;a href=&quot;http://wintersmith.io/&quot;&gt;Wintersmith&lt;/a&gt; to be a viable Jekyll replacement. It has a lot of the key features and is extensible. Plus, there are a reasonable amount of extensions out there for it already. On the other hand, the documentation is awful (let’s be honest) and the community is small. So, if you run into a problem, you’re stuck reviewing the source code. On the upside, I found the source code is pretty self-explanatory when I needed to rely on it.&lt;/p&gt;
-
-&lt;p&gt;Given the lack of a good getting started guide in the Wintersmith documentation, I wrote a two-part series for Sitepoint that walks you through the entire process of building a site. It follows the same exact format of my &lt;a href=&quot;http://developer.telerik.com/featured/getting-started-with-jekyll/&quot;&gt;Jekyll guide&lt;/a&gt; covering everything from installation to templating, creating posts, custom metadata and custom data.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.sitepoint.com/getting-started-wintersmith-nodejs-static-site-generator/&quot;&gt;Getting Started with Wintersmith: A Node.js-based Static Site Generator&lt;/a&gt; - Part 1&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.sitepoint.com/creating-posts-custom-metadata-data-wintersmith/&quot;&gt;Creating Posts, Custom Metadata, and Data in Wintersmith&lt;/a&gt; - Part 2&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The source code for the example is part of my &lt;a href=&quot;https://github.com/remotesynth/Static-Site-Samples&quot;&gt;Static Site Samples GitHub project&lt;/a&gt; which also includes the aforementioned Jekyll sample as well as examples for Harp and Middleman.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 08 Apr 2015 05:00:00 -0400</pubDate>
-        <link>http://remotesynthesis.com/general/2015/04/08/building-static-sites-wintersmith/</link>
-        <guid isPermaLink="true">http://remotesynthesis.com/general/2015/04/08/building-static-sites-wintersmith/</guid>
       </item>
     
   </channel>
