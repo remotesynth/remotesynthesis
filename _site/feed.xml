@@ -7,12 +7,177 @@
     <atom:link href="http://remotesynthesis.com/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Is the Native Mobile App Ecosystem Worth Saving?</title>
+        <description>&lt;p&gt;The native mobile app ecosystem is facing some major challenges. Some have even argued that it is in need of saving. Before we get there, though, let’s examine what the problems are.&lt;/p&gt;
+
+&lt;p&gt;About 5 years ago, we were in the middle of a modern “gold rush” with companies eager to establish a presence in the app stores. The iOS App Store opened in 2008 and it had already reached its 10 billionth download by 2011. The Android Market (now called Google Play) reached its 10 billionth download in late 2011 as well, having launched in 2008 as well. It’s no wonder that companies felt they had to be there - even if little thought was sometimes given to what value their app actually offered. The presence was enough.&lt;/p&gt;
+
+&lt;p&gt;Since that 10 billionth download, the app ecosystem continued to grow. This was driven in part by the fact that the mobile browser lagged far behind the ability of native apps. HTML5 was still seriously incomplete - the first working draft wasn’t even published until 2008. Adobe was pushing Flash for mobile, which would have brought the “app-like” capabilities of desktop Flash to the mobile browser, but…I don’t really need to revisit that, do I?&lt;/p&gt;
+
+&lt;p&gt;By 2013, Apple’s App Store alone was raking in $10 billion in annual gross revenue. Yes, that’s billion with a b.&lt;/p&gt;
+
+&lt;p&gt;Apps, it seemed, had won.&lt;/p&gt;
+
+&lt;p&gt;So what’s changed?&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Please note that this article represents my personal opinion and not  those of my employer, Progress Software / Telerik.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2 id=&quot;no-ones-using-our-app&quot;&gt;No One’s Using Our App&lt;/h2&gt;
+
+&lt;p&gt;In his recent post, &lt;a href=&quot;https://medium.com/swlh/mobile-app-developers-are-suffering-a5636c57d576&quot;&gt;Alex Austin makes a strong case&lt;/a&gt; that the mobile app ecosystems has become over-saturated and tilted heavily towards the top 0.01% of apps. He posted a chart that illustrates this.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/adoptionpowerlaw.png&quot; alt=&quot;The punishing app adoption power law&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Given the dramatic drop off, what chance does your company’s app have? As Alex says:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;In the past four weeks, there were 45,000 new apps submitted to the iOS App Store alone. The chances that any of them will ever break into the top 1000 are effectively 0%, and even if they did, they’re still not seeing any amount of traffic to build a successful business.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This assertion is backed up by industry reports. In a recent &lt;a href=&quot;http://www.gartner.com/technology/reprints.do?id=1-2JLR2P2&amp;amp;ct=150717&amp;amp;st=sb&quot;&gt;mobile apps survey&lt;/a&gt;, Gartner covers how reluctant users are to installing new apps.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Only 8% (U.S.) [of respondents] said they enjoyed searching for new apps.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And in &lt;a href=&quot;https://www.comscore.com/Insights/Presentations-and-Whitepapers/2015/The-2015-US-Mobile-App-Report&quot;&gt;Comscore’s 2015 U.S. Mobile App Report&lt;/a&gt;, they note the difficulty in building a mobile app audience.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Despite growing audiences on apps, the existing digital infrastructure makes it harder to build large audiences on apps than on the web. As evidenced, the mobile web still has 3.5x more web properties with 5 million unique visitors than apps have.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;As if to reinforce Alex’s point, they note that the “list of Top 25 mobile apps is dominated by the leading digital media companies and tends to concentrate within a few categories.” Add to this other recent studies that have noted that a large majority of users don’t download a single new app in any given month (it’s around 65%, according to a &lt;a href=&quot;http://www.engadget.com/2014/08/22/comscore-app-downloads/&quot;&gt;2014 Comscore survey&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;While Comscore notes that a company’s mobile app audience tends to be worth more because they are more loyal, there are clearly many obstacles in the way of building a substantial and monetizable audience in the app ecosystem.&lt;/p&gt;
+
+&lt;p&gt;Well-known venture capitalist Fred Wilson has discussed what he calls the “mobile downturn” since 2014. In a &lt;a href=&quot;http://avc.com/2015/11/the-mobile-downturn-continued/&quot;&gt;recent post&lt;/a&gt;, he noted:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Doing anything in the consumer mobile space these days is super hard. I can’t think of many consumer facing mobile apps that have gained massive traction and sustained it in the past three years. Can you?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In the &lt;a href=&quot;https://medium.com/swlh/mobile-app-developers-are-suffering-a5636c57d576&quot;&gt;same post&lt;/a&gt; discussed earlier, Alex Austin shared some ideas of how to save the mobile app ecosystem - more on that later. But first, can’t the mobile web offer an alternative?&lt;/p&gt;
+
+&lt;h2 id=&quot;the-mobile-web-to-the-rescue&quot;&gt;The Mobile Web to the Rescue?&lt;/h2&gt;
+
+&lt;p&gt;So if apps are hurting, does this benefit the mobile web as an alternative? Yes…and no.&lt;/p&gt;
+
+&lt;p&gt;In a &lt;a href=&quot;https://atavistinsider.atavist.com/goodbye-native-mobile-apps/&quot;&gt;recent post&lt;/a&gt; discussing why the &lt;a href=&quot;https://atavist.com/&quot;&gt;Atavist&lt;/a&gt; is dropping its native apps, Evan Ratliff and Jefferson Rabb note that one of the reasons is that the mobile web has finally caught up, in many respects. The situation is not the same one as in 2012. Many of the features available to native apps are now available in the browser - and it is much easier to develop once for the web than to maintain multiple native apps. Because of this, they note:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The reasons for creating a native experience began to narrow. Not only was there very little we could do in a native app that we couldn’t do on the web, but the strictures of the native app environment made it nearly impossible to design well for both.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And the mobile web audience is extremely large and growing. Referring again to &lt;a href=&quot;https://www.comscore.com/Insights/Presentations-and-Whitepapers/2015/The-2015-US-Mobile-App-Report&quot;&gt;Comscore’s 2015 U.S. Mobile App Report&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A comparison of the Top 1000 Apps vs. the Top 1000 Mobile Web Properties shows a surprising result. Not only do mobile web properties have audiences that are
+more than 2.5x the size, but these audiences are also growing twice as fast.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So if the web is nearly as powerful, easier to develop for, has a larger reach and is growing faster, what’s the problem?&lt;/p&gt;
+
+&lt;p&gt;Well, Comscore did follow up the above stats by noting a lack of engagement by mobile web users. Average engagement has been in a steady decline since late 2014, leading them to believe that much of the growth is what they call “drive-by traffic.”&lt;/p&gt;
+
+&lt;p&gt;The other big problem with the mobile web is that, as I’ve &lt;a href=&quot;http://developer.telerik.com/featured/whats-wrong-with-the-web/&quot;&gt;discussed in detail before&lt;/a&gt;, the mobile web suffers from performance issues and poor monetization capabilities - these are somewhat related as the &lt;a href=&quot;http://developer.telerik.com/featured/the-webs-cruft-problem/&quot;&gt;performance problems are often caused by the attempts to monetize&lt;/a&gt;. This has led to the rise of mobile ad blockers, which, while &lt;a href=&quot;http://www.nytimes.com/2015/10/01/technology/personaltech/ad-blockers-mobile-iphone-browsers.html?_r=0&quot;&gt;apparently very effective&lt;/a&gt; in improving performance, are expected to cost businesses upwards of &lt;a href=&quot;http://www.nytimes.com/2015/08/20/technology/personaltech/ad-blockers-and-the-nuisance-at-the-heart-of-the-modern-web.html&quot;&gt;$22 billion in revenue&lt;/a&gt; this year alone. Yes, that’s billion with a b.&lt;/p&gt;
+
+&lt;h2 id=&quot;so-theres-no-hope-then&quot;&gt;So There’s No Hope Then?&lt;/h2&gt;
+
+&lt;p&gt;So, at this point we’ve established that the native mobile app ecosystem is potentially broken and the mobile web doesn’t currently offer an easy, clear-cut alternative. What can we do?&lt;/p&gt;
+
+&lt;p&gt;Let’s turn back again to &lt;a href=&quot;https://medium.com/swlh/mobile-app-developers-are-suffering-a5636c57d576&quot;&gt;Alex Austin’s article&lt;/a&gt;. He offers a variety of potential solutions to fix the mobile app ecosystem including a better discovery system and, essentially, automatic download/install of apps via intents. He ends with the assertion that “something must be done.”&lt;/p&gt;
+
+&lt;p&gt;But must it?&lt;/p&gt;
+
+&lt;p&gt;I agree that there is a problem with the native mobile app ecosystem. In fact, I’ve been arguing this on a personal level for years. Before I go further, I will reiterate that this is &lt;em&gt;my personal opinion&lt;/em&gt; and does not reflect those of my employer (i.e. Progress Software or Telerik). Ok, now that that’s out of the way, I can say that I think the bigger issue is that &lt;strong&gt;most apps suck&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;thats-right-i-said-most-apps-suck&quot;&gt;That’s Right, I Said Most Apps Suck&lt;/h2&gt;
+
+&lt;p&gt;Yes, I am being hyperbolic here but let me explain.&lt;/p&gt;
+
+&lt;p&gt;First, apps have to overcome series of inherent issues such as:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Apps require a download and install process, even if we link to the app via intents. This isn’t necessary on the web.&lt;/li&gt;
+  &lt;li&gt;Apps eat up space on my device - sometimes needlessly large amounts when you combine the application, cache and data. Web apps use little to no permanent storage (with minor exceptions).&lt;/li&gt;
+  &lt;li&gt;Many apps can hurt the performance and battery life of my phone by running background processes. Web apps do not (and despite some claims, ads don’t kill your battery and mobile web ad blockers have been shown to offer &lt;a href=&quot;http://www.nytimes.com/2015/10/01/technology/personaltech/ad-blockers-mobile-iphone-browsers.html?_r=0&quot;&gt;minimal improvement on battery life&lt;/a&gt;).&lt;/li&gt;
+  &lt;li&gt;Apps are noisy (and can be annoying) by design and by default. Managing the mess of app notifications is such a pain that we’re willing to pay $350+ for a separate device whose primary benefit is &lt;a href=&quot;http://www.techrepublic.com/article/the-only-two-reasons-to-buy-an-apple-watch-for-now/&quot;&gt;decluttering app notifications&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Apps require constant maintenance by the user via updates and app store approvals. Plus it can be difficult, as an app creator, to get your users to update. The web is always running the latest release, no intervention needed.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;None of these problems are dealbreakers and some are more prominent on one platform versus the other. And a good app can make all these issues seem trivial. However, it is important to keep in mind that apps don’t inherently offer something of value. The value is what you build into it. Simply being in the app store does not make your app worthwhile to consumers.&lt;/p&gt;
+
+&lt;p&gt;Let’s look at Comscore’s list of the top 25 apps (i.e. the apps that eat up over 99% of all usage):&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.comscore.com/Insights/Presentations-and-Whitepapers/2015/The-2015-US-Mobile-App-Report&quot;&gt;&lt;img src=&quot;/images/posts/top25apps.jpg&quot; alt=&quot;Top 25 Mobile Apps&quot; /&gt;&lt;/a&gt;
+&lt;em&gt;Source: &lt;a href=&quot;https://www.comscore.com/Insights/Presentations-and-Whitepapers/2015/The-2015-US-Mobile-App-Report&quot;&gt;Comscore&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Many, if not most, of these apps could arguably run equally well on the web and offer equivalent, or nearly equivalent, functionality. Heck, a number of these are simply “appified” versions of the web site. However, all of them have the brand power to push them to the front of the line regardless (or even come pre-installed on many phones).&lt;/p&gt;
+
+&lt;p&gt;The point is, unless you have a massive global brand to fall back on, the only way for your app to stick out in a crowded marketplace is to truly focus on the needs of your users. Better monetization and establishing an app store presence are company problems, not a consumer ones, and not reasons to build an app in and of themselves.&lt;/p&gt;
+
+&lt;p&gt;If you already have an app and feel the need to improve adoption via an app install interstitial, it’s very likely that you haven’t given enough thought as to why your app exists in the first place. Instead of trying to force your web users into your app, focus on making your app more appealing by making it useful. Gartner’s advice in their &lt;a href=&quot;http://www.gartner.com/technology/reprints.do?id=1-2JLR2P2&amp;amp;ct=150717&amp;amp;st=sb&quot;&gt;recent report&lt;/a&gt; speaks to retention, but, in my opinion, applies equally to gaining new users:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Focus on creating richer, more immersive and personalized app experiences for your apps users to keep them coming back.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;i-did-also-say-most&quot;&gt;I Did Also Say “Most”&lt;/h3&gt;
+
+&lt;p&gt;I should emphasize that I am not claiming all apps are bad or apps are bad by nature. In marketplaces that each have &lt;a href=&quot;http://www.statista.com/statistics/276623/number-of-apps-available-in-leading-app-stores/&quot;&gt;over 1.5 million apps&lt;/a&gt;, there are probably thousands of fabulous apps. However, the large number of bad apps are crowding out the good ones, making them hard to find or identify.&lt;/p&gt;
+
+&lt;p&gt;Apps also have some innate benefits. For example ,most of the apps I have installed don’t really offer a ton of functionality over their web counterparts, but I use them for the one-click convenience the home screen icon offers or because, in some cases, their push notifications matter to me (Slack for instance). These benefits are not without value.&lt;/p&gt;
+
+&lt;p&gt;These are areas the web needs to catch up. The one-click convenience does not have to be solely the domain of native apps. And &lt;a href=&quot;http://www.w3.org/TR/push-api/&quot;&gt;push notifications&lt;/a&gt; on the web are coming (and in some cases, they’re &lt;a href=&quot;https://developers.google.com/web/updates/2015/03/push-notifications-on-the-open-web&quot;&gt;already here&lt;/a&gt;).&lt;/p&gt;
+
+&lt;h2 id=&quot;the-native-mobile-app-ecosystem-doesnt-need-saving&quot;&gt;The Native Mobile App Ecosystem Doesn’t Need Saving&lt;/h2&gt;
+
+&lt;p&gt;Native mobile apps don’t need to be saved because they aren’t dying. This pain the ecosystem seems to be going through is not a pain of injury but one of healing. It is a pain caused by misuse - by filling the app store with thousands of apps that don’t need to exist.&lt;/p&gt;
+
+&lt;p&gt;It is a pain that, I believe, will cause companies to move from saying “We need a mobile app” to asking “Why do we need a mobile app?” Answering this question gets at the real value your app intends to bring for the consumer/user.&lt;/p&gt;
+
+&lt;p&gt;There’s a famous scene from the Seinfeld episode named “&lt;a href=&quot;http://www.seinfeldscripts.com/ThePitch.htm&quot;&gt;The Pitch&lt;/a&gt;” where George Costanza is pitching his show about nothing to a TV executive:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/the-pitch-picture.jpg&quot; alt=&quot;George Costanza&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;GEORGE: The show is about nothing.&lt;/p&gt;
+
+  &lt;p&gt;…&lt;/p&gt;
+
+  &lt;p&gt;RUSSELL: Well, why am I watching it?&lt;/p&gt;
+
+  &lt;p&gt;GEORGE: Because it’s on TV.&lt;/p&gt;
+
+  &lt;p&gt;RUSSELL: (Threatening) Not yet.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For too long, many companies used the George Costanza line of reasoning for their apps - why would anyone want to download this app? Because it’s in the app store. And too many apps were about “nothing” in the sense that they didn’t focus on the value they intend to offer by being an app beyond just claiming a spot in the app store or offering the company that created it an easier route to monetizing than the web offered.&lt;/p&gt;
+
+&lt;p&gt;The current state of the native app ecosystem is forcing companies and developers to come to grips with what value our native apps offer over the web before entering an already overcrowded market. The result, I hope, will be fewer but better apps.&lt;/p&gt;
+
+&lt;p&gt;Meanwhile the current state of the mobile web is forcing us to fix the issues we’ve let fester because of our over-reliance on native apps to solve the ills of the web - namely performance and monetization. The result, I hope, will be a mobile web that better meets the needs of both consumers and companies.&lt;/p&gt;
+
+&lt;p&gt;Yes, both ecosystems need some fixing but both will survive. And I believe both will be better for their suffering.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 17 Nov 2015 00:00:00 -0500</pubDate>
+        <link>http://remotesynthesis.com/general/2015/11/17/mobile-app-ecosystem/</link>
+        <guid isPermaLink="true">http://remotesynthesis.com/general/2015/11/17/mobile-app-ecosystem/</guid>
+      </item>
+    
+      <item>
         <title>Some Advanced Jekyll/Liquid Template Techniques</title>
         <description>&lt;p&gt;Generally speaking, Liquid templates for Jekyll are pretty easy to create - Liquid is a powerful templating tool and offers a large number of helpers and formatters to get complex tasks done. However, recently I had the opportunity to build a site that required me to use some techniques I’d never needed before with Liquid and Jekyll.&lt;/p&gt;
 
 &lt;p&gt;The home page had a number of repeating sections that listed the content for each category of content. If there was no content, the section shouldn’t show. More importantly, each section was essentially the same except for some category metadata and styling. Rather than repeat the same code for each section, I decided to use includes - but this required some creative workarounds to make the styling show.&lt;/p&gt;
 
 &lt;p&gt;In this post, I’ll show some of the techniques I used. I am not entirely certain that these are necessarily “best practices,” but since there wasn’t a lot of information I could find around the web on this, I thought it might be worth sharing. (And if you have better ways of solving these problems, please share.)&lt;/p&gt;
+
+&lt;!--more--&gt;
 
 &lt;h2 id=&quot;determining-if-a-category-has-posts-and-how-many&quot;&gt;Determining If a Category Has Posts (and How Many)&lt;/h2&gt;
 
@@ -369,57 +534,6 @@
         <pubDate>Thu, 07 May 2015 07:15:47 -0400</pubDate>
         <link>http://remotesynthesis.com/general/2015/05/07/jekyll-versus-competition/</link>
         <guid isPermaLink="true">http://remotesynthesis.com/general/2015/05/07/jekyll-versus-competition/</guid>
-      </item>
-    
-      <item>
-        <title>Tools for Writing and Converting Markdown</title>
-        <description>&lt;p&gt;By now, most developers are familiar on some level with &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt;. It’s become a somewhat ubiquitous part of developer tooling, probably in no small part due to it’s usage for documentation in GitHub. It also plays a big part in nearly all the major static site engines.&lt;/p&gt;
-
-&lt;p&gt;The power of Markdown and probably a significant reason for its success is in its simplicity. But this is also its biggest weakness. Developers love Markdown because it offers a shorthand for probably 80% of their writing use cases - things like blog posts and basic documentation. For the other 20%, developers have no problem switching to straight HTML, which, of course, you can include in a Markdown file without issue.&lt;/p&gt;
-
-&lt;p&gt;For writers and the general public however, this presents a huge obstacle. They cannot use the tools they are comfortable in writing with and they not only are forced to learn Markdown syntax, but they must learn those cases that Markdown doesn’t cover and the HTML to use in these cases. It’s multiple layers of complexity for the sake of simplicity.&lt;/p&gt;
-
-&lt;p&gt;That being said, as Markdown becomes more widespread in its use, the tooling around it is slowly improving. I use Markdown daily and below are some of the tools that I’ve found useful in my own experience.&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;desktop-editors&quot;&gt;Desktop Editors&lt;/h2&gt;
-
-&lt;p&gt;Most code editors such as &lt;a href=&quot;http://brackets.io/&quot;&gt;Brackets&lt;/a&gt; or &lt;a href=&quot;https://atom.io/&quot;&gt;Atom&lt;/a&gt; already include some level of Markdown support. However, if you’re looking for an editor with richer functionality geared specifically towards Markdown, then there are a number of options.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://25.io/mou/&quot;&gt;Mou&lt;/a&gt; is my current go to option for writing Markdown. As with pretty much every Markdown editor out there, you write in Markdown and have a live preview available. There is currently no option that I am aware of where you write in rich text and have it converted to Markdown.&lt;/p&gt;
-
-&lt;p&gt;Mou offers syntax hinting and highlights as well as keyboard shortcuts, but my favorite feature (and why I prefer it) is the export. I rely heavily on the export to HTML feature and, in my experience, it has the most reliable of the editors I have tried. The only quirk I find is that it often stumbles when using backticks for code blocks (and doesn’t recognize the GitHub-flavored Markdown syntax for indicating the type of code within a code block).&lt;/p&gt;
-
-&lt;p&gt;Currently Mou is still free, though a 1.0 looks to be forthcoming that will be paid.&lt;/p&gt;
-
-&lt;p&gt;Another free option is &lt;a href=&quot;http://macdown.uranusjr.com/&quot;&gt;Macdown&lt;/a&gt;, which was created when Mou appeared to be ceasing development. I found it to be quite buggy, personally, but have not tried it much since its initial release.&lt;/p&gt;
-
-&lt;p&gt;If you are on Windows, some options I’ve heard recommended include &lt;a href=&quot;http://www.texts.io/&quot;&gt;Texts&lt;/a&gt; and &lt;a href=&quot;http://markdownpad.com/&quot;&gt;MarkdownPad&lt;/a&gt;, though I have limited experience with either.&lt;/p&gt;
-
-&lt;p&gt;Lastly, while not technically an editor, &lt;a href=&quot;https://github.com/mobily/markdown-live&quot;&gt;Markdown Live&lt;/a&gt; is a useful tool for live-previewing Markdown as you write it. Once installed, you simply change directory into the folder you want to serve up and enter &lt;code&gt;mdlive&lt;/code&gt; and it will open a preview in the browser that will update as you type - without the need to save the file. This can be useful if you prefer to use a plain text editor for writing Markdown.&lt;/p&gt;
-
-&lt;h2 id=&quot;web-based-editors&quot;&gt;Web-based Editors&lt;/h2&gt;
-
-&lt;p&gt;If you are looking for a free web-based option, &lt;a href=&quot;http://dillinger.io/&quot;&gt;Dillinger&lt;/a&gt; is a free (and open source) Markdown editor for the browser. It includes a live preview as well as the ability to import documents from numerous sources and export them to various formats.&lt;/p&gt;
-
-&lt;p&gt;However, one of the things lacking in both desktop and web-based editors is collaboration. If you are working on a team, the ability to share, comment and collaborate on a document is not just useful, but necessary. &lt;a href=&quot;https://beegit.com/&quot;&gt;Beegit&lt;/a&gt; is a commercial offering that includes a number of collaboration features. My team uses it mostly for the ability to share and comment on documents as they are being developed, much as you would within Google Drive.&lt;/p&gt;
-
-&lt;h2 id=&quot;converters&quot;&gt;Converters&lt;/h2&gt;
-
-&lt;p&gt;When you are working with a number of contributors, it’s not always possible to force everyone to use Markdown. While Markdown’s simplicity makes it simple to manually convert short documents, converting long documents or groups of documents could get tedious and time consuming. While they aren’t perfect, in these cases, a converter can be enormously helpful.&lt;/p&gt;
-
-&lt;p&gt;One converter that I rely on frequently is the &lt;a href=&quot;http://word-to-markdown.herokuapp.com/&quot;&gt;Word to Markdown web app&lt;/a&gt;. Simply choose your local file and hit convert. The site will post you the Markdown it generates from the file as well as a live preview. For good or for bad, it even embeds images in the document using Base64 encoding. Personally, I find this can be difficult to clean up and replace with external images, so I often remove them from the source document first and put placeholders.&lt;/p&gt;
-
-&lt;p&gt;Word to Markdown is also available as an &lt;a href=&quot;https://github.com/benbalter/word-to-markdown&quot;&gt;open source project and command line tool&lt;/a&gt;. In my experience, I couldn’t get the command line tool to work properly for some reason, while the web app worked perfectly.&lt;/p&gt;
-
-&lt;p&gt;In other cases, you may encounter rich text that you need converted to Markdown, such as text copy/pasted from the web or some other editor. In these situations, I’ve found &lt;a href=&quot;http://markitdown.medusis.com/&quot;&gt;Mark It Down&lt;/a&gt; to be both reliable and helpful (it is also &lt;a href=&quot;https://github.com/bambax/markitdown.medusis.com&quot;&gt;open source&lt;/a&gt;). Simply paste in the rich text and hit the convert button to get back nice, clean Markdown.&lt;/p&gt;
-
-&lt;h2 id=&quot;other-tools&quot;&gt;Other Tools?&lt;/h2&gt;
-
-&lt;p&gt;This is by no means a comprehensive list of Markdown tools - just the ones that I’ve personally come to rely on at some level or another. Are there any others that you recommend? Be sure to share in the comments as I’m always looking for new ones.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 29 Apr 2015 07:15:47 -0400</pubDate>
-        <link>http://remotesynthesis.com/general/2015/04/29/tools-for-writing-markdown/</link>
-        <guid isPermaLink="true">http://remotesynthesis.com/general/2015/04/29/tools-for-writing-markdown/</guid>
       </item>
     
   </channel>

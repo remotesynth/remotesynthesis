@@ -4,6 +4,8 @@
         URL: "http://www.oreilly.com/web-platform/free/static-site-generators.csp"
 -   name: "Telerik Developer Network"
     articles:
+      - title: "Spying on James Bond with Node.js"
+        URL: "http://developer.telerik.com/featured/spying-on-james-bond-with-node-js/"
       - title: "Defining a New Breed of Cross-Platform Mobile Apps (with TJ VanToll)"
         URL: "http://developer.telerik.com/featured/defining-a-new-breed-of-cross-platform-mobile-apps/"
       - title: "Lazy Loading Images on the Web"

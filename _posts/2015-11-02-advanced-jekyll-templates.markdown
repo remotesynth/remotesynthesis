@@ -11,6 +11,8 @@ The home page had a number of repeating sections that listed the content for eac
 
 In this post, I'll show some of the techniques I used. I am not entirely certain that these are necessarily "best practices," but since there wasn't a lot of information I could find around the web on this, I thought it might be worth sharing. (And if you have better ways of solving these problems, please share.)
 
+<!--more-->
+
 ## Determining If a Category Has Posts (and How Many)
 
 This one is actually pretty straightforward. Each category has a size property which you can use.
