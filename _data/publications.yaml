@@ -4,6 +4,10 @@
         URL: "http://www.oreilly.com/web-platform/free/static-site-generators.csp"
 -   name: "Telerik Developer Network"
     articles:
+      - title: "What I Learned from Working in Failed Platforms"
+        URL: "http://developer.telerik.com/featured/what-i-learned-from-working-in-failed-platforms/"
+      - title: "Creating Node.js Command Line Utilities to Improve Your Workflow"
+        URL: "http://developer.telerik.com/featured/creating-node-js-command-line-utilities-improve-workflow/"
       - title: "Spying on James Bond with Node.js"
         URL: "http://developer.telerik.com/featured/spying-on-james-bond-with-node-js/"
       - title: "Defining a New Breed of Cross-Platform Mobile Apps (with TJ VanToll)"

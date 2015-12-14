@@ -7,6 +7,31 @@
     <atom:link href="http://remotesynthesis.com/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Enough with the Developer Surveys Already</title>
+        <description>&lt;p&gt;The developer survey seems to have become a mainstay of technical blogs lately. I don’t mean to pick on anyone in particular, but the problem is, almost every one does not pass the eye test. This isn’t surprising when you think about it though. There are several problems with these surveys that prevent them from really being representative of the community they want to represent.&lt;/p&gt;
+
+&lt;p&gt;The main issue is that all of these surveys suffer from major &lt;a href=&quot;https://en.wikipedia.org/wiki/Selection_bias&quot;&gt;selection bias&lt;/a&gt;. Even with thousands of responses, the results this likely represents a very small fraction of the overall community.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Estimates from 2 years ago said there were &lt;a href=&quot;http://www.techrepublic.com/blog/european-technology/there-are-185-million-software-developers-in-the-world-but-which-country-has-the-most/&quot;&gt;18.5 million software developers&lt;/a&gt; worldwide, including both professional and hobbyists. It’s fairly safe to assume that this number has grown. I could not find estimates on JavaScript developers specifically, however. But given it’s ubiquity and growth the past few years, I’d guess the number is significant.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A small but substantial response is fine assuming it is representative. However, in most cases these are promoted through means that would only ever be seen by a specific type of developer - one who reads a certain blog, or follows specific individuals on Twitter or finds articles on sites like &lt;a href=&quot;http://www.echojs.com/&quot;&gt;EchoJS&lt;/a&gt;, for example. Even then, it’s merely a subset of developers in these outlets who are willing to fill out a survey. While the overall reach of these avenues of promoting your survey might be large, keep in mind that the type of developer who you’ll reach is the type that keeps up with the latest trends, who wants to learn about new tools, who wants to stay on the cutting edge.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;This is not the typical developer.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Making matters even wore is that I haven’t seen any of these surveys include any sort of demographic information. The opinions and habits of the cutting edge JavaScript developer might be useful if I had information about who exactly these people were or how some of this information might break down along various demographics. For instance, how long have they been a developer? How long in JavaScript? Are they employed? Full-time? Part-time? Self-employed? Hobbyist developer? If employed, how big is the company? How many developers at said company?&lt;/p&gt;
+
+&lt;p&gt;This sort of information, especially when we break down answers along certain demographics. At the very least, it would help us gauge how representative the responses are to the community as a whole or help us determine what specific subset of that audience it is representative for. But we should not be fooled into assuming it is widely representative of the developer community.&lt;/p&gt;
+
+&lt;p&gt;Look, if you want to run a survey that helps you determine who reads or is a potential reader of your site and what type of topics they are most interested in, this is a very useful tool. They can be fun too (and generate a lot of debate in the comments). But, please, let’s not go off presuming too much off the results of any one of these surveys I’ve seen so far.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 11 Dec 2015 00:00:00 -0500</pubDate>
+        <link>http://remotesynthesis.com/general/2015/12/11/enough-with-the-developer-surveys/</link>
+        <guid isPermaLink="true">http://remotesynthesis.com/general/2015/12/11/enough-with-the-developer-surveys/</guid>
+      </item>
+    
+      <item>
         <title>Is the Native Mobile App Ecosystem Worth Saving?</title>
         <description>&lt;p&gt;The native mobile app ecosystem is facing some major challenges. Some have even argued that it is in need of saving. Before we get there, though, let’s examine what the problems are.&lt;/p&gt;
 
@@ -183,29 +208,29 @@ more than 2.5x the size, but these audiences are also growing twice as fast.&lt;
 
 &lt;p&gt;This one is actually pretty straightforward. Each category has a size property which you can use.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-liquid&quot; data-lang=&quot;liquid&quot;&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;categories&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;categoryname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-liquid&quot; data-lang=&quot;liquid&quot;&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;categories&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;categoryname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
  &amp;lt;!-- do something --&amp;gt;
-&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;endif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;endif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Obviously, replace &lt;code&gt;categoryname&lt;/code&gt; with the actual category you used for your posts. Don’t worry, it won’t error if the category doesn’t exist. Now, I suppose you could leave the &lt;code&gt;.size&lt;/code&gt; off assuming that if the category doesn’t exist, that is because it contains no posts, but this works just as well (and reads easier perhaps).&lt;/p&gt;
+&lt;p&gt;Obviously, replace &lt;code class=&quot;highlighter-rouge&quot;&gt;categoryname&lt;/code&gt; with the actual category you used for your posts. Don’t worry, it won’t error if the category doesn’t exist. Now, I suppose you could leave the &lt;code class=&quot;highlighter-rouge&quot;&gt;.size&lt;/code&gt; off assuming that if the category doesn’t exist, that is because it contains no posts, but this works just as well (and reads easier perhaps).&lt;/p&gt;
 
 &lt;h2 id=&quot;assign-the-value-of-a-variable&quot;&gt;Assign the Value of a Variable&lt;/h2&gt;
 
-&lt;p&gt;In this scenario, I had a variable that would have the current category. Assigning a variable is easy. Liquid has an &lt;code&gt;assign&lt;/code&gt; keyword for this purpose.&lt;/p&gt;
+&lt;p&gt;In this scenario, I had a variable that would have the current category. Assigning a variable is easy. Liquid has an &lt;code class=&quot;highlighter-rouge&quot;&gt;assign&lt;/code&gt; keyword for this purpose.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-liquid&quot; data-lang=&quot;liquid&quot;&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;assign&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;categoryname&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;foobar&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-liquid&quot; data-lang=&quot;liquid&quot;&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;assign&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;categoryname&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;foobar&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Some examples claimed that you could not reassign the value of a variable once initially assigned. I didn’t find this to be the case. However, you can, alternatively, assign a variable with &lt;code&gt;capture&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Some examples claimed that you could not reassign the value of a variable once initially assigned. I didn’t find this to be the case. However, you can, alternatively, assign a variable with &lt;code class=&quot;highlighter-rouge&quot;&gt;capture&lt;/code&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-liquid&quot; data-lang=&quot;liquid&quot;&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;capture&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;categoryname&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;foobar&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;endcapture&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-liquid&quot; data-lang=&quot;liquid&quot;&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;capture&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;categoryname&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;foobar&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;endcapture&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;using-a-variable-with-an-include&quot;&gt;Using a Variable with an Include&lt;/h2&gt;
 
-&lt;p&gt;There’s really nothing special to do here. If the variable is assigned, you can simply use it within any include thereafter. (Note: I tried using the &lt;code&gt;with&lt;/code&gt; keyword to pass the variable in the include rather than assigning it each time, but couldn’t get this to work properly.)&lt;/p&gt;
+&lt;p&gt;There’s really nothing special to do here. If the variable is assigned, you can simply use it within any include thereafter. (Note: I tried using the &lt;code class=&quot;highlighter-rouge&quot;&gt;with&lt;/code&gt; keyword to pass the variable in the include rather than assigning it each time, but couldn’t get this to work properly.)&lt;/p&gt;
 
 &lt;p&gt;The fun part here is that the include was always the same, just the value of the variable changed. Let’s look at a small portion.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-liquid&quot; data-lang=&quot;liquid&quot;&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;categories&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;foobar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-liquid&quot; data-lang=&quot;liquid&quot;&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;categories&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;foobar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;assign&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;categoryname&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;foobar&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
   &amp;lt;section&amp;gt;
     &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;index_article&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
@@ -217,11 +242,11 @@ more than 2.5x the size, but these audiences are also growing twice as fast.&lt;
   &amp;lt;section&amp;gt;
     &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;index_article&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
   &amp;lt;/section&amp;gt;
-&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;endif&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;endif&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Within that include (which I poorly named &lt;code&gt;index_article.html&lt;/code&gt;), I can loop over the posts within that category by using the variable.&lt;/p&gt;
+&lt;p&gt;Within that include (which I poorly named &lt;code class=&quot;highlighter-rouge&quot;&gt;index_article.html&lt;/code&gt;), I can loop over the posts within that category by using the variable.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;{% include banner.html %}
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;{% include banner.html %}
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ArticleList&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
   {% for post in site.categories[categoryname] %}
 	&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;
@@ -231,15 +256,15 @@ more than 2.5x the size, but these audiences are also growing twice as fast.&lt;
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;PublishDate&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;{{ post.date | date: &quot;%b %-d, %Y&quot; }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
   {% endfor %}
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;dynamically-load-data&quot;&gt;Dynamically Load Data&lt;/h2&gt;
 
-&lt;p&gt;So, remember I said that the banner changed based upon some category metadata? Well, in order to do that, I decided to place the necessary metadata items in a YAML data file under &lt;code&gt;_data&lt;/code&gt;. Each category had the same key name as the actual post category so that I could easily look it up. (Yes, this is probably a little brittle, but remember we are talking a static site - it’s not like I’m going to push something broken live.)&lt;/p&gt;
+&lt;p&gt;So, remember I said that the banner changed based upon some category metadata? Well, in order to do that, I decided to place the necessary metadata items in a YAML data file under &lt;code class=&quot;highlighter-rouge&quot;&gt;_data&lt;/code&gt;. Each category had the same key name as the actual post category so that I could easily look it up. (Yes, this is probably a little brittle, but remember we are talking a static site - it’s not like I’m going to push something broken live.)&lt;/p&gt;
 
 &lt;p&gt;Let’s look at a sample of the YAML.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;foobar&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;foobar&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
   &lt;span class=&quot;s&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Foo&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Bar&quot;&lt;/span&gt;
   &lt;span class=&quot;s&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Foo&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;is&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;the&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;best&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;kind&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;around&quot;&lt;/span&gt;
   &lt;span class=&quot;s&quot;&gt;logo&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;foobar.png&quot;&lt;/span&gt;
@@ -247,11 +272,11 @@ more than 2.5x the size, but these audiences are also growing twice as fast.&lt;
 &lt;span class=&quot;s&quot;&gt;barbar&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
   &lt;span class=&quot;s&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Bar&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Bar&quot;&lt;/span&gt;
   &lt;span class=&quot;s&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;There&#39;s&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;no&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;doubt&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;that&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;is&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;the&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;original&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;kind&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;bar&quot;&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Orange&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+  &lt;span class=&quot;s&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Orange&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Notice that they don’t all contain the exact same metadata - the first has a logo but the second doesn’t. In the &lt;code&gt;index_article.html&lt;/code&gt; code sample above I included &lt;code&gt;banner.html&lt;/code&gt;. Let’s take a look at that.&lt;/p&gt;
+&lt;p&gt;Notice that they don’t all contain the exact same metadata - the first has a logo but the second doesn’t. In the &lt;code class=&quot;highlighter-rouge&quot;&gt;index_article.html&lt;/code&gt; code sample above I included &lt;code class=&quot;highlighter-rouge&quot;&gt;banner.html&lt;/code&gt;. Let’s take a look at that.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;SectionHead {{ site.data.categories[categoryname].color }}Box }}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;SectionHead {{ site.data.categories[categoryname].color }}Box }}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;LogoSpot&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
   {% if site.data.categories[categoryname].logo %}
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{ site.baseurl }}/images/{{ site.data.categories[categoryname].logo }}&quot;&lt;/span&gt;
@@ -264,7 +289,7 @@ more than 2.5x the size, but these audiences are also growing twice as fast.&lt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;{{ site.data.categories[categoryname].name }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;h3&amp;gt;&lt;/span&gt;{{ site.data.categories[categoryname].description }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h3&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Notice that I am able to dynamically pull the category name via the variable (and even though this is an include within an include after the variable was set). Also notice that I can test if particular properties exist on the category - for example I show the logo if it exists, if not the subtitle (if it exists) and else just the category name.&lt;/p&gt;
 
@@ -515,25 +540,6 @@ more than 2.5x the size, but these audiences are also growing twice as fast.&lt;
         <pubDate>Thu, 14 May 2015 07:15:47 -0400</pubDate>
         <link>http://remotesynthesis.com/general/2015/05/14/web-developers-hostile-to-audio/</link>
         <guid isPermaLink="true">http://remotesynthesis.com/general/2015/05/14/web-developers-hostile-to-audio/</guid>
-      </item>
-    
-      <item>
-        <title>Jekyll Versus the Competition</title>
-        <description>&lt;p&gt;On Saturday, May 2, the first ever &lt;a href=&quot;http://jekyllconf.com&quot;&gt;JekyllConf&lt;/a&gt; was held online and featured some really prominent speakers including Tom Preston-Werner and Brandon Mathis. I had the honor of opening the event with my session comparing Jekyll to other popular static site engine options including &lt;a href=&quot;http://harpjs.com&quot;&gt;Harp&lt;/a&gt;, &lt;a href=&quot;http://hexo.io/&quot;&gt;Hexo&lt;/a&gt;, &lt;a href=&quot;http://wintersmith.io/&quot;&gt;Wintersmith&lt;/a&gt;, &lt;a href=&quot;http://gohugo.io/&quot;&gt;Hugo&lt;/a&gt; and &lt;a href=&quot;https://middlemanapp.com/&quot;&gt;Middleman&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;In summary (and in my personal opinion of course), Jekyll is still in the strongest position of all the engines. It has the strongest community (partly evidenced by JekyllConf itself), the best documentation (not saying it couldn’t be better, but it’s better than the alternatives) and has the largest selection of pre-built templates and plugins.&lt;/p&gt;
-
-&lt;p&gt;However, it has failed to reach much beyond hardcore developers. This is partly because of the nature of the tool - for instance, few people outside of the developer community enjoy working on the command line…in fact, most find it intimidating. Tooling for authors is weak too - Markdown is a terrible option for authors (who aren’t developers). We think of it as being so simple and easy, but that’s actually what makes it so complex. In terms of authoring, it covers a majority of use cases, but it is still very common to encounter requirements that it doesn’t meet (intentionally, since it’s goal was simplicity). Thus, when you teach an author Markdown, you need to teach them the syntax, what it doesn’t cover and  HTML to handle those scenarios it doesn’t cover. This is actually more complicated than simply teaching them HTML.&lt;/p&gt;
-
-&lt;p&gt;In my opinion, until the tooling is available to allow authors and contributors to write using the tooling they love, static site engines will remain a niche solution. This is a shame as they actually seem like the optimal solution for content focused sites and, perhaps more so, documentation sites. The good news is that there are people working on the tools needed to bridge this gap…we’ll see how this goes!&lt;/p&gt;
-
-&lt;p&gt;You can see the full session recording below or view the &lt;a href=&quot;https://www.youtube.com/watch?v=X5sJIL-nOhg&amp;amp;feature=youtu.be&amp;amp;t=9m32s&quot;&gt;full recording of the day here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/vT7DhK5zbv0?list=PLrxYIq_0LFJcXlsRZD-JCdITfZexwvqsQ&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-</description>
-        <pubDate>Thu, 07 May 2015 07:15:47 -0400</pubDate>
-        <link>http://remotesynthesis.com/general/2015/05/07/jekyll-versus-competition/</link>
-        <guid isPermaLink="true">http://remotesynthesis.com/general/2015/05/07/jekyll-versus-competition/</guid>
       </item>
     
   </channel>

@@ -14,6 +14,7 @@ highlighter: rouge
 #pagination
 paginate: 5
 excerpt_separator: "<!--more-->"
+gems: [jekyll-paginate]
 
 #glynn
 ftp_host: '162.208.2.130'
